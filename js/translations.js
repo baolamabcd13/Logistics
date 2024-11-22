@@ -250,7 +250,7 @@ const translations = {
       news: "Tin tức",
       support: "Hỗ trợ",
       welcome: "Chào mừng đến với LogiTrack",
-      heroTitle: "<span class='highlight'>Giải pháp</span> Logistics Toàn cầu cho <span class='highlight'>Thành công</span> ca Bạn",
+      heroTitle: "<span class='highlight'>Giải pháp</span> Logistics Toàn cầu cho <span class='highlight'>Thành công</span> của Bạn",
       heroDesc: "Tối ưu hóa chuỗi cung ứng của bạn với các dịch vụ logistics toàn diện của chúng tôi. Từ vận chuyển hàng không đến giao hàng chặng cuối, chúng tôi đảm bảo hàng hóa của bạn đến đích an toàn và đúng hẹn.",
       searchPlaceholder: "Theo dõi lô hàng hoặc khám phá dịch vụ của chúng tôi...",
       searchButton: "Tìm kiếm",
