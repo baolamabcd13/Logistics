@@ -44,4 +44,32 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
+
+    // Thêm xử lý sticky sidebars
+    const leftSidebar = document.querySelector('.transport-sidebar-left');
+    const rightSidebar = document.querySelector('.transport-sidebar-right');
+    const footer = document.querySelector('.main-footer');
+    
+    function updateSidebarPosition() {
+        const footerRect = footer.getBoundingClientRect();
+        const viewportHeight = window.innerHeight;
+        
+        // Khoảng cách từ bottom của viewport đến top của footer
+        const distanceToFooter = footerRect.top - viewportHeight;
+        
+        if (distanceToFooter <= 0) {
+            // Khi footer xuất hiện trong viewport
+            const translateY = Math.abs(distanceToFooter);
+            leftSidebar.style.transform = `translateY(-${translateY}px)`;
+            rightSidebar.style.transform = `translateY(-${translateY}px)`;
+        } else {
+            // Reset position khi footer không trong viewport
+            leftSidebar.style.transform = 'translateY(0)';
+            rightSidebar.style.transform = 'translateY(0)';
+        }
+    }
+
+    // Thêm event listener cho scroll
+    window.addEventListener('scroll', updateSidebarPosition);
+    window.addEventListener('resize', updateSidebarPosition);
 });

@@ -26,10 +26,11 @@ body, html {
   grid-template-columns: 280px 1fr 320px;
   gap: 24px;
   padding: 24px;
-  margin: 0 auto;
+  margin: 80px auto 0;
   max-width: 1600px;
-  min-height: calc(100vh - 80px);
+  min-height: calc(100vh - 160px);
   background: #f8fafc;
+  padding-bottom: 80px;
 }
 
 /* Left Sidebar */
@@ -39,12 +40,13 @@ body, html {
   box-shadow: var(--box-shadow);
   padding: 24px;
   position: fixed;
-  top: 24px;
+  top: 104px;
   left: 24px;
   width: 280px;
-  height: calc(100vh - 48px);
+  height: calc(100vh - 208px);
   box-sizing: border-box;
   overflow-y: auto;
+  transition: transform 0.3s ease;
 }
 
 .transport-sidebar-left::-webkit-scrollbar {
@@ -206,9 +208,13 @@ body, html {
 
   .transport-container {
     grid-template-columns: 1fr;
+    margin-top: 60px;
+    padding: 16px;
+    min-height: calc(100vh - 120px);
   }
   
-  .transport-sidebar-left {
+  .transport-sidebar-left,
+  .transport-sidebar-right {
     display: none;
   }
   
@@ -216,6 +222,8 @@ body, html {
     grid-column: 1;
     margin: 0;
     width: 100%;
+    padding: 24px;
+    max-width: 100%;
   }
   
   .transport-sidebar-right {
@@ -241,12 +249,13 @@ body, html {
   box-shadow: var(--box-shadow);
   padding: 28px;
   position: fixed;
-  top: 24px;
+  top: 104px;
   right: 24px;
   width: 320px;
-  height: calc(100vh - 48px);
+  height: calc(100vh - 208px);
   box-sizing: border-box;
   overflow-y: auto;
+  transition: transform 0.3s ease;
 }
 
 /* Quick Quote Form */
