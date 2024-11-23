@@ -241,6 +241,143 @@ const translations = {
             electronics: "Electronics"
           }
         }
+      },
+      copyright: "2024 LogiTrack. All rights reserved.",
+      terms: "Terms & Conditions",
+      privacy: "Privacy Policy",
+      cookies: "Cookie Policy",
+      termsPage: {
+        title: "Terms & Conditions",
+        lastUpdated: "Last updated: March 15, 2024",
+        sections: {
+          intro: {
+            title: "1. Introduction",
+            content: "Welcome to LogiTrack. These terms and conditions outline the rules and regulations for the use of LogiTrack's services and website."
+          },
+          serviceTerms: {
+            title: "2. Service Terms",
+            description: {
+              title: "2.1 Service Description",
+              content: "LogiTrack provides logistics and transportation services including but not limited to:",
+              items: [
+                "Air Freight Services",
+                "Sea Freight Services",
+                "Land Transportation",
+                "Warehousing Solutions",
+                "Custom Clearance Services"
+              ]
+            },
+            availability: {
+              title: "2.2 Service Availability",
+              content: "We strive to provide our services 24/7, but we cannot guarantee uninterrupted availability of our services due to maintenance, updates, or factors beyond our control."
+            }
+          },
+          userResponsibilities: {
+            title: "3. User Responsibilities",
+            content: "By using our services, you agree to:",
+            items: [
+              "Provide accurate and complete information",
+              "Comply with all applicable laws and regulations",
+              "Maintain the confidentiality of your account",
+              "Notify us immediately of any unauthorized use"
+            ]
+          },
+          shippingPolicies: {
+            title: "4. Shipping Policies",
+            prohibited: {
+              title: "4.1 Prohibited Items",
+              content: "The following items are strictly prohibited from shipping:",
+              items: [
+                "Illegal substances",
+                "Hazardous materials without proper documentation",
+                "Protected wildlife products",
+                "Counterfeit goods"
+              ]
+            }
+          },
+          liability: {
+            title: "5. Liability",
+            content: "LogiTrack's liability is limited to the terms specified in our shipping agreements and applicable international conventions."
+          },
+          changes: {
+            title: "6. Changes to Terms",
+            content: "We reserve the right to modify these terms at any time. Changes will be effective immediately upon posting to our website."
+          },
+          footer: {
+            contact: "For any questions regarding these terms, please contact us at:"
+          }
+        }
+      },
+      privacyPage: {
+        title: "Privacy Policy",
+        lastUpdated: "Last updated: March 15, 2024",
+        sections: {
+          intro: {
+            title: "1. Introduction",
+            content: "At LogiTrack, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information."
+          },
+          dataCollection: {
+            title: "2. Data Collection",
+            personal: {
+              title: "2.1 Personal Information",
+              content: "We collect the following types of personal information:",
+              items: [
+                "Name and contact details",
+                "Shipping and billing addresses",
+                "Payment information",
+                "Account credentials",
+                "Communication preferences"
+              ]
+            },
+            usage: {
+              title: "2.2 Usage Data",
+              content: "We automatically collect certain information about your device and how you interact with our services.",
+              items: [
+                "IP address and device information",
+                "Browser type and settings",
+                "Location data",
+                "Usage patterns and preferences"
+              ]
+            }
+          },
+          dataUse: {
+            title: "3. Use of Information",
+            content: "We use your information to:",
+            items: [
+              "Process and track shipments",
+              "Provide customer support",
+              "Improve our services",
+              "Send service updates and marketing communications",
+              "Comply with legal obligations"
+            ]
+          },
+          dataSecurity: {
+            title: "4. Data Security",
+            content: "We implement appropriate security measures to protect your information from unauthorized access, alteration, disclosure, or destruction."
+          },
+          userRights: {
+            title: "5. Your Rights",
+            content: "You have the right to:",
+            items: [
+              "Access your personal data",
+              "Request data correction",
+              "Request data deletion",
+              "Opt-out of marketing communications",
+              "Data portability"
+            ]
+          },
+          cookies: {
+            title: "6. Cookies and Tracking",
+            content: "We use cookies and similar technologies to enhance your experience. See our Cookie Policy for more details."
+          },
+          updates: {
+            title: "7. Updates to Privacy Policy",
+            content: "We may update this policy periodically. We will notify you of any significant changes."
+          },
+          footer: {
+            contact: "For privacy-related inquiries, please contact our Data Protection Officer at:"
+          }
+        }
       }
     },
     vi: {
@@ -399,7 +536,7 @@ const translations = {
             position: "Cầu thủ bóng rổ - Philadelphia 76ers"
           },
           {
-            text: "Dịch vụ logistics xuất sắc đã tối ưu hóa hoạt động của chúng tôi. Sự tận tâm của họ đối với sự hài lòng của khách hàng là không gì sánh được.",
+            text: "Dịch vụ logistics xuất sắc đã tối u hóa hoạt động của chúng tôi. Sự tận tâm của họ đối với sự hài lòng của khách hàng là không gì sánh được.",
             author: "Anthony Edwards",
             position: "Cầu thủ bóng rổ - Minnesota Timberwolves"
           }
@@ -483,6 +620,236 @@ const translations = {
             automotive: "Ô tô & Phụ tùng",
             electronics: "Điện tử"
           }
+        }
+      },
+      copyright: "2024 LogiTrack. Đã đăng ký bản quyền.",
+      terms: "Điều khoản & Điều kiện",
+      privacy: "Chính sách bảo mật",
+      cookies: "Chính sách Cookie",
+      termsPage: {
+        title: "Điều Khoản & Điều Kiện",
+        lastUpdated: "Cập nhật lần cuối: 15 tháng 3, 2024",
+        sections: {
+          intro: {
+            title: "1. Giới Thiệu",
+            content: "Chào mừng đến với LogiTrack. Các điều khoản và điều kiện này quy định các quy tắc và quy định cho việc sử dụng dịch vụ và trang web của LogiTrack."
+          },
+          serviceTerms: {
+            title: "2. Điều Khoản Dịch Vụ",
+            description: {
+              title: "2.1 Mô Tả Dịch Vụ",
+              content: "LogiTrack cung cấp các dịch vụ logistics và vận tải bao gồm nhưng không giới hạn:",
+              items: [
+                "Dịch vụ vận tải hàng không",
+                "Dịch vụ vận tải biển",
+                "Vận tải đường bộ",
+                "Giải pháp kho bãi",
+                "Dịch vụ thông quan"
+              ]
+            },
+            availability: {
+              title: "2.2 Tính Khả Dụng của Dịch Vụ",
+              content: "Chúng tôi cố gắng cung cấp dịch vụ 24/7, nhưng không thể đảm bảo tính khả dụng liên tục của dịch vụ do bảo trì, cập nhật hoặc các yếu tố ngoài tầm kiểm soát của chúng tôi."
+            }
+          },
+          userResponsibilities: {
+            title: "3. Trách Nhiệm Người Dùng",
+            content: "Khi sử dụng dịch vụ của chúng tôi, bạn đồng ý:",
+            items: [
+              "Cung cấp thông tin chính xác và đầy đủ",
+              "Tuân thủ tất cả luật lệ và quy định hiện hành",
+              "Bảo mật thông tin tài khoản của bạn",
+              "Thông báo ngay cho chúng tôi về bất kỳ việc sử dụng trái phép nào"
+            ]
+          },
+          shippingPolicies: {
+            title: "4. Chính Sách Vận Chuyển",
+            prohibited: {
+              title: "4.1 Hàng Hóa Cấm",
+              content: "Các mặt hàng sau bị nghiêm cấm vận chuyển:",
+              items: [
+                "Các chất bất hợp pháp",
+                "Hàng hóa nguy hiểm không có giấy tờ phù hợp",
+                "Sản phẩm động vật hoang dã được bảo vệ",
+                "Hàng giả, hàng nhái"
+              ]
+            }
+          },
+          liability: {
+            title: "5. Trách Nhiệm Pháp Lý",
+            content: "Trách nhiệm pháp lý của LogiTrack được giới hạn trong các điều khoản được quy định trong thỏa thuận vận chuyển và các công ước quốc tế hiện hành."
+          },
+          changes: {
+            title: "6. Thay Đổi Điều Khoản",
+            content: "Chúng tôi có quyền sửa đổi các điều khoản này bất cứ lúc nào. Những thay đổi sẽ có hiệu lực ngay sau khi được đăng tải trên trang web của chúng tôi."
+          },
+          footer: {
+            contact: "Nếu có bất kỳ thắc mắc nào về các điều khoản này, vui lòng liên hệ với chúng tôi tại:",
+            email: "Email hỗ trợ:",
+            phone: "Điện thoại:"
+          }
+        }
+      },
+      privacyPage: {
+        title: "Chính Sách Bảo Mật",
+        lastUpdated: "Cập nhật lần cuối: 15 tháng 3, 2024",
+        sections: {
+          intro: {
+            title: "1. Giới Thiệu",
+            content: "Tại LogiTrack, chúng tôi rất coi trọng quyền riêng tư của bạn. Chính sách Bảo mật này giải thích cách chúng tôi thu thập, sử dụng, tiết lộ và bảo vệ thông tin của bạn."
+          },
+          dataCollection: {
+            title: "2. Thu Thập Dữ Liệu",
+            personal: {
+              title: "2.1 Thông Tin Cá Nhân",
+              content: "Chúng tôi thu thập các loại thông tin cá nhân sau:",
+              items: [
+                "Tên và thông tin liên hệ",
+                "Địa chỉ giao hàng và thanh toán",
+                "Thông tin thanh toán",
+                "Thông tin đăng nhập",
+                "Tùy chọn liên lạc"
+              ]
+            },
+            usage: {
+              title: "2.2 Dữ Liệu Sử Dụng",
+              content: "Chúng tôi tự động thu thập một số thông tin về thiết bị của bạn và cách bạn tương tác với dịch vụ của chúng tôi.",
+              items: [
+                "Địa chỉ IP và thông tin thiết bị",
+                "Loại trình duyệt và cài đặt",
+                "Dữ liệu vị trí",
+                "Mẫu sử dụng và tùy chọn"
+              ]
+            }
+          },
+          dataUse: {
+            title: "3. Sử Dụng Thông Tin",
+            content: "Chúng tôi sử dụng thông tin của bạn để:",
+            items: [
+              "Xử lý và theo dõi lô hàng",
+              "Cung cấp hỗ trợ khách hàng",
+              "Cải thiện dịch vụ",
+              "Gửi thông tin cập nhật dịch vụ và tiếp thị",
+              "Tuân thủ nghĩa vụ pháp lý"
+            ]
+          },
+          dataSecurity: {
+            title: "4. Bảo Mật Dữ Liệu",
+            content: "Chúng tôi thực hiện các biện pháp bảo mật thích hợp để bảo vệ thông tin của bạn khỏi truy cập, thay đổi, tiết lộ hoặc phá hủy trái phép."
+          },
+          userRights: {
+            title: "5. Quyền Của Bạn",
+            content: "Bạn có quyền:",
+            items: [
+              "Truy cập dữ liệu cá nhân của bạn",
+              "Yêu cầu chỉnh sửa dữ liệu",
+              "Yêu cầu xóa dữ liệu",
+              "Từ chối nhận thông tin tiếp thị",
+              "Chuyển giao dữ liệu"
+            ]
+          },
+          cookies: {
+            title: "6. Cookie và Theo Dõi",
+            content: "Chúng tôi sử dụng cookie và các công nghệ tương tự để nâng cao trải nghiệm của bạn. Xem Chính sách Cookie của chúng tôi để biết thêm chi tiết."
+          },
+          updates: {
+            title: "7. Cập Nhật Chính Sách Bảo Mật",
+            content: "Chúng tôi có thể cập nhật chính sách này định kỳ. Chúng tôi sẽ thông báo cho bạn về bất kỳ thay đổi quan trọng nào."
+          }
+        },
+        footer: {
+          contact: "Đối với các câu hỏi liên quan đến quyền riêng tư, vui lòng liên hệ với Cán bộ Bảo vệ Dữ liệu của chúng tôi tại:",
+          email: "Email bảo mật:",
+          phone: "Điện thoại:"
+        }
+      },
+      cookiePage: {
+        title: "Chính Sách Cookie",
+        lastUpdated: "Cập nhật lần cuối: 15 tháng 3, 2024",
+        sections: {
+          what: {
+            title: "1. Cookie Là Gì?",
+            content: "Cookie là các tệp văn bản nhỏ được đặt trên thiết bị của bạn khi bạn truy cập trang web của chúng tôi. Chúng giúp chúng tôi cung cấp trải nghiệm tốt hơn bằng cách:",
+            items: [
+              "Ghi nhớ tùy chọn của bạn",
+              "Hiểu cách bạn sử dụng trang web của chúng tôi",
+              "Cải thiện chức năng trang web",
+              "Cung cấp nội dung được cá nhân hóa"
+            ]
+          },
+          types: {
+            title: "2. Các Loại Cookie Chúng Tôi Sử Dụng",
+            essential: {
+              title: "2.1 Cookie Thiết Yếu",
+              content: "Những cookie này cần thiết để trang web hoạt động bình thường. Chúng cho phép các chức năng cơ bản như:",
+              items: [
+                "Điều hướng trang",
+                "Truy cập vào khu vực bảo mật",
+                "Chức năng giỏ hàng",
+                "Xử lý thanh toán"
+              ]
+            },
+            performance: {
+              title: "2.2 Cookie Hiệu Suất",
+              content: "Những cookie này giúp chúng tôi hiểu cách người truy cập tương tác với trang web của chúng tôi bằng cách:",
+              items: [
+                "Thu thập dữ liệu phân tích",
+                "Xác định thông báo lỗi",
+                "Kiểm tra các thiết kế khác nhau",
+                "Đo lường hiệu suất trang web"
+              ]
+            },
+            functionality: {
+              title: "2.3 Cookie Chức Năng",
+              content: "Những cookie này ghi nhớ tùy chọn của bạn để nâng cao trải nghiệm:",
+              items: [
+                "Tùy chọn ngôn ngữ",
+                "Cài đặt vị trí",
+                "Thông tin tài khoản người dùng",
+                "Bố cục tùy chỉnh"
+              ]
+            },
+            targeting: {
+              title: "2.4 Cookie Tiếp Thị",
+              content: "Những cookie này được sử dụng cho mục đích tiếp thị:",
+              items: [
+                "Hiển thị quảng cáo phù hợp",
+                "Đo lường hiệu quả quảng cáo",
+                "Tích hợp đối tác",
+                "Tính năng mạng xã hội"
+              ]
+            }
+          },
+          management: {
+            title: "3. Quản Lý Cookie",
+            content: "Bạn có thể kiểm soát cookie thông qua cài đặt trình duyệt:",
+            items: [
+              "Chặn tất cả cookie",
+              "Xóa cookie hiện có",
+              "Cho phép cookie từ các trang cụ thể",
+              "Thiết lập tùy chọn cookie"
+            ],
+            note: "Lưu ý: Việc chặn một số loại cookie có thể ảnh hưởng đến trải nghiệm của bạn trên trang web của chúng tôi."
+          },
+          thirdParty: {
+            title: "4. Cookie Bên Thứ Ba",
+            content: "Chúng tôi sử dụng dịch vụ từ các đối tác đáng tin cậy sau:",
+            items: [
+              "Google Analytics - Theo dõi hiệu suất",
+              "Bộ xử lý thanh toán - Bảo mật giao dịch",
+              "Nền tảng mạng xã hội - Chia sẻ nội dung",
+              "Mạng lưới quảng cáo - Quảng cáo có mục tiêu"
+            ]
+          },
+          updates: {
+            title: "5. Cập Nhật Chính Sách Cookie",
+            content: "Chúng tôi có thể cập nhật chính sách này khi dịch vụ của chúng tôi phát triển. Vui lòng kiểm tra định kỳ để biết các thay đổi."
+          }
+        },
+        footer: {
+          contact: "Nếu có thắc mắc về chính sách cookie của chúng tôi, vui lòng liên hệ:",
+          email: "Email hỗ trợ:",
+          phone: "Điện thoại:"
         }
       }
     }

@@ -2489,3 +2489,23 @@ body.modal-open {
   transition: all 0.3s ease;
 }
 
+/* Điều chỉnh font size cho tiếng Việt */
+[lang="vi"] .copyright-text {
+    font-size: 0.9rem;
+}
+
+[lang="vi"] .footer-links a {
+    font-size: 0.85rem;
+}
+
+/* Đảm bảo khoảng cách phù hợp cho text dài hơn */
+@media (max-width: 768px) {
+    [lang="vi"] .footer-links {
+        gap: 20px;
+    }
+    
+    [lang="vi"] .footer-links a {
+        padding: 3px 8px;
+    }
+}
+

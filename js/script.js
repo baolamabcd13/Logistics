@@ -558,3 +558,26 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+function translateList(element, translationKey) {
+    const items = translations[currentLang][translationKey];
+    if (Array.isArray(items)) {
+        element.innerHTML = items.map(item => `<li>${item}</li>`).join('');
+    }
+}
+
+// Update existing translation function
+function translatePage() {
+    document.querySelectorAll('[data-translate]').forEach(element => {
+        const key = element.getAttribute('data-translate');
+        const translation = getNestedTranslation(translations[currentLang], key);
+        if (translation) {
+            element.innerHTML = translation;
+        }
+    });
+
+    document.querySelectorAll('[data-translate-list]').forEach(element => {
+        const key = element.getAttribute('data-translate-list');
+        translateList(element, key);
+    });
+}
+
