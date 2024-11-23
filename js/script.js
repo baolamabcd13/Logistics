@@ -228,6 +228,24 @@ document.addEventListener('DOMContentLoaded', () => {
           <p>Our partnerships with major airlines ensure reliable and efficient air transportation worldwide.</p>
         `
       },
+      "Vận Tải Hàng Không": {
+        description: `
+          <p>Dịch vụ vận tải hàng không toàn diện của chúng tôi cung cấp giải pháp vận chuyển toàn cầu nhanh chóng và đáng tin cậy:</p>
+          <ul>
+            <li>Giải pháp vận chuyển hàng không nhanh</li>
+            <li>Dịch vụ giao hàng tận nơi</li>
+            <li>Xử lý hàng hóa có kiểm soát nhiệt độ</li>
+            <li>Khả năng xử lý hàng hóa nguy hiểm</li>
+            <li>Theo dõi lô hàng thời gian thực</li>
+            <li>Hỗ trợ khách hàng 24/7</li>
+            <li>Hỗ trợ thông quan</li>
+            <li>Các lựa chọn bảo hiểm hàng hóa</li>
+            <li>Dịch vụ thuê chuyến cho hàng khẩn cấp</li>
+            <li>Dịch vụ gom hàng</li>
+          </ul>
+          <p>Quan hệ đối tác với các hãng hàng không lớn đảm bảo vận chuyển hàng không đáng tin cậy và hiệu quả trên toàn thế giới.</p>
+        `
+      },
       "Sea Freight": {
         description: `
           <p>Our sea freight services offer cost-effective solutions for international shipping:</p>
@@ -244,6 +262,24 @@ document.addEventListener('DOMContentLoaded', () => {
             <li>Marine cargo insurance</li>
           </ul>
           <p>We work with leading shipping lines to provide reliable ocean freight solutions globally.</p>
+        `
+      },
+      "Vận Tải Đường Biển": {
+        description: `
+          <p>Dịch vụ vận tải đường biển của chúng tôi cung cấp giải pháp hiệu quả về chi phí cho vận chuyển quốc tế:</p>
+          <ul>
+            <li>Dịch vụ vận chuyển container nguyên (FCL)</li>
+            <li>Dịch vụ gom hàng lẻ (LCL)</li>
+            <li>Xử lý hàng rời</li>
+            <li>Vận chuyển cảng-đến-cảng và door-to-door</li>
+            <li>Giải pháp container lạnh</li>
+            <li>Xử lý hàng hóa nguy hiểm</li>
+            <li>Theo dõi container thời gian thực</li>
+            <li>Quản lý hoạt động cảng</li>
+            <li>Dịch vụ thông quan</li>
+            <li>Bảo hiểm hàng hóa đường biển</li>
+          </ul>
+          <p>Chúng tôi hợp tác với các hãng tàu hàng đầu để cung cấp giải pháp vận tải biển đáng tin cậy trên toàn cầu.</p>
         `
       },
       "Land Transport": {
@@ -264,6 +300,24 @@ document.addEventListener('DOMContentLoaded', () => {
           <p>Our extensive network ensures reliable ground transportation across the region.</p>
         `
       },
+      "Vận Tải Đường Bộ": {
+        description: `
+          <p>Dịch vụ vận tải đường bộ toàn diện của chúng tôi bao gồm:</p>
+          <ul>
+            <li>Dịch vụ vận tải nội địa</li>
+            <li>Vận chuyển xuyên biên giới</li>
+            <li>Giải pháp vận tải đa phương thức</li>
+            <li>Vận chuyển có kiểm soát nhiệt độ</li>
+            <li>Hệ thống theo dõi GPS</li>
+            <li>Tùy chọn giao hàng nhanh</li>
+            <li>Vận chuyển hàng nặng và quá khổ</li>
+            <li>Dịch vụ giao hàng chặng cuối</li>
+            <li>Phân phối đa điểm</li>
+            <li>Kho bãi và phân phối</li>
+          </ul>
+          <p>Mạng lưới rộng khắp của chúng tôi đảm bảo vận chuyển đường bộ đáng tin cậy trong khu vực.</p>
+        `
+      },
       "Warehousing": {
         description: `
           <p>Our modern warehousing solutions provide:</p>
@@ -280,6 +334,24 @@ document.addEventListener('DOMContentLoaded', () => {
             <li>Real-time inventory tracking</li>
           </ul>
           <p>State-of-the-art facilities ensuring secure and efficient storage solutions.</p>
+        `
+      },
+      "Kho Bãi": {
+        description: `
+          <p>Giải pháp kho bãi hiện đại của chúng tôi cung cấp:</p>
+          <ul>
+            <li>Kho lạnh có kiểm soát nhiệt độ</li>
+            <li>Hệ thống quản lý hàng tồn kho</li>
+            <li>Dịch vụ xử lý đơn hàng</li>
+            <li>Cơ sở trung chuyển hàng hóa</li>
+            <li>Dịch vụ lấy hàng và đóng gói</li>
+            <li>Kiểm tra chất lượng</li>
+            <li>Dịch vụ gia tăng giá trị</li>
+            <li>Giám sát an ninh 24/7</li>
+            <li>Hệ thống quét mã vạch</li>
+            <li>Theo dõi hàng tồn kho thời gian thực</li>
+          </ul>
+          <p>Cơ sở hiện đại đảm bảo giải pháp lưu trữ an toàn và hiệu quả.</p>
         `
       },
       "Supply Chain": {
@@ -300,6 +372,24 @@ document.addEventListener('DOMContentLoaded', () => {
           <p>Optimizing your supply chain for maximum efficiency and reliability.</p>
         `
       },
+      "Chuỗi Cung Ứng": {
+        description: `
+          <p>Giải pháp chuỗi cung ứng toàn diện của chúng tôi bao gồm:</p>
+          <ul>
+            <li>Tư vấn chuỗi cung ứng</li>
+            <li>Tối ưu hóa mạng lưới</li>
+            <li>Quản lý hàng tồn kho</li>
+            <li>Lập kế hoạch nhu cầu</li>
+            <li>Quản lý đơn hàng</li>
+            <li>Quản lý hàng hoàn trả</li>
+            <li>Khả năng hiển thị chuỗi cung ứng</li>
+            <li>Quản lý rủi ro</li>
+            <li>Phân tích hiệu suất</li>
+            <li>Giải pháp bền vững</li>
+          </ul>
+          <p>Tối ưu hóa chuỗi cung ứng của bạn để đạt hiệu quả và độ tin cậy tối đa.</p>
+        `
+      },
       "Custom Clearance": {
         description: `
           <p>Our customs clearance services provide:</p>
@@ -316,6 +406,24 @@ document.addEventListener('DOMContentLoaded', () => {
             <li>Post-entry services</li>
           </ul>
           <p>Expert customs solutions ensuring smooth international trade operations.</p>
+        `
+      },
+      "Thông Quan": {
+        description: `
+          <p>Dịch vụ thông quan của chúng tôi cung cấp:</p>
+          <ul>
+            <li>Chứng từ xuất/nhập khẩu</li>
+            <li>Tư vấn tuân thủ hải quan</li>
+            <li>Phân loại biểu thuế</li>
+            <li>Tính toán thuế và phí</li>
+            <li>Quản lý giấy phép và chứng chỉ</li>
+            <li>Tư vấn Hiệp định Thương mại Tự do</li>
+            <li>Dịch vụ bảo lãnh hải quan</li>
+            <li>Dịch vụ khai báo từ xa</li>
+            <li>Hỗ trợ hải quan 24/7</li>
+            <li>Dịch vụ hậu kiểm</li>
+          </ul>
+          <p>Giải pháp hải quan chuyên nghiệp đảm bảo hoạt động thương mại quốc tế suôn sẻ.</p>
         `
       }
     };
@@ -350,7 +458,7 @@ document.addEventListener('DOMContentLoaded', () => {
         modalIcon.className = iconClass;
         
         modalDescription.innerHTML = serviceDetails[title]?.description || 
-          'Detailed information about this service will be available soon.';
+          'Thông tin chi tiết về dịch vụ này sẽ sớm được cập nhật.';
         
         // Show modal with animation
         modal.style.display = 'flex';
