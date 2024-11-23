@@ -554,21 +554,6 @@ button.prev:hover, button.next:hover {
   opacity: 0.7;
 }
 
-.map-marker {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background: #FF6B00;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  animation: pulse 2s infinite;
-}
-
-.map-marker.vietnam {
-  top: 55%;
-  left: 75%;
-}
-
 /* Social Links */
 .social-links {
   display: flex;
@@ -2335,5 +2320,172 @@ body.modal-open {
     margin: 20px 0;
     justify-content: center;
   }
+}
+
+/* Add these styles for the terms section */
+.footer-links {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+}
+
+.footer-links .divider {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .footer-links .divider {
+    display: none;
+  }
+  
+  .footer-links a {
+    padding: 5px 10px;
+  }
+}
+
+/* Copyright Section */
+.copyright {
+  background: #1a4f8b;
+  padding: 25px 0;
+  margin-top: 60px;
+  position: relative;
+}
+
+.copyright::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    rgba(255,255,255,0.1),
+    rgba(255,255,255,0.2),
+    rgba(255,255,255,0.1)
+  );
+}
+
+.copyright-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: #1a4f8b;
+}
+
+.copyright .container {
+  background: #1a4f8b;
+}
+
+.copyright-text {
+  color: #ffffff;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.copyright-text i {
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.footer-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: rgba(255,255,255,0.8);
+}
+
+.footer-links a:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .copyright {
+    padding: 20px 0;
+  }
+
+  .copyright-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .copyright-text {
+    justify-content: center;
+  }
+  
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown.show .dropdown-content {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Nếu bạn đã có animation, có thể điều chỉnh như sau */
+.dropdown-content {
+  transition: all 0.3s ease;
 }
 
