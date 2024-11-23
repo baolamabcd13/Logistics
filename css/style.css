@@ -2198,3 +2198,142 @@ body.modal-open {
   font-size: clamp(0.9rem, 1.8vw, 1.1rem);
 }
 
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  padding: 15px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  z-index: 1001;
+  margin: 20px 30px 0 0;
+
+}
+
+.hamburger-box {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 24px;
+}
+
+.hamburger-inner {
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #1a4f8b;
+  transition: transform 0.2s ease;
+}
+
+.hamburger-inner::before,
+.hamburger-inner::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #1a4f8b;
+  transition: transform 0.2s ease;
+}
+
+.hamburger-inner::before {
+  top: -8px;
+}
+
+.hamburger-inner::after {
+  bottom: -8px;
+}
+
+/* Hamburger Animation */
+.hamburger.active .hamburger-inner {
+  transform: rotate(45deg);
+}
+
+.hamburger.active .hamburger-inner::before {
+  top: 0;
+  opacity: 0;
+}
+
+.hamburger.active .hamburger-inner::after {
+  bottom: 0;
+  transform: rotate(-90deg);
+}
+
+/* Mobile Navigation */
+@media (max-width: 1024px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-wrapper {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background: white;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    overflow-y: auto;
+    z-index: 1000;
+  }
+
+  .nav-wrapper.active {
+    transform: translateX(0);
+  }
+
+  nav {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 15px 0;
+    font-size: 16px;
+  }
+
+  /* Dropdown adjustments for mobile */
+  .dropdown-content {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    padding: 0;
+    margin-top: 10px;
+    display: none;
+  }
+
+  .dropdown.active .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dropdown-column {
+    padding: 10px 0;
+  }
+
+  .dropdown-column h3 {
+    padding: 10px 0;
+  }
+
+  /* Language selector adjustments */
+  .lang-selector {
+    margin: 20px 0;
+    justify-content: center;
+  }
+}
+

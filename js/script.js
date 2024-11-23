@@ -71,6 +71,39 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const slider = new HeroSlider();
   const langSwitcher = new LanguageSwitcher();
+
+  // Hamburger Menu
+  const hamburger = document.querySelector('.hamburger');
+  const navWrapper = document.querySelector('.nav-wrapper');
+  const dropdowns = document.querySelectorAll('.dropdown');
+
+  if (hamburger && navWrapper) {
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navWrapper.classList.toggle('active');
+      document.body.classList.toggle('nav-open');
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!navWrapper.contains(e.target) && !hamburger.contains(e.target)) {
+        hamburger.classList.remove('active');
+        navWrapper.classList.remove('active');
+        document.body.classList.remove('nav-open');
+      }
+    });
+
+    // Handle dropdowns in mobile
+    dropdowns.forEach(dropdown => {
+      const link = dropdown.querySelector('a');
+      link.addEventListener('click', (e) => {
+        if (window.innerWidth <= 1024) {
+          e.preventDefault();
+          dropdown.classList.toggle('active');
+        }
+      });
+    });
+  }
 });
 
 // Header Scroll Effect
