@@ -639,6 +639,172 @@ const translations = {
           placeholder: "Enter your tracking number"
         },
         submit: "Track Now"
+      },
+      logistics: {
+        title: "Logistics & Supply Chain",
+        services: {
+          mainServices: "Main Services",
+          customs: {
+            name: "Customs Brokerage",
+            title: "Customs Brokerage Services",
+            stats: {
+              countries: "50+",
+              countriesLabel: "Countries",
+              support: "24/7",
+              supportLabel: "Support",
+              clearance: "99%",
+              clearanceLabel: "Clearance Rate"
+            },
+            overview: {
+              title: "Service Overview",
+              description: "Our customs brokerage services ensure smooth and compliant international trade operations. We handle all customs documentation, duties, and regulations to facilitate seamless cross-border movements."
+            },
+            features: {
+              title: "Key Features",
+              compliance: {
+                title: "Compliance Management",
+                description: "Expert handling of regulations"
+              },
+              calculator: {
+                title: "Duty Calculator",
+                description: "Accurate cost estimation"
+              },
+              documentation: {
+                title: "Documentation",
+                description: "Complete paperwork handling"
+              },
+              support: {
+                title: "24/7 Support",
+                description: "Round-the-clock assistance"
+              }
+            }
+          },
+          insurance: {
+            name: "Cargo Insurance",
+            title: "Cargo Insurance Solutions",
+            stats: {
+              coverage: "100%",
+              coverageLabel: "Coverage",
+              processing: "48h",
+              processingLabel: "Claim Processing",
+              satisfaction: "95%",
+              satisfactionLabel: "Client Satisfaction"
+            },
+            overview: {
+              title: "Service Overview",
+              description: "Protect your valuable cargo with our comprehensive insurance solutions. We offer tailored coverage options to safeguard your shipments against loss, damage, and unforeseen circumstances during transit."
+            },
+            features: {
+              title: "Key Features",
+              coverage: {
+                title: "All-Risk Coverage",
+                description: "Comprehensive protection"
+              },
+              claims: {
+                title: "Quick Claims",
+                description: "Fast processing & settlement"
+              },
+              global: {
+                title: "Global Coverage",
+                description: "Worldwide protection"
+              },
+              rates: {
+                title: "Competitive Rates",
+                description: "Cost-effective solutions"
+              }
+            }
+          },
+          warehousing: {
+            name: "Warehousing Services",
+            stats: {
+              accuracy: {
+                number: "99.9%",
+                label: "Accuracy"
+              },
+              locations: {
+                number: "15+",
+                label: "Locations"
+              }
+            },
+            overview: {
+              title: "Service Overview", 
+              description: "Our modern warehousing facilities provide secure storage and efficient distribution solutions. With advanced inventory management systems and strategic locations, we ensure your products are safely stored and delivered on time."
+            },
+            features: {
+              title: "Key Features",
+              inventory: {
+                title: "Inventory Management",
+                description: "Real-time tracking system"
+              },
+              climate: {
+                title: "Temperature Control",
+                description: "Specialized cold storage"
+              },
+              security: {
+                title: "24/7 Security",
+                description: "Advanced protection systems"
+              },
+              crossdock: {
+                title: "Cross-Docking",
+                description: "Efficient distribution"
+              }
+            }
+          },
+          ecommerce: {
+            name: "E-Commerce Solutions",
+            stats: {
+              delivery: {
+                number: "2-3",
+                label: "Days Delivery"
+              },
+              ontime: {
+                number: "98%",
+                label: "On-Time Rate"
+              },
+              partners: {
+                number: "200+",
+                label: "Integration Partners"
+              }
+            },
+            overview: {
+              title: "Service Overview",
+              description: "Our specialized e-commerce logistics solutions are designed to meet the unique challenges of online retail. From fast air-express delivery to seamless marketplace integration, we help you grow your online business globally."
+            },
+            features: {
+              title: "Key Features",
+              express: {
+                title: "Air Express",
+                description: "Rapid worldwide delivery"
+              },
+              fulfillment: {
+                title: "Fulfillment",
+                description: "End-to-end solutions"
+              },
+              returns: {
+                title: "Returns Management",
+                description: "Efficient reverse logistics"
+              },
+              analytics: {
+                title: "Analytics",
+                description: "Performance insights"
+              }
+            }
+          }, 
+          quote: {
+            title: "Request a Quote",
+            serviceType: "Service Type",
+            selectService: "Select a service",
+            customsBrokerage: "Customs Brokerage",
+            cargoInsurance: "Cargo Insurance",
+            warehousing: "Warehousing",
+            ecommerce: "E-Commerce Services",
+            location: "Service Location",
+            locationPlaceholder: "Enter location",
+            cargoType: "Cargo Type",
+            cargoPlaceholder: "Enter cargo type",
+            submit: "Get Free Quote"
+          }
+        }
       }
     },
     vi: {
@@ -691,7 +857,7 @@ const translations = {
           title: "Mạng Lưới Toàn Cầu",
           description: "Kết nối với hơn 200 quốc gia cùng chuyên môn địa phương",
           hoverItems: [
-            "Tuyến vận chuyển quốc tế",
+            "Tuyến vận chuyển quốc t��",
             "Hỗ trợ toàn cầu 24/7",
             "Đối tác địa phương"
           ]
@@ -782,7 +948,7 @@ const translations = {
         subtitle: "Được tin tưởng bởi doanh nghiệp trên toàn thế giới",
         testimonials: [
           {
-            text: "LogiTrack đã chuyển đổi hoạt động chuỗi cung ứng của chúng tôi. Dịch vụ hiệu quả và khả năng theo dõi thời gian thực đã cải thiện đáng kể thời gian giao hàng của chúng tôi.",
+            text: "LogiTrack đã chuyển đổi hoạt động chuỗi cung �����ng của chúng tôi. Dịch vụ hiệu quả và khả năng theo dõi thời gian thực đã cải thiện đáng kể thời gian giao hàng của chúng tôi.",
             author: "Giannis Antetokounmpo",
             position: "Cầu thủ bóng rổ - Milwaukee Bucks"
           },
@@ -957,7 +1123,7 @@ const translations = {
         sections: {
           intro: {
             title: "1. Giới Thiệu",
-            content: "Tại LogiTrack, chúng tôi rất coi trọng quyền riêng tư của bạn. Chính sách Bảo mật này gi��i thích cách chúng tôi thu thập, sử dụng, tiết lộ và bảo vệ thông tin của bạn."
+            content: "Tại LogiTrack, chúng tôi rất coi trọng quyền riêng tư của bạn. Chính sách Bảo mật này gii thích cách chúng tôi thu thập, sử dụng, tiết lộ và bảo vệ thông tin của bạn."
           },
           dataCollection: {
             title: "2. Thu Thập Dữ Liệu",
@@ -978,18 +1144,18 @@ const translations = {
               items: [
                 "Địa chỉ IP và thông tin thiết bị",
                 "Loại trình duyệt và cài đặt",
-                "Dữ liệu vị trí",
+                "Dữ liu vị trí",
                 "Mẫu sử dụng và tùy chọn"
               ]
             }
           },
           dataUse: {
-            title: "3. Sử Dụng Thông Tin",
+            title: "3. Sử D���ng Thông Tin",
             content: "Chúng tôi sử dụng thông tin của bạn để:",
             items: [
               "Xử lý và theo dõi lô hàng",
               "Cung cấp hỗ trợ khách hàng",
-              "Cải thiện dịch vụ",
+              "Ci thiện dịch vụ",
               "Gửi thông tin cập nhật dịch vụ và tiếp thị",
               "Tuân thủ nghĩa vụ pháp lý"
             ]
@@ -1011,7 +1177,7 @@ const translations = {
           },
           cookies: {
             title: "6. Cookie và Theo Dõi",
-            content: "Chúng tôi sử dụng cookie và các công nghệ tương tự để nâng cao trải nghiệm của bạn. Xem Chính sách Cookie của chúng tôi để biết thêm chi tiết."
+            content: "Chúng tôi sử dụng cookie và các công nghệ tương tự ��ể nâng cao trải nghiệm của bạn. Xem Chính sách Cookie của chúng tôi để biết thêm chi tiết."
           },
           updates: {
             title: "7. Cập Nhật Chính Sách Bảo Mật",
@@ -1098,7 +1264,7 @@ const translations = {
             items: [
               "Google Analytics - Theo dõi hiệu suất",
               "Bộ xử lý thanh toán - Bảo mật giao dịch",
-              "Nền tảng mạng xã hội - Chia sẻ nội dung",
+              "Nền tảng m��ng xã hội - Chia sẻ nội dung",
               "Mạng lưới quảng cáo - Quảng cáo có mục tiêu"
             ]
           },
@@ -1269,7 +1435,7 @@ const translations = {
             ]
           },
           options: {
-            title: "Tùy Chọn Dịch Vụ",
+            title: "Tùy Chọn D��ch Vụ",
             domestic: {
               title: "Vận Tải Nội Địa",
               features: [
@@ -1364,6 +1530,172 @@ const translations = {
           placeholder: "Nhập mã theo dõi của bạn"
         },
         submit: "Theo Dõi Ngay"
+      },
+      logistics: {
+        title: "Logistics & Chuỗi Cung Ứng",
+        services: {
+          mainServices: "Dịch Vụ Chính",
+          customs: {
+            name: "Dịch Vụ Khai Báo Hải Quan",
+            title: "Dịch Vụ Khai Báo Hải Quan",
+            stats: {
+              countries: "50+",
+              countriesLabel: "Quốc Gia",
+              support: "24/7",
+              supportLabel: "Hỗ Trợ",
+              clearance: "99%",
+              clearanceLabel: "Tỷ Lệ Thông Quan"
+            },
+            overview: {
+              title: "Tổng Quan Dịch Vụ",
+              description: "Dịch vụ khai báo hải quan của chúng tôi đảm bảo hoạt động thương mại quốc tế suôn sẻ và tuân thủ. Chúng tôi xử lý tất cả các chứng từ hải quan, thuế và quy định để tạo điều kiện thuận lợi cho việc vận chuyển xuyên biên giới."
+            },
+            features: {
+              title: "Tính Năng Chính",
+              compliance: {
+                title: "Quản Lý Tuân Thủ",
+                description: "Xử lý chuyên nghiệp các quy định"
+              },
+              calculator: {
+                title: "Tính Toán Thuế",
+                description: "Ước tính chi phí chính xác"
+              },
+              documentation: {
+                title: "Chứng Từ",
+                description: "Xử lý đầy đủ giấy tờ"
+              },
+              support: {
+                title: "Hỗ Trợ 24/7",
+                description: "Hỗ trợ liên tục"
+              }
+            }
+          },
+          insurance: {
+            name: "Bảo Hiểm Hàng Hóa",
+            title: "Giải Pháp Bảo Hiểm Hàng Hóa",
+            stats: {
+              coverage: "100%",
+              coverageLabel: "Phạm Vi Bảo Hiểm",
+              processing: "48h",
+              processingLabel: "Xử Lý Bồi Thường",
+              satisfaction: "95%",
+              satisfactionLabel: "Khách Hàng Hài Lòng"
+            },
+            overview: {
+              title: "Tổng Quan Dịch Vụ",
+              description: "Bảo vệ hàng hóa giá trị của bạn với các giải pháp bảo hiểm toàn diện. Chúng tôi cung cấp các tùy chọn bảo hiểm phù hợp để bảo vệ lô hàng khỏi mất mát, hư hỏng và các tình huống không lường trước trong quá trình vận chuyển."
+            },
+            features: {
+              title: "Tính Năng Chính",
+              coverage: {
+                title: "Bảo Hiểm Toàn Diện",
+                description: "Bảo vệ mọi rủi ro"
+              },
+              claims: {
+                title: "Bồi Thường Nhanh Chóng",
+                description: "Xử lý và giải quyết nhanh"
+              },
+              global: {
+                title: "Phạm Vi Toàn Cầu",
+                description: "Bảo vệ trên toàn thế giới"
+              },
+              rates: {
+                title: "Phí Cạnh Tranh",
+                description: "Giải pháp tiết kiệm chi phí"
+              }
+            }
+          },
+          warehousing: {
+            name: "Dịch Vụ Kho Bãi",
+            stats: {
+              accuracy: {
+                number: "99.9%",
+                label: "Độ Chính Xác"
+              },
+              locations: {
+                number: "15+",
+                label: "Địa Điểm"
+              }
+            },
+            overview: {
+              title: "Tổng Quan Dịch Vụ",
+              description: "Cơ sở kho bãi hiện đại của chúng tôi cung cấp giải pháp lưu trữ an toàn và phân phối hiệu quả. Với hệ thống quản lý hàng tồn kho tiên tiến và vị trí chiến lược, chúng tôi đảm bảo sản phẩm của bạn được lưu trữ an toàn và giao hàng kịp thời."
+            },
+            features: {
+              title: "Tính Năng Chính",
+              inventory: {
+                title: "Quản Lý Hàng Tồn Kho",
+                description: "Hệ thống theo dõi thời gian thực"
+              },
+              climate: {
+                title: "Kiểm Soát Nhiệt Độ",
+                description: "Kho lạnh chuyên dụng"
+              },
+              security: {
+                title: "An Ninh 24/7",
+                description: "Hệ thống bảo vệ tiên tiến"
+              },
+              crossdock: {
+                title: "Trung Chuyển Hàng Hóa",
+                description: "Phân phối hiệu quả"
+              }
+            }
+          },
+          ecommerce: {
+            name: "Thương Mại Điện Tử (Chuyển Phát Nhanh)",
+            stats: {
+              delivery: {
+                number: "2-3",
+                label: "Ngày Giao Hàng"
+              },
+              ontime: {
+                number: "98%",
+                label: "Tỷ Lệ Đúng Hẹn"
+              },
+              partners: {
+                number: "200+",
+                label: "Đối Tác Tích Hợp"
+              }
+            },
+            overview: {
+              title: "Tổng Quan Dịch Vụ",
+              description: "Giải pháp logistics thương mại điện tử chuyên biệt của chúng tôi được thiết kế để đáp ứng những thách thức đặc thù của bán lẻ trực tuyến. Từ giao hàng nhanh bằng đường hàng không đến tích hợp sàn thương mại liền mạch, chúng tôi gi��p phát triển kinh doanh trực tuyến của bạn trên toàn cầu."
+            },
+            features: {
+              title: "Tính Năng Chính",
+              express: {
+                title: "Chuyển Phát Nhanh",
+                description: "Giao hàng nhanh toàn cầu"
+              },
+              fulfillment: {
+                title: "Hoàn Thiện Đơn Hàng",
+                description: "Giải pháp trọn gói"
+              },
+              returns: {
+                title: "Quản Lý Hoàn Trả",
+                description: "Logistics hoàn trả hiệu quả"
+              },
+              analytics: {
+                title: "Phân Tích Dữ Liệu",
+                description: "Thông tin hiệu suất"
+              }
+            }
+          },
+          quote: {
+            title: "Yêu Cầu Báo Giá",
+            serviceType: "Loại Dịch Vụ", 
+            selectService: "Chọn dịch vụ",
+            customsBrokerage: "Dịch Vụ Khai Báo Hải Quan",
+            cargoInsurance: "Bảo Hiểm Hàng Hóa",
+            warehousing: "Dịch Vụ Kho Bãi",
+            ecommerce: "Dịch Vụ Thương Mại Điện Tử",
+            location: "Địa Điểm Dịch Vụ",
+            locationPlaceholder: "Nhập địa điểm",
+            cargoType: "Loại Hàng Hóa",
+            cargoPlaceholder: "Nhập loại hàng hóa", 
+            submit: "Nhận Báo Giá Miễn Phí"
+          }
+        }
       }
     }
   };
@@ -1420,6 +1752,15 @@ const translations = {
           } else {
             element.innerHTML = translation;
           }
+        }
+      });
+
+      // Update elements with data-translate-placeholder attributes
+      document.querySelectorAll('[data-translate-placeholder]').forEach(element => {
+        const key = element.getAttribute('data-translate-placeholder');
+        const translation = this.getNestedTranslation(translations[lang], key);
+        if (translation) {
+          element.placeholder = translation;
         }
       });
 
