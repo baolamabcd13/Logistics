@@ -378,6 +378,267 @@ const translations = {
             contact: "For privacy-related inquiries, please contact our Data Protection Officer at:"
           }
         }
+      },
+      transportation: {
+        title: "Transportation Services",
+        mainServices: "Main Services",
+        specialServices: "Special Services", 
+        services: {
+          seaFreight: {
+            name: "Sea Freight",
+            title: "Sea Freight Services",
+            stats: {
+              ports: {
+                number: "150+",
+                label: "Global Ports"
+              },
+              tracking: {
+                number: "24/7",
+                label: "Tracking"
+              },
+              success: {
+                number: "98%",
+                label: "Success Rate"
+              }
+            },
+            overview: {
+              title: "Service Overview",
+              description: "Our comprehensive sea freight solutions offer reliable and cost-effective shipping services across major ports worldwide. We specialize in both FCL (Full Container Load) and LCL (Less than Container Load) shipments."
+            },
+            features: {
+              title: "Key Features",
+              items: [
+                { title: "Global Coverage", description: "Access to major shipping routes and ports" },
+                { title: "Flexible Solutions", description: "FCL and LCL shipping options" },
+                { title: "Cargo Insurance", description: "Comprehensive coverage options" },
+                { title: "Schedule Reliability", description: "Regular departures and arrivals" }
+              ]
+            },
+            options: {
+              title: "Shipping Options",
+              fcl: {
+                title: "FCL Shipping",
+                features: [
+                  "Full container exclusivity",
+                  "Direct port delivery",
+                  "Suitable for large shipments",
+                  "Cost-effective for full loads"
+                ]
+              },
+              lcl: {
+                title: "LCL Shipping",
+                features: [
+                  "Shared container space",
+                  "Flexible cargo size",
+                  "Economic for small shipments",
+                  "Regular consolidation service"
+                ]
+              }
+            }
+          },
+          airFreight: {
+            name: "Air Freight",
+            title: "Air Freight Services",
+            stats: {
+              destinations: { number: "200+", label: "Destinations" },
+              express: { number: "48h", label: "Express Delivery" },
+              ontime: { number: "99%", label: "On-time Rate" }
+            },
+            overview: {
+              title: "Service Overview",
+              description: "Experience swift and reliable air freight solutions connecting to major airports worldwide. Our air cargo services are designed for time-sensitive shipments and high-value goods."
+            },
+            features: {
+              title: "Key Features",
+              items: [
+                { title: "Express Services", description: "Next-day and same-day delivery options" },
+                { title: "Temperature Control", description: "Special handling for sensitive cargo" },
+                { title: "Flexible Capacity", description: "From small parcels to charter services" },
+                { title: "Custom Clearance", description: "Streamlined documentation process" }
+              ]
+            },
+            options: {
+              title: "Shipping Options",
+              express: {
+                title: "Express Air Freight",
+                features: [
+                  "Next-day delivery",
+                  "Priority handling",
+                  "Door-to-door service",
+                  "Real-time tracking"
+                ]
+              },
+              standard: {
+                title: "Standard Air Freight",
+                features: [
+                  "Cost-effective solution",
+                  "Regular schedules",
+                  "Consolidated shipping",
+                  "Worldwide coverage"
+                ]
+              }
+            }
+          },
+          inlandTrucking: {
+            name: "Inland Trucking & Cross Border",
+            title: "Inland Trucking & Cross Border Services",
+            stats: {
+              vehicles: { number: "1000+", label: "Vehicles" },
+              countries: { number: "15+", label: "Countries" },
+              coverage: { number: "95%", label: "Coverage" }
+            },
+            overview: {
+              title: "Service Overview", 
+              description: "Our inland trucking and cross-border services provide seamless door-to-door transportation solutions across Southeast Asia. We offer dedicated fleet services and specialized equipment for various types of cargo."
+            },
+            features: {
+              title: "Key Features",
+              items: [
+                { title: "Route Optimization", description: "Efficient delivery planning" },
+                { title: "Specialized Equipment", description: "Various truck types available" },
+                { title: "Border Expertise", description: "Smooth customs clearance" },
+                { title: "GPS Tracking", description: "Real-time shipment monitoring" }
+              ]
+            },
+            options: {
+              title: "Service Options",
+              domestic: {
+                title: "Domestic Transport",
+                features: [
+                  "Door-to-door delivery",
+                  "Express and standard service", 
+                  "Temperature-controlled options",
+                  "Last-mile delivery"
+                ]
+              },
+              crossBorder: {
+                title: "Cross Border",
+                features: [
+                  "International routes",
+                  "Customs documentation",
+                  "Transit management",
+                  "Multi-country services"
+                ]
+              }
+            }
+          },
+          railFreight: {
+            name: "Rail Freight",
+            title: "Rail Freight Services",
+            stats: {
+              routes: { number: "50+", label: "Routes" },
+              cost: { number: "30%", label: "Cost Saving" },
+              reliability: { number: "97%", label: "Reliability" }
+            },
+            overview: {
+              title: "Service Overview",
+              description: "Our rail freight services offer an eco-friendly and cost-effective alternative for long-distance cargo transportation. We provide reliable connections between Asia and Europe through the New Silk Road."
+            },
+            features: {
+              title: "Key Features",
+              items: [
+                { title: "Eco-Friendly", description: "Lower carbon footprint" },
+                { title: "Cost-Effective", description: "Competitive pricing for bulk cargo" },
+                { title: "Network Coverage", description: "Extensive rail connections" },
+                { title: "Fixed Schedules", description: "Regular departure times" }
+              ]
+            },
+            options: {
+              title: "Service Options",
+              container: {
+                title: "Container Rail",
+                features: [
+                  "Full container loads",
+                  "Consolidated cargo",
+                  "Temperature-controlled",
+                  "High-value goods service"
+                ]
+              },
+              bulk: {
+                title: "Bulk Rail",
+                features: [
+                  "Raw materials transport",
+                  "Large volume shipping",
+                  "Special equipment",
+                  "Project cargo handling"
+                ]
+              }
+            }
+          },
+          breakBulk: {
+            name: "Break Bulk & OOG",
+            title: "Break Bulk & OOG Services", 
+            stats: {
+              experience: { number: "25+", label: "Years Experience" },
+              projects: { number: "500+", label: "Projects per Year" },
+              specialists: { number: "50+", label: "Specialists" }
+            },
+            overview: {
+              title: "Service Overview",
+              description: "We specialize in handling break bulk and out-of-gauge cargo with our experienced team of experts. Our services include detailed planning, specialized equipment, and customized transportation solutions."
+            },
+            features: {
+              title: "Key Features",
+              items: [
+                { title: "In-depth Survey", description: "Route and requirement assessment" },
+                { title: "Specialized Equipment", description: "Special handling equipment" },
+                { title: "Comprehensive Monitoring", description: "Detailed tracking and reporting" },
+                { title: "Optimal Safety", description: "Strict safety procedures" }
+              ]
+            },
+            options: {
+              title: "Service Options",
+              breakbulk: {
+                title: "Break Bulk",
+                features: [
+                  "Professional break bulk handling",
+                  "Specialized lifting equipment",
+                  "Suitable storage facilities",
+                  "Cargo packaging and protection"
+                ]
+              },
+              oog: {
+                title: "Out of Gauge",
+                features: [
+                  "Oversized equipment",
+                  "Heavy machinery",
+                  "Customized solutions", 
+                  "Route surveys"
+                ]
+              }
+            }
+          }
+        }
+      },
+      quote: {
+        title: "Request a Quote",
+        serviceType: {
+          label: "Service Type",
+          placeholder: "Select a service",
+          options: {
+            sea: "Sea Freight",
+            air: "Air Freight",
+            land: "Land Transport",
+            rail: "Rail Freight"
+          }
+        },
+        origin: {
+          label: "From",
+          placeholder: "Enter origin city/port"
+        },
+        destination: {
+          label: "To",
+          placeholder: "Enter destination city/port"
+        },
+        submit: "Get Free Quote"
+      },
+      tracking: {
+        title: "Track Shipment",
+        number: {
+          label: "Tracking Number",
+          placeholder: "Enter your tracking number"
+        },
+        submit: "Track Now"
       }
     },
     vi: {
@@ -418,7 +679,7 @@ const translations = {
       },
       customClearance: {
         title: "Thông Quan",
-        desc: "Dịch vụ thông quan chuyên nghiệp đảm bảo thương mại quốc tế suôn sẻ."
+        desc: "Dịch vụ thông quan chuyên nghiệp đảm bảo thương mại quc tế suôn sẻ."
       },
       learnMore: "Tìm Hiểu Thêm",
       whyChooseUs: {
@@ -611,7 +872,7 @@ const translations = {
           title: "Ngành nghề",
           items: {
             foodBeverage: "Thực phẩm & Đồ uống",
-            garment: "May mặc & Giày dép",
+            garment: "May mặc & Giy dép",
             furniture: "Nội thất & Đồ gia dụng",
             metal: "Kim loại & Vật liệu xây dựng",
             machinery: "Máy móc & Thiết bị",
@@ -663,7 +924,7 @@ const translations = {
             ]
           },
           shippingPolicies: {
-            title: "4. Chính Sách Vận Chuyển",
+            title: "4. Chính Sách Vn Chuyển",
             prohibited: {
               title: "4.1 Hàng Hóa Cấm",
               content: "Các mặt hàng sau bị nghiêm cấm vận chuyển:",
@@ -696,7 +957,7 @@ const translations = {
         sections: {
           intro: {
             title: "1. Giới Thiệu",
-            content: "Tại LogiTrack, chúng tôi rất coi trọng quyền riêng tư của bạn. Chính sách Bảo mật này giải thích cách chúng tôi thu thập, sử dụng, tiết lộ và bảo vệ thông tin của bạn."
+            content: "Tại LogiTrack, chúng tôi rất coi trọng quyền riêng tư của bạn. Chính sách Bảo mật này gi��i thích cách chúng tôi thu thập, sử dụng, tiết lộ và bảo vệ thông tin của bạn."
           },
           dataCollection: {
             title: "2. Thu Thập Dữ Liệu",
@@ -851,6 +1112,258 @@ const translations = {
           email: "Email hỗ trợ:",
           phone: "Điện thoại:"
         }
+      },
+      transportation: {
+        title: "Dịch Vụ Vận Tải",
+        mainServices: "Dịch Vụ Chính",
+        specialServices: "Dịch Vụ Đặc Biệt",
+        services: {
+          seaFreight: {
+            name: "Vận Tải Biển",
+            title: "Dịch Vụ Vận Tải Biển",
+            stats: {
+              ports: { number: "150+", label: "Cảng Toàn Cầu" },
+              tracking: { number: "24/7", label: "Theo Dõi" },
+              success: { number: "98%", label: "Tỷ Lệ Thành Công" }
+            },
+            overview: {
+              title: "Tổng Quan Dịch Vụ",
+              description: "Giải pháp vận tải biển toàn diện của chúng tôi cung cấp dịch vụ vận chuyển đáng tin cậy và hiệu quả về chi phí qua các cảng lớn trên toàn thế giới. Chúng tôi chuyên về cả hàng nguyên container (FCL) và hàng lẻ (LCL)."
+            },
+            features: {
+              title: "Tính Năng Chính",
+              items: [
+                { title: "Phạm Vi Toàn Cầu", description: "Tiếp cận các tuyến đường và cảng biển chính" },
+                { title: "Giải Pháp Linh Hoạt", description: "Lựa chọn FCL và LCL" },
+                { title: "Bảo Hiểm Hàng Hóa", description: "Các tùy chọn bảo hiểm toàn diện" },
+                { title: "Lịch Trình Đáng Tin Cậy", description: "Khởi hành và đến định kỳ" }
+              ]
+            },
+            options: {
+              title: "Tùy Chọn Vận Chuyển",
+              fcl: {
+                title: "Vận Chuyển FCL",
+                features: [
+                  "Container độc quyền",
+                  "Giao hàng trực tiếp tại cảng",
+                  "Phù hợp cho lô hàng lớn",
+                  "Hiệu quả chi phí cho container đầy"
+                ]
+              },
+              lcl: {
+                title: "Vận Chuyển LCL",
+                features: [
+                  "Chia sẻ không gian container",
+                  "Kích thước hàng hóa linh hoạt",
+                  "Tiết kiệm cho lô hàng nhỏ",
+                  "Dịch vụ gom hàng thường xuyên"
+                ]
+              }
+            }
+          },
+          airFreight: {
+            name: "Vận Tải Hàng Không",
+            title: "Dịch Vụ Vận Tải Hàng Không",
+            stats: {
+              destinations: { number: "200+", label: "Destinations" },
+              express: { number: "48h", label: "Express Delivery" },
+              ontime: { number: "99%", label: "On-time Rate" }
+            },
+            overview: {
+              title: "Tổng Quan Dịch Vụ",
+              description: "Trải nghiệm giải pháp vận tải hàng không nhanh chóng và đáng tin cậy kết nối với các sân bay lớn trên toàn thế giới. Dịch vụ vận chuyển hàng không của chúng tôi được thiết kế cho các lô hàng cần giao gấp và hàng hóa giá trị cao."
+            },
+            features: {
+              title: "Tính Năng Chính",
+              items: [
+                { title: "Dịch Vụ Chuyển Phát Nhanh", description: "Tùy chọn giao hàng trong ngày và ngày hôm sau" },
+                { title: "Kiểm Soát Nhiệt Độ", description: "Xử lý đặc biệt cho hàng hóa nhạy cảm" },
+                { title: "Năng Lực Linh Hoạt", description: "Từ bưu kiện nhỏ đến dịch vụ thuê chuyến" },
+                { title: "Thông Quan", description: "Quy trình chứng từ đơn giản" }
+              ]
+            },
+            options: {
+              title: "Tùy Chọn Vận Chuyển",
+              express: {
+                title: "Vận Chuyển Hàng Không Nhanh",
+                features: [
+                  "Giao hàng ngày hôm sau",
+                  "Xử lý ưu tiên",
+                  "Dịch vụ door-to-door",
+                  "Theo dõi thời gian thực"
+                ]
+              },
+              standard: {
+                title: "Vận Chuyển Hàng Không Tiêu Chuẩn",
+                features: [
+                  "Giải pháp tiết kiệm chi phí",
+                  "Lịch trình thường xuyên",
+                  "Vận chuyển gom hàng",
+                  "Phủ sóng toàn cầu"
+                ]
+              }
+            }
+          },
+          railFreight: {
+            name: "Vận Tải Đường Sắt",
+            title: "Dịch Vụ Vận Tải Đường Sắt",
+            stats: {
+              network: { number: "50,000+", label: "Km Đường Sắt" },
+              terminals: { number: "100+", label: "Nhà Ga" },
+              capacity: { number: "10,000+", label: "TEU/Tháng" }
+            },
+            overview: {
+              title: "Tổng Quan Dịch Vụ",
+              description: "Dịch vụ vận tải đường sắt của chúng tôi cung cấp giải pháp vận chuyển đáng tin cậy và thân thiện với môi trường. Kết nối các trung tâm logistics chính thông qua mạng lưới đường sắt rộng khắp."
+            },
+            features: {
+              title: "Tính Năng Chính",
+              items: [
+                { title: "Vận Chuyển Xanh", description: "Giảm thiểu carbon footprint" },
+                { title: "Kết Nối Liền Mạch", description: "Tích hợp đa phương thức" },
+                { title: "Chi Phí Hiệu Quả", description: "Giá cả cạnh tranh cho quãng đường dài" },
+                { title: "Độ Tin Cậy Cao", description: "Lịch trình cố định và ổn định" }
+              ]
+            },
+            options: {
+              title: "Tùy Chọn Dịch Vụ",
+              container: {
+                title: "Vận Chuyển Container",
+                features: [
+                  "Dịch vụ container đầy",
+                  "Vận chuyển hàng lẻ",
+                  "Theo dõi thời gian thực",
+                  "Kết nối đa điểm"
+                ]
+              },
+              bulk: {
+                title: "Vận Chuyển Hàng Rời",
+                features: [
+                  "Toa xe chuyên dụng",
+                  "Xử lý hàng hóa đặc biệt",
+                  "Giải pháp tùy chỉnh",
+                  "Dịch vụ kho bãi"
+                ]
+              }
+            }
+          },
+          inlandTrucking: {
+            name: "Vận Tải Đường Bộ & Xuyên Biên Giới",
+            title: "Dịch Vụ Vận Tải Đường Bộ & Xuyên Biên Giới",
+          stats: {
+            vehicles: { number: "1000+", label: "Phương Tiện" },
+            countries: { number: "15+", label: "Quốc Gia" },
+            coverage: { number: "95%", label: "Độ Phủ" }
+          },
+          overview: {
+            title: "Tổng Quan Dịch Vụ",
+            description: "Dịch vụ vận tải đường bộ và xuyên biên giới của chúng tôi cung cấp giải pháp vận chuyển door-to-door liền mạch khắp Đông Nam Á. Chúng tôi cung cấp dịch vụ đội xe chuyên dụng và thiết bị chuyên biệt cho nhiều loại hàng hóa."
+          },
+          features: {
+            title: "Tính Năng Chính",
+            items: [
+              { title: "Tối Ưu Tuyến Đường", description: "Lập kế hoạch giao hàng hiệu quả" },
+              { title: "Thiết Bị Chuyên Dụng", description: "Đa dạng loại xe tải" },
+              { title: "Chuyên Môn Biên Giới", description: "Thông quan thuận lợi" },
+              { title: "Theo Dõi GPS", description: "Giám sát lô hàng thời gian thực" }
+            ]
+          },
+          options: {
+            title: "Tùy Chọn Dịch Vụ",
+            domestic: {
+              title: "Vận Tải Nội Địa",
+              features: [
+                "Giao hàng door-to-door",
+                "Dịch vụ nhanh và tiêu chuẩn",
+                "Tùy chọn kiểm soát nhiệt độ",
+                "Giao hàng chặng cuối"
+              ]
+            },
+            crossBorder: {
+              title: "Xuyên Biên Giới",
+              features: [
+                "Tuyến đường quốc tế",
+                "Chứng từ hải quan",
+                "Quản lý quá cảnh",
+                "Dịch vụ đa quốc gia"
+              ]
+            }
+          }
+          },
+          breakBulk: {
+            name: "Hàng Rời & Hàng Quá Khổ",
+            title: "Dịch Vụ Vận Chuyển Hàng Rời & Hàng Quá Khổ",
+            stats: {
+              experience: { number: "25+", label: "Năm Kinh Nghiệm" },
+              projects: { number: "500+", label: "Dự Án Mỗi Năm" },
+              specialists: { number: "50+", label: "Chuyên Gia" }
+            },
+            overview: {
+              title: "Tổng Quan Dịch Vụ",
+              description: "Chúng tôi chuyên xử lý các lô hàng rời và hàng quá khổ với đội ngũ chuyên gia giàu kinh nghiệm. Dịch vụ của chúng tôi bao gồm lập kế hoạch chi tiết, thiết bị chuyên dụng và giải pháp vận chuyển tùy chỉnh."
+            },
+            features: {
+              title: "Tính Năng Chính",
+              items: [
+                { title: "Khảo Sát Chuyên Sâu", description: "Đánh giá tuyến đường và yêu cầu" },
+                { title: "Thiết Bị Chuyên Dụng", description: "Trang thiết bị xử lý đặc biệt" },
+                { title: "Giám Sát Toàn Diện", description: "Theo dõi và báo cáo chi tiết" },
+                { title: "An Toàn Tối Ưu", description: "Quy trình an toàn nghiêm ngặt" }
+              ]
+            },
+            options: {
+              title: "Tùy Chọn Dịch Vụ",
+              breakbulk: {
+                title: "Hàng Rời",
+                features: [
+                  "Xử lý hàng rời chuyên nghiệp",
+                  "Thiết bị nâng chuyên dụng",
+                  "Kho bãi phù hợp",
+                  "Đóng gói và bảo vệ hàng hóa"
+                ]
+              },
+              oog: {
+                title: "Hàng Quá Khổ",
+                features: [
+                  "Thiết bị quá khổ",
+                  "Máy móc hạng nặng",
+                  "Giải pháp tùy chỉnh",
+                  "Khảo sát tuyến đường"
+                ]
+              }
+            }
+          }
+        }
+      },
+      quote: {
+        title: "Yêu Cầu Báo Giá",
+        serviceType: {
+          label: "Loại Dịch Vụ",
+          placeholder: "Chọn dịch vụ",
+          options: {
+            sea: "Vận Tải Biển",
+            air: "Vận Tải Hàng Không",
+            land: "Vận Tải Đường Bộ",
+            rail: "Vận Tải Đường Sắt"
+          }
+        },
+        origin: {
+          label: "Từ",
+          placeholder: "Nhập thành phố/cảng đi"
+        },
+        destination: {
+          label: "Đến",
+          placeholder: "Nhập thành phố/cảng đến"
+        },
+        submit: "Nhận Báo Giá Miễn Phí"
+      },
+      tracking: {
+        title: "Theo Dõi Lô Hàng",
+        number: {
+          label: "Mã Theo Dõi",
+          placeholder: "Nhập mã theo dõi của bạn"
+        },
+        submit: "Theo Dõi Ngay"
       }
     }
   };
