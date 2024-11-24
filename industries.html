@@ -17,12 +17,14 @@
                 Logi<span>Track</span>
             </a>
             
+            <!-- Add hamburger button -->
             <button class="hamburger" aria-label="Menu">
                 <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
                 </span>
             </button>
             
+            <!-- Add mobile nav wrapper -->
             <div class="nav-wrapper">
                 <nav>
                     <ul>
@@ -72,15 +74,15 @@
                                 </div>
                               </div>
                         </li>
-                        <li><a href="index.html#about">About Us</a></li>
-                        <li><a href="index.html#sustainability">Sustainability</a></li>
-                        <li><a href="index.html#news">Insights</a></li>
-                        <li><a href="index.html#support">Support</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#sustainability">Sustainability</a></li>
+                        <li><a href="#news">Insights</a></li>
+                        <li><a href="#support">Support</a></li>
                     </ul>
                     <div class="lang-selector">
-                        <a href="#" data-lang="vi">VIE</a>
+                        <a href="#">VIE</a>
                         <span class="divider">|</span>
-                        <a href="#" data-lang="en" class="active">ENG</a>
+                        <a href="#" class="active">ENG</a>
                     </div>
                 </nav>
             </div>
@@ -90,66 +92,66 @@
     <div class="transport-container">
         <!-- Left Sidebar -->
         <aside class="transport-sidebar-left">
-            <h3>Industries</h3>
+            <h3 data-translate="industries.title">Industries</h3>
             
-            <div class="transport-nav-section">Main Industries</div>
+            <div class="transport-nav-section" data-translate="industries.sections.mainIndustries">Main Industries</div>
             <ul class="transport-nav">
                 <li>
                     <a href="#food-beverage" class="transport-nav-item active">
                         <i class="fas fa-utensils"></i>
-                        <span>Food & Beverage</span>
+                        <span data-translate="industries.categories.foodBeverage">Food & Beverage</span>
                     </a>
                 </li>
                 <li>
                     <a href="#garment-footwear" class="transport-nav-item">
                         <i class="fas fa-tshirt"></i>
-                        <span>Garment & Footwear</span>
+                        <span data-translate="industries.categories.garmentFootwear">Garment & Footwear</span>
                     </a>
                 </li>
                 <li>
                     <a href="#furniture" class="transport-nav-item">
                         <i class="fas fa-couch"></i>
-                        <span>Furniture & Houseware</span>
+                        <span data-translate="industries.categories.furnitureHouseware">Furniture & Houseware</span>
                     </a>
                 </li>
                 <li>
                     <a href="#construction" class="transport-nav-item">
                         <i class="fas fa-hard-hat"></i>
-                        <span>Metal & Construction</span>
+                        <span data-translate="industries.categories.metalConstruction">Metal & Construction</span>
                     </a>
                 </li>
                 <li>
                     <a href="#machinery" class="transport-nav-item">
                         <i class="fas fa-cogs"></i>
-                        <span>Machinery & Equipment</span>
+                        <span data-translate="industries.categories.machineryEquipment">Machinery & Equipment</span>
                     </a>
                 </li>
             </ul>
 
-            <div class="transport-nav-section">Specialized Industries</div>
+            <div class="transport-nav-section" data-translate="industries.sections.specializedIndustries">Specialized Industries</div>
             <ul class="transport-nav">
                 <li>
                     <a href="#healthcare" class="transport-nav-item">
                         <i class="fas fa-medkit"></i>
-                        <span>Healthcare & Cosmetics</span>
+                        <span data-translate="industries.categories.healthcareCosmetics">Healthcare & Cosmetics</span>
                     </a>
                 </li>
                 <li>
                     <a href="#dangerous-goods" class="transport-nav-item">
                         <i class="fas fa-exclamation-triangle"></i>
-                        <span>Dangerous Goods</span>
+                        <span data-translate="industries.categories.dangerousGoods">Dangerous Goods</span>
                     </a>
                 </li>
                 <li>
                     <a href="#automotive" class="transport-nav-item">
                         <i class="fas fa-car"></i>
-                        <span>Automotive</span>
+                        <span data-translate="industries.categories.automotive">Automotive</span>
                     </a>
                 </li>
                 <li>
                     <a href="#electronics" class="transport-nav-item">
                         <i class="fas fa-microchip"></i>
-                        <span>Electronics</span>
+                        <span data-translate="industries.categories.electronics">Electronics</span>
                     </a>
                 </li>
             </ul>
@@ -161,15 +163,15 @@
                 <!-- Food & Beverage Section -->
                 <section id="food-beverage" class="transport-service">
                     <div class="transport-service-header">
-                        <h1>Food & Beverage Industry</h1>
+                        <h1 data-translate="industries.foodBeverage.title">Food & Beverage Industry</h1>
                         <div class="transport-service-stats">
                             <div class="stat">
-                                <span class="number">-30°C</span>
-                                <span class="label">Cold Chain</span>
+                                <span class="number" data-translate="industries.foodBeverage.stats.temperature.number">-30°C</span>
+                                <span class="label" data-translate="industries.foodBeverage.stats.temperature.label">Cold Chain</span>
                             </div>
                             <div class="stat">
-                                <span class="number">HACCP</span>
-                                <span class="label">Certified</span>
+                                <span class="number" data-translate="industries.foodBeverage.stats.certification.number">HACCP</span>
+                                <span class="label" data-translate="industries.foodBeverage.stats.certification.label">Certified</span>
                             </div>
                             <div class="stat">
                             </div>
@@ -178,32 +180,32 @@
                     
                     <div class="transport-service-content">
                         <div class="service-overview">
-                            <h3>Industry Overview</h3>
-                            <p>Specialized logistics solutions for the food and beverage industry, ensuring temperature-controlled transportation and storage with strict compliance to food safety standards.</p>
+                            <h3 data-translate="industries.foodBeverage.overview.title">Industry Overview</h3>
+                            <p data-translate="industries.foodBeverage.overview.description">Specialized logistics solutions for the food and beverage industry, ensuring temperature-controlled transportation and storage with strict compliance to food safety standards.</p>
                         </div>
 
                         <div class="service-features">
-                            <h3>Key Capabilities</h3>
+                            <h3 data-translate="industries.foodBeverage.features.title">Key Capabilities</h3>
                             <div class="features-grid">
                                 <div class="feature-card">
                                     <i class="fas fa-temperature-low"></i>
-                                    <h4>Temperature Control</h4>
-                                    <p>End-to-end cold chain</p>
+                                    <h4 data-translate="industries.foodBeverage.features.temperature.title">Temperature Control</h4>
+                                    <p data-translate="industries.foodBeverage.features.temperature.description">End-to-end cold chain</p>
                                 </div>
                                 <div class="feature-card">
                                     <i class="fas fa-clipboard-check"></i>
-                                    <h4>Quality Control</h4>
-                                    <p>HACCP compliance</p>
+                                    <h4 data-translate="industries.foodBeverage.features.quality.title">Quality Control</h4>
+                                    <p data-translate="industries.foodBeverage.features.quality.description">HACCP compliance</p>
                                 </div>
                                 <div class="feature-card">
                                     <i class="fas fa-truck-loading"></i>
-                                    <h4>Special Handling</h4>
-                                    <p>Food-grade equipment</p>
+                                    <h4 data-translate="industries.foodBeverage.features.handling.title">Special Handling</h4>
+                                    <p data-translate="industries.foodBeverage.features.handling.description">Food-grade equipment</p>
                                 </div>
                                 <div class="feature-card">
                                     <i class="fas fa-clock"></i>
-                                    <h4>Time Critical</h4>
-                                    <p>Express delivery options</p>
+                                    <h4 data-translate="industries.foodBeverage.features.time.title">Time Critical</h4>
+                                    <p data-translate="industries.foodBeverage.features.time.description">Express delivery options</p>
                                 </div>
                             </div>
                         </div>
@@ -215,51 +217,51 @@
                 <!-- Garment & Footwear Section -->
                 <section id="garment-footwear" class="transport-service">
                     <div class="transport-service-header">
-                        <h1>Garment & Footwear Industry</h1>
+                        <h1 data-translate="industries.garmentFootwear.title">Garment & Footwear Industry</h1>
                         <div class="transport-service-stats">
                             <div class="stat">
-                                <span class="number">100%</span>
-                                <span class="label">Dust Free</span>
+                                <span class="number" data-translate="industries.garmentFootwear.stats.dustFree.number">100%</span>
+                                <span class="label" data-translate="industries.garmentFootwear.stats.dustFree.label">Dust Free</span>
                             </div>
                             <div class="stat">
-                                <span class="number">VMI</span>
-                                <span class="label">Solutions</span>
+                                <span class="number" data-translate="industries.garmentFootwear.stats.vmi.number">VMI</span>
+                                <span class="label" data-translate="industries.garmentFootwear.stats.vmi.label">Solutions</span>
                             </div>
                             <div class="stat">
-                                <span class="number">B2B</span>
-                                <span class="label">Distribution</span>
+                                <span class="number" data-translate="industries.garmentFootwear.stats.distribution.number">B2B</span>
+                                <span class="label" data-translate="industries.garmentFootwear.stats.distribution.label">Distribution</span>
                             </div>
                         </div>
                     </div>
                     
                     <div class="transport-service-content">
                         <div class="service-overview">
-                            <h3>Industry Overview</h3>
-                            <p>Specialized logistics solutions for fashion and footwear brands, ensuring garment-on-hanger transport, careful handling, and retail-ready distribution services.</p>
+                            <h3 data-translate="industries.garmentFootwear.overview.title">Industry Overview</h3>
+                            <p data-translate="industries.garmentFootwear.overview.description">Specialized logistics solutions for fashion and footwear brands, ensuring garment-on-hanger transport, careful handling, and retail-ready distribution services.</p>
                         </div>
 
                         <div class="service-features">
-                            <h3>Key Capabilities</h3>
+                            <h3 data-translate="industries.garmentFootwear.features.title">Key Capabilities</h3>
                             <div class="features-grid">
                                 <div class="feature-card">
                                     <i class="fas fa-tshirt"></i>
-                                    <h4>Garment Storage</h4>
-                                    <p>Specialized hanging systems</p>
+                                    <h4 data-translate="industries.garmentFootwear.features.storage.title">Garment Storage</h4>
+                                    <p data-translate="industries.garmentFootwear.features.storage.description">Specialized hanging systems</p>
                                 </div>
                                 <div class="feature-card">
                                     <i class="fas fa-tags"></i>
-                                    <h4>Value Added Services</h4>
-                                    <p>Labeling & packaging</p>
+                                    <h4 data-translate="industries.garmentFootwear.features.value.title">Value Added Services</h4>
+                                    <p data-translate="industries.garmentFootwear.features.value.description">Labeling & packaging</p>
                                 </div>
                                 <div class="feature-card">
                                     <i class="fas fa-store"></i>
-                                    <h4>Retail Distribution</h4>
-                                    <p>Store-ready delivery</p>
+                                    <h4 data-translate="industries.garmentFootwear.features.retail.title">Retail Distribution</h4>
+                                    <p data-translate="industries.garmentFootwear.features.retail.description">Store-ready delivery</p>
                                 </div>
                                 <div class="feature-card">
                                     <i class="fas fa-box-open"></i>
-                                    <h4>Quality Control</h4>
-                                    <p>Inspection services</p>
+                                    <h4 data-translate="industries.garmentFootwear.features.quality.title">Quality Control</h4>
+                                    <p data-translate="industries.garmentFootwear.features.quality.description">Inspection services</p>
                                 </div>
                             </div>
                         </div>
@@ -271,51 +273,51 @@
                 <!-- Furniture & Houseware Section -->
                 <section id="furniture" class="transport-service">
                     <div class="transport-service-header">
-                        <h1>Furniture & Houseware Industry</h1>
+                        <h1 data-translate="industries.furnitureHouseware.title">Furniture & Houseware Industry</h1>
                         <div class="transport-service-stats">
                             <div class="stat">
-                                <span class="number">XL</span>
-                                <span class="label">Cargo Space</span>
+                                <span class="number" data-translate="industries.furnitureHouseware.stats.space.number">XL</span>
+                                <span class="label" data-translate="industries.furnitureHouseware.stats.space.label">Cargo Space</span>
                             </div>
                             <div class="stat">
-                                <span class="number">Safe</span>
-                                <span class="label">Handling</span>
+                                <span class="number" data-translate="industries.furnitureHouseware.stats.handling.number">Safe</span>
+                                <span class="label" data-translate="industries.furnitureHouseware.stats.handling.label">Handling</span>
                             </div>
                             <div class="stat">
-                                <span class="number">D2C</span>
-                                <span class="label">Delivery</span>
+                                <span class="number" data-translate="industries.furnitureHouseware.stats.delivery.number">D2C</span>
+                                <span class="label" data-translate="industries.furnitureHouseware.stats.delivery.label">Delivery</span>
                             </div>
                         </div>
                     </div>
                     
                     <div class="transport-service-content">
                         <div class="service-overview">
-                            <h3>Industry Overview</h3>
-                            <p>Comprehensive logistics solutions for furniture and houseware companies, offering specialized handling for large items and delicate home goods with white-glove delivery service.</p>
+                            <h3 data-translate="industries.furnitureHouseware.overview.title">Industry Overview</h3>
+                            <p data-translate="industries.furnitureHouseware.overview.description">Comprehensive logistics solutions for furniture and houseware companies, offering specialized handling for large items and delicate home goods with white-glove delivery service.</p>
                         </div>
 
                         <div class="service-features">
-                            <h3>Key Capabilities</h3>
+                            <h3 data-translate="industries.furnitureHouseware.features.title">Key Capabilities</h3>
                             <div class="features-grid">
                                 <div class="feature-card">
                                     <i class="fas fa-couch"></i>
-                                    <h4>Large Item Handling</h4>
-                                    <p>Specialized equipment</p>
+                                    <h4 data-translate="industries.furnitureHouseware.features.handling.title">Large Item Handling</h4>
+                                    <p data-translate="industries.furnitureHouseware.features.handling.description">Specialized equipment</p>
                                 </div>
                                 <div class="feature-card">
                                     <i class="fas fa-home"></i>
-                                    <h4>Home Delivery</h4>
-                                    <p>White glove service</p>
+                                    <h4 data-translate="industries.furnitureHouseware.features.delivery.title">Home Delivery</h4>
+                                    <p data-translate="industries.furnitureHouseware.features.delivery.description">White glove service</p>
                                 </div>
                                 <div class="feature-card">
                                     <i class="fas fa-box"></i>
-                                    <h4>Assembly Service</h4>
-                                    <p>Professional installation</p>
+                                    <h4 data-translate="industries.furnitureHouseware.features.assembly.title">Assembly Service</h4>
+                                    <p data-translate="industries.furnitureHouseware.features.assembly.description">Professional installation</p>
                                 </div>
                                 <div class="feature-card">
                                     <i class="fas fa-warehouse"></i>
-                                    <h4>Storage Solutions</h4>
-                                    <p>Climate-controlled</p>
+                                    <h4 data-translate="industries.furnitureHouseware.features.storage.title">Storage Solutions</h4>
+                                    <p data-translate="industries.furnitureHouseware.features.storage.description">Climate-controlled</p>
                                 </div>
                             </div>
                         </div>
@@ -327,47 +329,47 @@
                 <!-- Metal & Construction Section -->
                 <section id="construction" class="transport-service">
                     <div class="transport-service-header">
-                        <h1>Metal & Construction Materials</h1>
+                        <h1 data-translate="industries.metalConstruction.title">Metal & Construction Materials</h1>
                         <div class="transport-service-stats">
                             <div class="stat">
-                                <span class="number">500T</span>
-                                <span class="label">Capacity</span>
+                                <span class="number" data-translate="industries.metalConstruction.stats.capacity.number">500T</span>
+                                <span class="label" data-translate="industries.metalConstruction.stats.capacity.label">Capacity</span>
                             </div>
                             <div class="stat">
-                                <span class="number">Heavy</span>
-                                <span class="label">Lifting</span>
+                                <span class="number" data-translate="industries.metalConstruction.stats.lifting.number">Heavy</span>
+                                <span class="label" data-translate="industries.metalConstruction.stats.lifting.label">Lifting</span>
                             </div>
                         </div>
                     </div>
                     
                     <div class="transport-service-content">
                         <div class="service-overview">
-                            <h3>Industry Overview</h3>
-                            <p>Specialized handling and transportation solutions for construction materials and metal products, with heavy-duty equipment and expertise in project cargo logistics.</p>
+                            <h3 data-translate="industries.metalConstruction.overview.title">Industry Overview</h3>
+                            <p data-translate="industries.metalConstruction.overview.description">Specialized handling and transportation solutions for construction materials and metal products, with heavy-duty equipment and expertise in project cargo logistics.</p>
                         </div>
 
                         <div class="service-features">
-                            <h3>Key Capabilities</h3>
+                            <h3 data-translate="industries.metalConstruction.features.title">Key Capabilities</h3>
                             <div class="features-grid">
                                 <div class="feature-card">
                                     <i class="fas fa-weight-hanging"></i>
-                                    <h4>Heavy Lifting</h4>
-                                    <p>Specialized equipment</p>
+                                    <h4 data-translate="industries.metalConstruction.features.lifting.title">Heavy Lifting</h4>
+                                    <p data-translate="industries.metalConstruction.features.lifting.description">Specialized equipment</p>
                                 </div>
                                 <div class="feature-card">
                                     <i class="fas fa-hard-hat"></i>
-                                    <h4>Project Cargo</h4>
-                                    <p>Custom solutions</p>
+                                    <h4 data-translate="industries.metalConstruction.features.project.title">Project Cargo</h4>
+                                    <p data-translate="industries.metalConstruction.features.project.description">Custom solutions</p>
                                 </div>
                                 <div class="feature-card">
                                     <i class="fas fa-truck-loading"></i>
-                                    <h4>Loading/Unloading</h4>
-                                    <p>Professional handling</p>
+                                    <h4 data-translate="industries.metalConstruction.features.loading.title">Loading/Unloading</h4>
+                                    <p data-translate="industries.metalConstruction.features.loading.description">Professional handling</p>
                                 </div>
                                 <div class="feature-card">
                                     <i class="fas fa-warehouse"></i>
-                                    <h4>Storage</h4>
-                                    <p>Secure facilities</p>
+                                    <h4 data-translate="industries.metalConstruction.features.storage.title">Storage</h4>
+                                    <p data-translate="industries.metalConstruction.features.storage.description">Secure facilities</p>
                                 </div>
                             </div>
                         </div>
@@ -379,97 +381,99 @@
                 <!-- Machinery & Equipment Section -->
                 <section id="machinery" class="transport-service">
                     <div class="transport-service-header">
-                        <h1>Machinery & Equipment</h1>
+                        <h1 data-translate="industries.machinery.title">Machinery & Equipment</h1>
                         <div class="transport-service-stats">
                             <div class="stat">
-                                <span class="number">OOG</span>
-                                <span class="label">Handling</span>
+                                <span class="number" data-translate="industries.machinery.stats.handling.number">OOG</span>
+                                <span class="label" data-translate="industries.machinery.stats.handling.label">Handling</span>
                             </div>
                             <div class="stat">
-                                <span class="number">Tech</span>
-                                <span class="label">Expertise</span>
+                                <span class="number" data-translate="industries.machinery.stats.expertise.number">Tech</span>
+                                <span class="label" data-translate="industries.machinery.stats.expertise.label">Expertise</span>
                             </div>
                         </div>
                     </div>
                     
                     <div class="transport-service-content">
                         <div class="service-overview">
-                            <h3>Industry Overview</h3>
-                            <p>Expert logistics solutions for industrial machinery and equipment, including specialized handling for oversized cargo and technical installation services.</p>
+                            <h3 data-translate="industries.machinery.overview.title">Industry Overview</h3>
+                            <p data-translate="industries.machinery.overview.description">Expert logistics solutions for industrial machinery and equipment, including specialized handling for oversized cargo and technical installation services.</p>
                         </div>
 
                         <div class="service-features">
-                            <h3>Key Capabilities</h3>
+                            <h3 data-translate="industries.machinery.features.title">Key Capabilities</h3>
                             <div class="features-grid">
                                 <div class="feature-card">
                                     <i class="fas fa-cogs"></i>
-                                    <h4>Technical Handling</h4>
-                                    <p>Specialized expertise</p>
+                                    <h4 data-translate="industries.machinery.features.technical.title">Technical Handling</h4>
+                                    <p data-translate="industries.machinery.features.technical.description">Specialized expertise</p>
                                 </div>
                                 <div class="feature-card">
                                     <i class="fas fa-tools"></i>
-                                    <h4>Installation</h4>
-                                    <p>Professional setup</p>
+                                    <h4 data-translate="industries.machinery.features.installation.title">Installation</h4>
+                                    <p data-translate="industries.machinery.features.installation.description">Professional setup</p>
                                 </div>
                                 <div class="feature-card">
                                     <i class="fas fa-ruler"></i>
-                                    <h4>OOG Transport</h4>
-                                    <p>Oversized cargo</p>
+                                    <h4 data-translate="industries.machinery.features.transport.title">OOG Transport</h4>
+                                    <p data-translate="industries.machinery.features.transport.description">Oversized cargo</p>
                                 </div>
                                 <div class="feature-card">
                                     <i class="fas fa-shield-alt"></i>
-                                    <h4>Insurance</h4>
-                                    <p>Full coverage</p>
+                                    <h4 data-translate="industries.machinery.features.insurance.title">Insurance</h4>
+                                    <p data-translate="industries.machinery.features.insurance.description">Full coverage</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
 
+                <div class="service-divider"></div>
+
                 <!-- Healthcare Section -->
                 <section id="healthcare" class="transport-service">
                     <div class="transport-service-header">
-                        <h1>Healthcare & Cosmetics</h1>
+                        <h1 data-translate="industries.healthcare.title">Healthcare & Cosmetics</h1>
                         <div class="transport-service-stats">
                             <div class="stat">
-                                <span class="number">GDP</span>
-                                <span class="label">Certified</span>
+                                <span class="number" data-translate="industries.healthcare.stats.certification.number">GDP</span>
+                                <span class="label" data-translate="industries.healthcare.stats.certification.label">Certified</span>
                             </div>
                             <div class="stat">
-                                <span class="number">2-8°C</span>
-                                <span class="label">Cold Chain</span>
+                                <span class="number" data-translate="industries.healthcare.stats.temperature.number">2-8°C</span>
+                                <span class="label" data-translate="industries.healthcare.stats.temperature.label">Cold Chain</span>
                             </div>
                         </div>
                     </div>
                     
                     <div class="transport-service-content">
                         <div class="service-overview">
-                            <h3>Industry Overview</h3>
-                            <p>GDP-certified healthcare logistics solutions ensuring temperature-controlled transportation and storage for pharmaceuticals, medical supplies, and cosmetics.</p>
+                            <h3 data-translate="industries.healthcare.overview.title">Industry Overview</h3>
+                            <p data-translate="industries.healthcare.overview.description">GDP-certified healthcare logistics solutions ensuring temperature-controlled transportation and storage for pharmaceuticals, medical supplies, and cosmetics.</p>
                         </div>
 
                         <div class="service-features">
-                            <h3>Key Capabilities</h3>
+                            <h3 data-translate="industries.healthcare.features.title">Key Capabilities</h3>
                             <div class="features-grid">
                                 <div class="feature-card">
                                     <i class="fas fa-temperature-low"></i>
-                                    <h4>Temperature Control</h4>
-                                    <p>Precise monitoring</p>
+                                    <h4 data-translate="industries.healthcare.features.temperature.title">Temperature Control</h4>
+                                    <p data-translate="industries.healthcare.features.temperature.description">Precise monitoring</p>
                                 </div>
                                 <div class="feature-card">
                                     <i class="fas fa-clipboard-check"></i>
-                                    <h4>GDP Compliance</h4>
-                                    <p>Certified handling</p>
+                                    <h4 data-translate="industries.healthcare.features.gdp.title">GDP Compliance</h4>
+                                    <p data-translate="industries.healthcare.features.gdp.description">Certified handling</p>
                                 </div>
                                 <div class="feature-card">
                                     <i class="fas fa-shield-virus"></i>
-                                    <h4>Clean Room</h4>
-                                    <p>Sterile environment</p>
+                                    <h4 data-translate="industries.healthcare.features.cleanroom.title">Clean Room</h4>
+                                    <p data-translate="industries.healthcare.features.cleanroom.description">Sterile environment</p>
                                 </div>
                                 <div class="feature-card">
                                     <i class="fas fa-truck-medical"></i>
-                                    <h4>Medical Transport</h4>
-                                    <p>Specialized vehicles</p>
+                                    <h4 data-translate="industries.healthcare.features.transport.title">Medical Transport</h4>
+                                    <p data-translate="industries.healthcare.features.transport.description">Specialized vehicles</p>
                                 </div>
                             </div>
                         </div>
@@ -481,47 +485,47 @@
                 <!-- Dangerous Goods Section -->
                 <section id="dangerous-goods" class="transport-service">
                     <div class="transport-service-header">
-                        <h1>Dangerous Goods</h1>
+                        <h1 data-translate="industries.dangerous.title">Dangerous Goods</h1>
                         <div class="transport-service-stats">
                             <div class="stat">
-                                <span class="number">IMDG</span>
-                                <span class="label">Certified</span>
+                                <span class="number" data-translate="industries.dangerous.stats.certification.number">IMDG</span>
+                                <span class="label" data-translate="industries.dangerous.stats.certification.label">Certified</span>
                             </div>
                             <div class="stat">
-                                <span class="number">ADR</span>
-                                <span class="label">Transport</span>
+                                <span class="number" data-translate="industries.dangerous.stats.transport.number">ADR</span>
+                                <span class="label" data-translate="industries.dangerous.stats.transport.label">Transport</span>
                             </div>
                         </div>
                     </div>
                     
                     <div class="transport-service-content">
                         <div class="service-overview">
-                            <h3>Industry Overview</h3>
-                            <p>Certified dangerous goods handling and transportation services, ensuring compliance with international regulations and safety standards for hazardous materials.</p>
+                            <h3 data-translate="industries.dangerous.overview.title">Industry Overview</h3>
+                            <p data-translate="industries.dangerous.overview.description">Certified dangerous goods handling and transportation services, ensuring compliance with international regulations and safety standards for hazardous materials.</p>
                         </div>
 
                         <div class="service-features">
-                            <h3>Key Capabilities</h3>
+                            <h3 data-translate="industries.dangerous.features.title">Key Capabilities</h3>
                             <div class="features-grid">
                                 <div class="feature-card">
                                     <i class="fas fa-exclamation-triangle"></i>
-                                    <h4>DG Certified</h4>
-                                    <p>Licensed handling</p>
+                                    <h4 data-translate="industries.dangerous.features.certified.title">DG Certified</h4>
+                                    <p data-translate="industries.dangerous.features.certified.description">Licensed handling</p>
                                 </div>
                                 <div class="feature-card">
                                     <i class="fas fa-file-contract"></i>
-                                    <h4>Documentation</h4>
-                                    <p>Complete compliance</p>
+                                    <h4 data-translate="industries.dangerous.features.documentation.title">Documentation</h4>
+                                    <p data-translate="industries.dangerous.features.documentation.description">Complete compliance</p>
                                 </div>
                                 <div class="feature-card">
                                     <i class="fas fa-warehouse"></i>
-                                    <h4>Special Storage</h4>
-                                    <p>Secure facilities</p>
+                                    <h4 data-translate="industries.dangerous.features.storage.title">Special Storage</h4>
+                                    <p data-translate="industries.dangerous.features.storage.description">Secure facilities</p>
                                 </div>
                                 <div class="feature-card">
                                     <i class="fas fa-route"></i>
-                                    <h4>Route Planning</h4>
-                                    <p>Safety optimized</p>
+                                    <h4 data-translate="industries.dangerous.features.routing.title">Route Planning</h4>
+                                    <p data-translate="industries.dangerous.features.routing.description">Safety optimized</p>
                                 </div>
                             </div>
                         </div>
@@ -533,51 +537,51 @@
                 <!-- Automotive Section -->
                 <section id="automotive" class="transport-service">
                     <div class="transport-service-header">
-                        <h1>Automotive Industry</h1>
+                        <h1 data-translate="industries.automotive.title">Automotive Industry</h1>
                         <div class="transport-service-stats">
                             <div class="stat">
-                                <span class="number">JIT</span>
-                                <span class="label">Delivery</span>
+                                <span class="number" data-translate="industries.automotive.stats.delivery.number">JIT</span>
+                                <span class="label" data-translate="industries.automotive.stats.delivery.label">Delivery</span>
                             </div>
                             <div class="stat">
-                                <span class="number">QMS</span>
-                                <span class="label">Certified</span>
+                                <span class="number" data-translate="industries.automotive.stats.certification.number">QMS</span>
+                                <span class="label" data-translate="industries.automotive.stats.certification.label">Certified</span>
                             </div>
                             <div class="stat">
-                                <span class="number">EDI</span>
-                                <span class="label">Integration</span>
+                                <span class="number" data-translate="industries.automotive.stats.integration.number">EDI</span>
+                                <span class="label" data-translate="industries.automotive.stats.integration.label">Integration</span>
                             </div>
                         </div>
                     </div>
                     
                     <div class="transport-service-content">
                         <div class="service-overview">
-                            <h3>Industry Overview</h3>
-                            <p>Specialized automotive logistics solutions supporting manufacturing supply chains with just-in-time delivery and quality management systems.</p>
+                            <h3 data-translate="industries.automotive.overview.title">Industry Overview</h3>
+                            <p data-translate="industries.automotive.overview.description">Specialized automotive logistics solutions supporting manufacturing supply chains with just-in-time delivery and quality management systems.</p>
                         </div>
 
                         <div class="service-features">
-                            <h3>Key Capabilities</h3>
+                            <h3 data-translate="industries.automotive.features.title">Key Capabilities</h3>
                             <div class="features-grid">
                                 <div class="feature-card">
                                     <i class="fas fa-car"></i>
-                                    <h4>Vehicle Logistics</h4>
-                                    <p>Specialized transport</p>
+                                    <h4 data-translate="industries.automotive.features.vehicle.title">Vehicle Logistics</h4>
+                                    <p data-translate="industries.automotive.features.vehicle.description">Specialized transport</p>
                                 </div>
                                 <div class="feature-card">
                                     <i class="fas fa-industry"></i>
-                                    <h4>Production Support</h4>
-                                    <p>JIT delivery</p>
+                                    <h4 data-translate="industries.automotive.features.production.title">Production Support</h4>
+                                    <p data-translate="industries.automotive.features.production.description">JIT delivery</p>
                                 </div>
                                 <div class="feature-card">
                                     <i class="fas fa-cogs"></i>
-                                    <h4>Parts Management</h4>
-                                    <p>Inventory control</p>
+                                    <h4 data-translate="industries.automotive.features.parts.title">Parts Management</h4>
+                                    <p data-translate="industries.automotive.features.parts.description">Inventory control</p>
                                 </div>
                                 <div class="feature-card">
                                     <i class="fas fa-sync"></i>
-                                    <h4>Sequencing</h4>
-                                    <p>Production line feed</p>
+                                    <h4 data-translate="industries.automotive.features.sequencing.title">Sequencing</h4>
+                                    <p data-translate="industries.automotive.features.sequencing.description">Production line feed</p>
                                 </div>
                             </div>
                         </div>
@@ -589,47 +593,47 @@
                 <!-- Electronics Section -->
                 <section id="electronics" class="transport-service">
                     <div class="transport-service-header">
-                        <h1>Electronics Industry</h1>
+                        <h1 data-translate="industries.electronics.title">Electronics Industry</h1>
                         <div class="transport-service-stats">
                             <div class="stat">
-                                <span class="number">ESD</span>
-                                <span class="label">Protected</span>
+                                <span class="number" data-translate="industries.electronics.stats.protection.number">ESD</span>
+                                <span class="label" data-translate="industries.electronics.stats.protection.label">Protected</span>
                             </div>
                             <div class="stat">
-                                <span class="number">IoT</span>
-                                <span class="label">Tracking</span>
+                                <span class="number" data-translate="industries.electronics.stats.tracking.number">IoT</span>
+                                <span class="label" data-translate="industries.electronics.stats.tracking.label">Tracking</span>
                             </div>
                         </div>
                     </div>
                     
                     <div class="transport-service-content">
                         <div class="service-overview">
-                            <h3>Industry Overview</h3>
-                            <p>Specialized electronics logistics solutions ensuring safe handling and storage for sensitive electronic components and devices.</p>
+                            <h3 data-translate="industries.electronics.overview.title">Industry Overview</h3>
+                            <p data-translate="industries.electronics.overview.description">Specialized electronics logistics solutions ensuring safe handling and storage for sensitive electronic components and devices.</p>
                         </div>
 
                         <div class="service-features">
-                            <h3>Key Capabilities</h3>
+                            <h3 data-translate="industries.electronics.features.title">Key Capabilities</h3>
                             <div class="features-grid">
                                 <div class="feature-card">
                                     <i class="fas fa-microchip"></i>
-                                    <h4>ESD Protected</h4>
-                                    <p>Safe handling</p>
+                                    <h4 data-translate="industries.electronics.features.protection.title">ESD Protected</h4>
+                                    <p data-translate="industries.electronics.features.protection.description">Safe handling</p>
                                 </div>
                                 <div class="feature-card">
                                     <i class="fas fa-satellite"></i>
-                                    <h4>IoT Tracking</h4>
-                                    <p>Real-time monitoring</p>
+                                    <h4 data-translate="industries.electronics.features.tracking.title">IoT Tracking</h4>
+                                    <p data-translate="industries.electronics.features.tracking.description">Real-time monitoring</p>
                                 </div>
                                 <div class="feature-card">
                                     <i class="fas fa-shield-virus"></i>
-                                    <h4>Secure Storage</h4>
-                                    <p>Secure facilities</p>
+                                    <h4 data-translate="industries.electronics.features.security.title">Secure Storage</h4>
+                                    <p data-translate="industries.electronics.features.security.description">Secure facilities</p>
                                 </div>
                                 <div class="feature-card">
                                     <i class="fas fa-warehouse"></i>
-                                    <h4>Special Storage</h4>
-                                    <p>Secure facilities</p>
+                                    <h4 data-translate="industries.electronics.features.storage.title">Special Storage</h4>
+                                    <p data-translate="industries.electronics.features.storage.description">Secure facilities</p>
                                 </div>
                             </div>
                         </div>
@@ -641,48 +645,48 @@
         <!-- Right Sidebar -->
         <aside class="transport-sidebar-right">
             <div class="transport-quick-quote">
-                <h3>Request Industry Solution</h3>
+                <h3 data-translate="industries.quote.title">Request Industry Solution</h3>
                 <form class="transport-quote-form">
                     <div class="form-group">
-                        <label>Industry Type</label>
+                        <label data-translate="industries.quote.industryType">Industry Type</label>
                         <select>
-                            <option value="">Select industry</option>
-                            <option value="food">Food & Beverage</option>
-                            <option value="garment">Garment & Footwear</option>
-                            <option value="furniture">Furniture & Houseware</option>
-                            <option value="construction">Construction Materials</option>
-                            <option value="machinery">Machinery & Equipment</option>
-                            <option value="healthcare">Healthcare & Cosmetics</option>
-                            <option value="dangerous">Dangerous Goods</option>
-                            <option value="automotive">Automotive</option>
-                            <option value="electronics">Electronics</option>
+                            <option value="" data-translate="industries.quote.selectIndustry">Select industry</option>
+                            <option value="food" data-translate="industries.quote.industries.food">Food & Beverage</option>
+                            <option value="garment" data-translate="industries.quote.industries.garment">Garment & Footwear</option>
+                            <option value="furniture" data-translate="industries.quote.industries.furniture">Furniture & Houseware</option>
+                            <option value="construction" data-translate="industries.quote.industries.construction">Construction Materials</option>
+                            <option value="machinery" data-translate="industries.quote.industries.machinery">Machinery & Equipment</option>
+                            <option value="healthcare" data-translate="industries.quote.industries.healthcare">Healthcare & Cosmetics</option>
+                            <option value="dangerous" data-translate="industries.quote.industries.dangerous">Dangerous Goods</option>
+                            <option value="automotive" data-translate="industries.quote.industries.automotive">Automotive</option>
+                            <option value="electronics" data-translate="industries.quote.industries.electronics">Electronics</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label>Service Required</label>
+                        <label data-translate="industries.quote.serviceRequired">Service Required</label>
                         <select>
-                            <option value="">Select service</option>
-                            <option value="transport">Transportation</option>
-                            <option value="warehouse">Warehousing</option>
-                            <option value="customs">Customs Clearance</option>
-                            <option value="distribution">Distribution</option>
+                            <option value="" data-translate="industries.quote.selectService">Select service</option>
+                            <option value="transport" data-translate="industries.quote.services.transport">Transportation</option>
+                            <option value="warehouse" data-translate="industries.quote.services.warehouse">Warehousing</option>
+                            <option value="customs" data-translate="industries.quote.services.customs">Customs Clearance</option>
+                            <option value="distribution" data-translate="industries.quote.services.distribution">Distribution</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label>Special Requirements</label>
-                        <textarea placeholder="Enter any special requirements"></textarea>
+                        <label data-translate="industries.quote.specialRequirements">Special Requirements</label>
+                        <textarea data-translate-placeholder="industries.quote.requirementsPlaceholder" placeholder="Enter any special requirements"></textarea>
                     </div>
                     <button type="submit" class="transport-quote-btn">
                         <i class="fas fa-paper-plane"></i>
-                        Get Solution
+                        <span data-translate="industries.quote.submit">Get Solution</span>
                     </button>
                 </form>
             </div>
         </aside>
     </div>
 
-    <!-- Footer -->
-    <footer class="main-footer">
+     <!-- Footer -->
+     <footer class="main-footer">
         <div class="container">
             <div class="footer-grid">
                 <!-- Company Info -->
@@ -754,10 +758,9 @@
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/translations.js" type="module"></script>
     <script src="js/script.js" type="module"></script>
-    <script src="js/industries.js"></script>
+    <script src="js/logistics-supply-chain.js"></script>
 </body>
 </html>

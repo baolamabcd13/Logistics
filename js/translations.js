@@ -377,6 +377,100 @@ const translations = {
           footer: {
             contact: "For privacy-related inquiries, please contact our Data Protection Officer at:"
           }
+        },
+        footer: {
+          contact: "For privacy-related questions, please contact our Data Protection Officer at:",
+          email: "Security Email:",
+          phone: "Phone:"
+        }
+      },
+      cookiePage: {
+        title: "Cookie Policy",
+        lastUpdated: "Last updated: March 15, 2024",
+        sections: {
+          what: {
+            title: "1. What Are Cookies?",
+            content: "Cookies are small text files placed on your device when you visit our website. They help us provide a better experience by:",
+            items: [
+              "Remembering your preferences",
+              "Understanding how you use our website",
+              "Improving website functionality", 
+              "Providing personalized content"
+            ]
+          },
+          types: {
+            title: "2. Types of Cookies We Use",
+            essential: {
+              title: "2.1 Essential Cookies",
+              content: "These cookies are necessary for the website to function normally. Chúng cho phép các chức năng cơ bản như:",
+              items: [
+                "Điều hướng trang",
+                "Truy cập vào khu vực bảo mật",
+                "Chức năng giỏ hàng",
+                "Xử lý thanh toán"
+              ]
+            },
+            performance: {
+              title: "2.2 Performance Cookies",
+              content: "These cookies help us understand how visitors interact with our website by:",
+              items: [
+                "Collecting analytics data",
+                "Identifying error messages",
+                "Testing different designs",
+                "Measuring website performance"
+              ]
+            },
+            functionality: {
+              title: "2.3 Functionality Cookies",
+              content: "These cookies remember your preferences to enhance your experience:",
+              items: [
+                "Language preferences",
+                "Location settings",
+                "User account information",
+                "Customized layouts"
+              ]
+            },
+            targeting: {
+              title: "2.4 Marketing Cookies",
+              content: "These cookies are used for marketing purposes:",
+              items: [
+                "Displaying relevant advertisements",
+                "Measuring advertising effectiveness",
+                "Partner integration",
+                "Social media features"
+              ]
+            }
+          },
+          management: {
+            title: "3. Cookie Management",
+            content: "You can control cookies through your browser settings:",
+            items: [
+              "Block all cookies",
+              "Delete existing cookies",
+              "Allow cookies from specific sites",
+              "Set cookie preferences"
+            ],
+            note: "Note: Blocking certain types of cookies may affect your experience on our website."
+          },
+          thirdParty: {
+            title: "4. Third Party Cookies",
+            content: "We use services from the following trusted partners:",
+            items: [
+              "Google Analytics - Performance tracking",
+              "Payment processors - Transaction security", 
+              "Social media platforms - Content sharing",
+              "Ad networks - Targeted advertising"
+            ]
+          },
+          updates: {
+            title: "5. Cookie Policy Updates",
+            content: "We may update this policy as our services evolve. Please check periodically for changes."
+          }
+        },
+        footer: {
+          contact: "If you have questions about our cookie policy, please contact:",
+          email: "Support email:",
+          phone: "Phone:"
         }
       },
       transportation: {
@@ -388,30 +482,21 @@ const translations = {
             name: "Sea Freight",
             title: "Sea Freight Services",
             stats: {
-              ports: {
-                number: "150+",
-                label: "Global Ports"
-              },
-              tracking: {
-                number: "24/7",
-                label: "Tracking"
-              },
-              success: {
-                number: "98%",
-                label: "Success Rate"
-              }
+              ports: { number: "150+", label: "Global Ports" },
+              tracking: { number: "24/7", label: "Tracking" },
+              success: { number: "98%", label: "Success Rate" }
             },
             overview: {
               title: "Service Overview",
-              description: "Our comprehensive sea freight solutions offer reliable and cost-effective shipping services across major ports worldwide. We specialize in both FCL (Full Container Load) and LCL (Less than Container Load) shipments."
+              description: "Our comprehensive sea freight solutions provide reliable and cost-effective shipping services through major ports worldwide. We specialize in Full Container Load (FCL) and Less than Container Load (LCL) shipments."
             },
             features: {
               title: "Key Features",
               items: [
                 { title: "Global Coverage", description: "Access to major shipping routes and ports" },
-                { title: "Flexible Solutions", description: "FCL and LCL shipping options" },
-                { title: "Cargo Insurance", description: "Comprehensive coverage options" },
-                { title: "Schedule Reliability", description: "Regular departures and arrivals" }
+                { title: "Flexible Solutions", description: "FCL and LCL options" },
+                { title: "Cargo Insurance", description: "Comprehensive insurance options" },
+                { title: "Reliable Schedules", description: "Regular departures and arrivals" }
               ]
             },
             options: {
@@ -419,19 +504,19 @@ const translations = {
               fcl: {
                 title: "FCL Shipping",
                 features: [
-                  "Full container exclusivity",
-                  "Direct port delivery",
+                  "Exclusive container use",
+                  "Port-to-port delivery",
                   "Suitable for large shipments",
-                  "Cost-effective for full loads"
+                  "Cost-effective for full containers"
                 ]
               },
               lcl: {
                 title: "LCL Shipping",
                 features: [
                   "Shared container space",
-                  "Flexible cargo size",
-                  "Economic for small shipments",
-                  "Regular consolidation service"
+                  "Flexible cargo sizes",
+                  "Economical for small shipments",
+                  "Regular consolidation services"
                 ]
               }
             }
@@ -442,19 +527,19 @@ const translations = {
             stats: {
               destinations: { number: "200+", label: "Destinations" },
               express: { number: "48h", label: "Express Delivery" },
-              ontime: { number: "99%", label: "On-time Rate" }
+              ontime: { number: "99%", label: "On-Time Rate" }
             },
             overview: {
-              title: "Service Overview",
-              description: "Experience swift and reliable air freight solutions connecting to major airports worldwide. Our air cargo services are designed for time-sensitive shipments and high-value goods."
+              title: "Service Overview", 
+              description: "Experience fast and reliable air freight solutions connecting major airports worldwide. Our air transportation services are designed for time-sensitive shipments and high-value cargo."
             },
             features: {
               title: "Key Features",
               items: [
-                { title: "Express Services", description: "Next-day and same-day delivery options" },
+                { title: "Express Delivery", description: "Same-day and next-day delivery options" },
                 { title: "Temperature Control", description: "Special handling for sensitive cargo" },
                 { title: "Flexible Capacity", description: "From small parcels to charter services" },
-                { title: "Custom Clearance", description: "Streamlined documentation process" }
+                { title: "Customs Clearance", description: "Simplified documentation process" }
               ]
             },
             options: {
@@ -474,50 +559,7 @@ const translations = {
                   "Cost-effective solution",
                   "Regular schedules",
                   "Consolidated shipping",
-                  "Worldwide coverage"
-                ]
-              }
-            }
-          },
-          inlandTrucking: {
-            name: "Inland Trucking & Cross Border",
-            title: "Inland Trucking & Cross Border Services",
-            stats: {
-              vehicles: { number: "1000+", label: "Vehicles" },
-              countries: { number: "15+", label: "Countries" },
-              coverage: { number: "95%", label: "Coverage" }
-            },
-            overview: {
-              title: "Service Overview", 
-              description: "Our inland trucking and cross-border services provide seamless door-to-door transportation solutions across Southeast Asia. We offer dedicated fleet services and specialized equipment for various types of cargo."
-            },
-            features: {
-              title: "Key Features",
-              items: [
-                { title: "Route Optimization", description: "Efficient delivery planning" },
-                { title: "Specialized Equipment", description: "Various truck types available" },
-                { title: "Border Expertise", description: "Smooth customs clearance" },
-                { title: "GPS Tracking", description: "Real-time shipment monitoring" }
-              ]
-            },
-            options: {
-              title: "Service Options",
-              domestic: {
-                title: "Domestic Transport",
-                features: [
-                  "Door-to-door delivery",
-                  "Express and standard service", 
-                  "Temperature-controlled options",
-                  "Last-mile delivery"
-                ]
-              },
-              crossBorder: {
-                title: "Cross Border",
-                features: [
-                  "International routes",
-                  "Customs documentation",
-                  "Transit management",
-                  "Multi-country services"
+                  "Global coverage"
                 ]
               }
             }
@@ -526,61 +568,104 @@ const translations = {
             name: "Rail Freight",
             title: "Rail Freight Services",
             stats: {
-              routes: { number: "50+", label: "Routes" },
-              cost: { number: "30%", label: "Cost Saving" },
-              reliability: { number: "97%", label: "Reliability" }
+              network: { number: "50,000+", label: "Km of Rail" },
+              terminals: { number: "100+", label: "Terminals" },
+              capacity: { number: "10,000+", label: "TEU/Month" }
             },
             overview: {
               title: "Service Overview",
-              description: "Our rail freight services offer an eco-friendly and cost-effective alternative for long-distance cargo transportation. We provide reliable connections between Asia and Europe through the New Silk Road."
+              description: "Our rail freight services provide reliable and environmentally friendly transportation solutions. Connecting major logistics hubs through an extensive rail network."
             },
             features: {
-              title: "Key Features",
+              title: "Key Features", 
               items: [
-                { title: "Eco-Friendly", description: "Lower carbon footprint" },
-                { title: "Cost-Effective", description: "Competitive pricing for bulk cargo" },
-                { title: "Network Coverage", description: "Extensive rail connections" },
-                { title: "Fixed Schedules", description: "Regular departure times" }
+                { title: "Green Transportation", description: "Reduced carbon footprint" },
+                { title: "Seamless Connectivity", description: "Multimodal integration" },
+                { title: "Cost Effective", description: "Competitive pricing for long distances" },
+                { title: "High Reliability", description: "Fixed and stable schedules" }
               ]
             },
             options: {
               title: "Service Options",
               container: {
-                title: "Container Rail",
+                title: "Container Transport",
                 features: [
-                  "Full container loads",
-                  "Consolidated cargo",
-                  "Temperature-controlled",
-                  "High-value goods service"
+                  "Full container service",
+                  "Less than container load",
+                  "Real-time tracking",
+                  "Multi-point connections"
                 ]
               },
               bulk: {
-                title: "Bulk Rail",
+                title: "Bulk Transport",
                 features: [
-                  "Raw materials transport",
-                  "Large volume shipping",
-                  "Special equipment",
-                  "Project cargo handling"
+                  "Specialized wagons",
+                  "Special cargo handling",
+                  "Customized solutions",
+                  "Warehousing services"
                 ]
               }
             }
           },
-          breakBulk: {
-            name: "Break Bulk & OOG",
-            title: "Break Bulk & OOG Services", 
+          inlandTrucking: {
+            name: "Inland & Cross-Border Trucking",
+            title: "Inland & Cross-Border Trucking Services",
             stats: {
-              experience: { number: "25+", label: "Years Experience" },
-              projects: { number: "500+", label: "Projects per Year" },
-              specialists: { number: "50+", label: "Specialists" }
+              vehicles: { number: "1000+", label: "Vehicles" },
+              countries: { number: "15+", label: "Countries" },
+              coverage: { number: "95%", label: "Coverage" }
             },
             overview: {
               title: "Service Overview",
-              description: "We specialize in handling break bulk and out-of-gauge cargo with our experienced team of experts. Our services include detailed planning, specialized equipment, and customized transportation solutions."
+              description: "Our inland and cross-border trucking services provide seamless door-to-door transportation solutions across Southeast Asia. We offer dedicated fleet services and specialized equipment for various types of cargo."
             },
             features: {
               title: "Key Features",
               items: [
-                { title: "In-depth Survey", description: "Route and requirement assessment" },
+                { title: "Route Optimization", description: "Efficient delivery planning" },
+                { title: "Specialized Equipment", description: "Diverse truck fleet" },
+                { title: "Border Expertise", description: "Smooth customs clearance" },
+                { title: "GPS Tracking", description: "Real-time shipment monitoring" }
+              ]
+            },
+          options: {
+            title: "Service Options",
+            domestic: {
+              title: "Domestic Transport",
+              features: [
+                "Door-to-door delivery",
+                "Express and standard services",
+                "Temperature control options",
+                "Last mile delivery"
+              ]
+            },
+            crossBorder: {
+              title: "Cross Border",
+              features: [
+                "International routes",
+                "Customs documentation",
+                "Transit management",
+                "Multi-country services"
+              ]
+            }
+          }
+          },
+          breakBulk: {
+            name: "Break Bulk & Out of Gauge",
+            title: "Break Bulk & Out of Gauge Transportation Services",
+            stats: {
+              experience: { number: "25+", label: "Years Experience" },
+              projects: { number: "500+", label: "Projects Per Year" },
+              specialists: { number: "50+", label: "Specialists" }
+            },
+            overview: {
+              title: "Service Overview", 
+              description: "We specialize in handling break bulk and out of gauge cargo with our experienced team of experts. Our services include detailed planning, specialized equipment and customized transportation solutions."
+            },
+            features: {
+              title: "Key Features",
+              items: [
+                { title: "In-Depth Survey", description: "Route and requirements assessment" },
                 { title: "Specialized Equipment", description: "Special handling equipment" },
                 { title: "Comprehensive Monitoring", description: "Detailed tracking and reporting" },
                 { title: "Optimal Safety", description: "Strict safety procedures" }
@@ -593,7 +678,7 @@ const translations = {
                 features: [
                   "Professional break bulk handling",
                   "Specialized lifting equipment",
-                  "Suitable storage facilities",
+                  "Suitable warehousing",
                   "Cargo packaging and protection"
                 ]
               },
@@ -614,12 +699,12 @@ const translations = {
         title: "Request a Quote",
         serviceType: {
           label: "Service Type",
-          placeholder: "Select a service",
+          placeholder: "Select service",
           options: {
             sea: "Sea Freight",
-            air: "Air Freight",
+            air: "Air Freight", 
             land: "Land Transport",
-            rail: "Rail Freight"
+            rail: "Rail Transport"
           }
         },
         origin: {
@@ -627,7 +712,7 @@ const translations = {
           placeholder: "Enter origin city/port"
         },
         destination: {
-          label: "To",
+          label: "To", 
           placeholder: "Enter destination city/port"
         },
         submit: "Get Free Quote"
@@ -645,8 +730,8 @@ const translations = {
         services: {
           mainServices: "Main Services",
           customs: {
-            name: "Customs Brokerage",
-            title: "Customs Brokerage Services",
+            name: "Customs Declaration Services",
+            title: "Customs Declaration Services",
             stats: {
               countries: "50+",
               countriesLabel: "Countries",
@@ -657,16 +742,16 @@ const translations = {
             },
             overview: {
               title: "Service Overview",
-              description: "Our customs brokerage services ensure smooth and compliant international trade operations. We handle all customs documentation, duties, and regulations to facilitate seamless cross-border movements."
+              description: "Our customs declaration services ensure smooth and compliant international trade operations. We handle all customs documentation, taxes and regulations to facilitate cross-border shipments."
             },
             features: {
               title: "Key Features",
               compliance: {
                 title: "Compliance Management",
-                description: "Expert handling of regulations"
+                description: "Professional handling of regulations"
               },
               calculator: {
-                title: "Duty Calculator",
+                title: "Tax Calculator",
                 description: "Accurate cost estimation"
               },
               documentation: {
@@ -675,7 +760,7 @@ const translations = {
               },
               support: {
                 title: "24/7 Support",
-                description: "Round-the-clock assistance"
+                description: "Continuous assistance"
               }
             }
           },
@@ -684,25 +769,25 @@ const translations = {
             title: "Cargo Insurance Solutions",
             stats: {
               coverage: "100%",
-              coverageLabel: "Coverage",
+              coverageLabel: "Coverage Area",
               processing: "48h",
-              processingLabel: "Claim Processing",
+              processingLabel: "Claims Processing",
               satisfaction: "95%",
-              satisfactionLabel: "Client Satisfaction"
+              satisfactionLabel: "Customer Satisfaction"
             },
             overview: {
               title: "Service Overview",
-              description: "Protect your valuable cargo with our comprehensive insurance solutions. We offer tailored coverage options to safeguard your shipments against loss, damage, and unforeseen circumstances during transit."
+              description: "Protect your valuable cargo with comprehensive insurance solutions. We provide suitable insurance options to protect shipments from loss, damage and unforeseen situations during transportation."
             },
             features: {
               title: "Key Features",
               coverage: {
-                title: "All-Risk Coverage",
-                description: "Comprehensive protection"
+                title: "Comprehensive Coverage",
+                description: "Protection against all risks"
               },
               claims: {
-                title: "Quick Claims",
-                description: "Fast processing & settlement"
+                title: "Fast Claims Processing",
+                description: "Quick handling and resolution"
               },
               global: {
                 title: "Global Coverage",
@@ -738,7 +823,7 @@ const translations = {
               },
               climate: {
                 title: "Temperature Control",
-                description: "Specialized cold storage"
+                description: "Dedicated cold storage"
               },
               security: {
                 title: "24/7 Security",
@@ -751,11 +836,11 @@ const translations = {
             }
           },
           ecommerce: {
-            name: "E-Commerce Solutions",
+            name: "E-commerce (Express Delivery)",
             stats: {
               delivery: {
                 number: "2-3",
-                label: "Days Delivery"
+                label: "Delivery Days"
               },
               ontime: {
                 number: "98%",
@@ -768,16 +853,16 @@ const translations = {
             },
             overview: {
               title: "Service Overview",
-              description: "Our specialized e-commerce logistics solutions are designed to meet the unique challenges of online retail. From fast air-express delivery to seamless marketplace integration, we help you grow your online business globally."
+              description: "Our specialized e-commerce logistics solutions are designed to meet the unique challenges of online retail. From fast air delivery to seamless marketplace integration, we help grow your online business globally."
             },
             features: {
               title: "Key Features",
               express: {
-                title: "Air Express",
-                description: "Rapid worldwide delivery"
+                title: "Express Delivery",
+                description: "Global fast shipping"
               },
               fulfillment: {
-                title: "Fulfillment",
+                title: "Order Fulfillment",
                 description: "End-to-end solutions"
               },
               returns: {
@@ -785,24 +870,405 @@ const translations = {
                 description: "Efficient reverse logistics"
               },
               analytics: {
-                title: "Analytics",
+                title: "Data Analytics",
                 description: "Performance insights"
               }
             }
-          }, 
+          },
           quote: {
             title: "Request a Quote",
             serviceType: "Service Type",
-            selectService: "Select a service",
-            customsBrokerage: "Customs Brokerage",
+            selectService: "Select service",
+            customsBrokerage: "Customs Brokerage Services",
             cargoInsurance: "Cargo Insurance",
-            warehousing: "Warehousing",
-            ecommerce: "E-Commerce Services",
+            warehousing: "Warehousing Services",
+            ecommerce: "E-commerce Services",
             location: "Service Location",
             locationPlaceholder: "Enter location",
             cargoType: "Cargo Type",
             cargoPlaceholder: "Enter cargo type",
             submit: "Get Free Quote"
+          }
+        }
+      },
+      industries: {
+        title: "Industries",
+        sections: {
+          mainIndustries: "Main Industries",
+          specializedIndustries: "Specialized Industries"
+        },
+        categories: {
+          foodBeverage: "Food & Beverage",
+          garmentFootwear: "Garment & Footwear",
+          furnitureHouseware: "Furniture & Houseware",
+          metal: "Metal & Construction Materials",
+          machinery: "Machinery & Equipment",
+          healthcareCosmetics: "Healthcare & Cosmetics",
+          dangerousGoods: "Dangerous Goods",
+          automotive: "Automotive & Parts",
+          electronics: "Electronics"
+        },
+        foodBeverage: {
+          title: "Food & Beverage Industry",
+          stats: {
+            temperature: {
+              number: "-30°C",
+              label: "Cold Chain"
+            },
+            certification: {
+              number: "HACCP",
+              label: "Certified"
+            }
+          },
+          overview: {
+            title: "Industry Overview",
+            description: "Specialized logistics solutions for the food and beverage industry, ensuring temperature-controlled transportation and storage with strict compliance to food safety standards."
+          },
+          features: {
+            title: "Key Capabilities",
+            temperature: {
+              title: "Temperature Control",
+              description: "Comprehensive cold chain"
+            },
+            quality: {
+              title: "Quality Control",
+              description: "HACCP compliance"
+            },
+            handling: {
+              title: "Special Handling",
+              description: "Food-grade equipment"
+            },
+            time: {
+              title: "Time Critical",
+              description: "Express delivery options"
+            }
+          }
+        },
+        garmentFootwear: {
+          title: "Garment & Footwear Industry",
+          stats: {
+            dustFree: {
+              number: "100%",
+              label: "Dust Free"
+            },
+            vmi: {
+              number: "VMI",
+              label: "Solutions"
+            },
+            distribution: {
+              number: "B2B",
+              label: "Distribution"
+            }
+          },
+          overview: {
+            title: "Industry Overview",
+            description: "Specialized logistics solutions for fashion and footwear brands, ensuring garment-on-hanger transport, careful handling and retail-ready distribution services."
+          },
+          features: {
+            title: "Key Capabilities",
+            storage: {
+              title: "Garment Storage",
+              description: "Specialized hanging systems"
+            },
+            value: {
+              title: "Value Added Services",
+              description: "Labeling & packaging"
+            },
+            retail: {
+              title: "Retail Distribution",
+              description: "Store-ready delivery"
+            },
+            quality: {
+              title: "Quality Control",
+              description: "Inspection services"
+            }
+          }
+        },
+        furnitureHouseware: {
+          title: "Furniture & Houseware Industry",
+          stats: {
+            space: {
+              number: "XL",
+              label: "Storage Space"
+            },
+            handling: {
+              number: "Safe",
+              label: "Safe Handling"
+            },
+            delivery: {
+              number: "D2C",
+              label: "Delivery"
+            }
+          },
+          overview: {
+            title: "Industry Overview",
+            description: "Comprehensive logistics solutions for furniture and houseware companies, providing specialized handling for large items and delicate housewares with premium delivery services."
+          },
+          features: {
+            title: "Key Capabilities",
+            handling: {
+              title: "Large Item Handling",
+              description: "Specialized equipment"
+            },
+            delivery: {
+              title: "Home Delivery",
+              description: "Premium service"
+            },
+            assembly: {
+              title: "Assembly Services",
+              description: "Professional installation"
+            },
+            storage: {
+              title: "Storage Solutions",
+              description: "Climate-controlled"
+            }
+          }
+        },
+        metalConstruction: {
+          title: "Metal & Construction Materials",
+          stats: {
+            capacity: {
+              number: "500T",
+              label: "Capacity"
+            },
+            lifting: {
+              number: "Heavy",
+              label: "Lifting"
+            }
+          },
+          overview: {
+            title: "Industry Overview",
+            description: "Specialized handling and transportation solutions for construction materials and metal products, with heavy-duty equipment and expertise in project cargo logistics."
+          },
+          features: {
+            title: "Key Capabilities",
+            lifting: {
+              title: "Heavy Lifting",
+              description: "Specialized equipment"
+            },
+            project: {
+              title: "Project Cargo",
+              description: "Custom solutions"
+            },
+            loading: {
+              title: "Loading Operations",
+              description: "Professional handling"
+            },
+            storage: {
+              title: "Storage Facilities",
+              description: "Secure facilities"
+            }
+          }
+        },
+        machinery: {
+          title: "Machinery & Equipment",
+          stats: {
+            handling: {
+              number: "OOG",
+              label: "Handling"
+            },
+            expertise: {
+              number: "Tech",
+              label: "Expertise"
+            }
+          },
+          overview: {
+            title: "Industry Overview",
+            description: "Professional logistics solutions for machinery and industrial equipment, including specialized handling for oversized cargo and technical installation services."
+          },
+          features: {
+            title: "Key Capabilities",
+            technical: {
+              title: "Technical Handling",
+              description: "Specialized expertise"
+            },
+            installation: {
+              title: "Installation",
+              description: "Professional setup"
+            },
+            transport: {
+              title: "OOG Transport",
+              description: "Oversized cargo"
+            },
+            insurance: {
+              title: "Insurance",
+              description: "Comprehensive coverage"
+            }
+          }
+        },
+        healthcare: {
+          title: "Healthcare & Cosmetics",
+          stats: {
+            certification: {
+              number: "GDP",
+              label: "Certification"
+            },
+            temperature: {
+              number: "2-8°C",
+              label: "Cold Chain"
+            }
+          },
+          overview: {
+            title: "Industry Overview",
+            description: "GDP-certified healthcare logistics solutions ensuring temperature-controlled transportation and storage for pharmaceuticals, medical supplies, and cosmetics."
+          },
+          features: {
+            title: "Key Capabilities",
+            temperature: {
+              title: "Temperature Control",
+              description: "Precise monitoring"
+            },
+            gdp: {
+              title: "GDP Compliance",
+              description: "Certified handling"
+            },
+            cleanroom: {
+              title: "Clean Room",
+              description: "Sterile environment"
+            },
+            transport: {
+              title: "Medical Transport",
+              description: "Specialized vehicles"
+            }
+          }
+        },
+        dangerous: {
+          title: "Dangerous Goods",
+          stats: {
+            certification: {
+              number: "IMDG",
+              label: "Certification"
+            },
+            transport: {
+              number: "ADR",
+              label: "Transport"
+            }
+          },
+          overview: {
+            title: "Industry Overview",
+            description: "Certified dangerous goods handling and transportation services, ensuring compliance with international regulations and safety standards for hazardous materials."
+          },
+          features: {
+            title: "Key Capabilities",
+            certified: {
+              title: "DG Certification",
+              description: "Licensed handling"
+            },
+            documentation: {
+              title: "Documentation",
+              description: "Full compliance"
+            },
+            storage: {
+              title: "Special Storage",
+              description: "Secure facilities"
+            },
+            routing: {
+              title: "Route Planning",
+              description: "Safety optimized"
+            }
+          }
+        },
+        automotive: {
+          title: "Automotive Industry",
+          stats: {
+            delivery: {
+              number: "JIT",
+              label: "Delivery"
+            },
+            certification: {
+              number: "QMS",
+              label: "Certification"
+            },
+            integration: {
+              number: "EDI",
+              label: "Integration"
+            }
+          },
+          overview: {
+            title: "Industry Overview",
+            description: "Specialized automotive logistics solutions supporting production supply chains with just-in-time delivery and quality management systems."
+          },
+          features: {
+            title: "Key Capabilities",
+            vehicle: {
+              title: "Vehicle Logistics",
+              description: "Specialized transport"
+            },
+            production: {
+              title: "Production Support",
+              description: "JIT delivery"
+            },
+            parts: {
+              title: "Parts Management",
+              description: "Inventory control"
+            },
+            sequencing: {
+              title: "Sequencing",
+              description: "Line feeding"
+            }
+          }
+        },
+        electronics: {
+          title: "Electronics Industry",
+          stats: {
+            protection: {
+              number: "ESD",
+              label: "Protected"
+            },
+            tracking: {
+              number: "IoT",
+              label: "Tracking"
+            }
+          },
+          overview: {
+            title: "Industry Overview",
+            description: "Specialized electronics logistics solutions ensuring safe handling and storage for sensitive electronic components and devices."
+          },
+          features: {
+            title: "Key Capabilities",
+            protection: {
+              title: "ESD Protected",
+              description: "Safe handling"
+            },
+            tracking: {
+              title: "IoT Tracking",
+              description: "Real-time monitoring"
+            },
+            security: {
+              title: "Secure Storage",
+              description: "Secure facilities"
+            },
+            storage: {
+              title: "Special Storage",
+              description: "Secure facilities"
+            }
+          }
+        },
+        quote: {
+          title: "Request Industry Solution",
+          industryType: "Industry Type",
+          selectIndustry: "Select industry",
+          serviceRequired: "Service Required",
+          selectService: "Select service",
+          specialRequirements: "Special Requirements",
+          requirementsPlaceholder: "Enter any special requirements",
+          submit: "Get Solution",
+          industries: {
+            food: "Food & Beverage",
+            garment: "Garment & Footwear",
+            furniture: "Furniture & Houseware",
+            construction: "Construction Materials",
+            machinery: "Machinery & Equipment",
+            healthcare: "Healthcare & Cosmetics",
+            dangerous: "Dangerous Goods",
+            automotive: "Automotive",
+            electronics: "Electronics"
+          },
+          services: {
+            transport: "Transportation",
+            warehouse: "Warehousing",
+            customs: "Customs Clearance",
+            distribution: "Distribution"
           }
         }
       }
@@ -857,7 +1323,7 @@ const translations = {
           title: "Mạng Lưới Toàn Cầu",
           description: "Kết nối với hơn 200 quốc gia cùng chuyên môn địa phương",
           hoverItems: [
-            "Tuyến vận chuyển quốc t��",
+            "Tuyến vận chuyển quốc t",
             "Hỗ trợ toàn cầu 24/7",
             "Đối tác địa phương"
           ]
@@ -948,7 +1414,7 @@ const translations = {
         subtitle: "Được tin tưởng bởi doanh nghiệp trên toàn thế giới",
         testimonials: [
           {
-            text: "LogiTrack đã chuyển đổi hoạt động chuỗi cung �����ng của chúng tôi. Dịch vụ hiệu quả và khả năng theo dõi thời gian thực đã cải thiện đáng kể thời gian giao hàng của chúng tôi.",
+            text: "LogiTrack đã chuyển đổi hoạt động chuỗi cung ng của chúng tôi. Dịch vụ hiệu quả và khả năng theo dõi thời gian thực đã cải thiện đáng kể thời gian giao hàng của chúng tôi.",
             author: "Giannis Antetokounmpo",
             position: "Cầu thủ bóng rổ - Milwaukee Bucks"
           },
@@ -982,7 +1448,7 @@ const translations = {
         },
         location: {
           title: "VỊ TRÍ CÔNG TY",
-          subtitle: "Tìm Chúng Tôi Trên Bản Đồ",
+          subtitle: "Tìm Chúng Tôi Trên Bản Đ",
           mapAlt: "Bản Đồ Thế Giới"
         },
         connect: {
@@ -1049,7 +1515,7 @@ const translations = {
           }
         }
       },
-      copyright: "2024 LogiTrack. Đã đăng ký bản quyền.",
+      copyright: "2024 LogiTrack. Đã đồng ý đăng ký bản quyền.",
       terms: "Điều khoản & Điều kiện",
       privacy: "Chính sách bảo mật",
       cookies: "Chính sách Cookie",
@@ -1076,7 +1542,7 @@ const translations = {
             },
             availability: {
               title: "2.2 Tính Khả Dụng của Dịch Vụ",
-              content: "Chúng tôi cố gắng cung cấp dịch vụ 24/7, nhưng không thể đảm bảo tính khả dụng liên tục của dịch vụ do bảo trì, cập nhật hoặc các yếu tố ngoài tầm kiểm soát của chúng tôi."
+              content: "Chúng tôi cố gắng cung cấp dịch vụ 24/7, nhưng không thể đảm bảo tính khả dụng liên tục của dịch vụ do bảo trì, cập nhật hoặc các yếu tố ngoi tầm kiểm soát của chúng tôi."
             }
           },
           userResponsibilities: {
@@ -1134,13 +1600,13 @@ const translations = {
                 "Tên và thông tin liên hệ",
                 "Địa chỉ giao hàng và thanh toán",
                 "Thông tin thanh toán",
-                "Thông tin đăng nhập",
+                "Thông tin đ����ng nh�������p",
                 "Tùy chọn liên lạc"
               ]
             },
             usage: {
               title: "2.2 Dữ Liệu Sử Dụng",
-              content: "Chúng tôi tự động thu thập một số thông tin về thiết bị của bạn và cách bạn tương tác với dịch vụ của chúng tôi.",
+              content: "Chúng tôi tự động thu thập một số thông tin về thiết bị của bạn và cách bạn tương tác với dịch v của chúng tôi.",
               items: [
                 "Địa chỉ IP và thông tin thiết bị",
                 "Loại trình duyệt và cài đặt",
@@ -1150,7 +1616,7 @@ const translations = {
             }
           },
           dataUse: {
-            title: "3. Sử D���ng Thông Tin",
+            title: "3. Sử Dng Thông Tin",
             content: "Chúng tôi sử dụng thông tin của bạn để:",
             items: [
               "Xử lý và theo dõi lô hàng",
@@ -1177,7 +1643,7 @@ const translations = {
           },
           cookies: {
             title: "6. Cookie và Theo Dõi",
-            content: "Chúng tôi sử dụng cookie và các công nghệ tương tự ��ể nâng cao trải nghiệm của bạn. Xem Chính sách Cookie của chúng tôi để biết thêm chi tiết."
+            content: "Chúng tôi sử dụng cookie và các công nghệ tương tự ể nâng cao trải nghiệm của bạn. Xem Chính sách Cookie của chúng tôi để biết thêm chi tiết."
           },
           updates: {
             title: "7. Cập Nhật Chính Sách Bảo Mật",
@@ -1264,7 +1730,7 @@ const translations = {
             items: [
               "Google Analytics - Theo dõi hiệu suất",
               "Bộ xử lý thanh toán - Bảo mật giao dịch",
-              "Nền tảng m��ng xã hội - Chia sẻ nội dung",
+              "Nền tảng mng xã hội - Chia sẻ nội dung",
               "Mạng lưới quảng cáo - Quảng cáo có mục tiêu"
             ]
           },
@@ -1294,7 +1760,7 @@ const translations = {
             },
             overview: {
               title: "Tổng Quan Dịch Vụ",
-              description: "Giải pháp vận tải biển toàn diện của chúng tôi cung cấp dịch vụ vận chuyển đáng tin cậy và hiệu quả về chi phí qua các cảng lớn trên toàn thế giới. Chúng tôi chuyên về cả hàng nguyên container (FCL) và hàng lẻ (LCL)."
+              description: "Giải pháp vận tải biển toàn diện của chúng tôi cung cấp dịch vụ vận chuyển đáng tin cậy và hiệu quả về chi phí qua các cảng lớn trên toàn thế giới. Chúng tôi chuyên về c hàng nguyên container (FCL) và hàng lẻ (LCL)."
             },
             features: {
               title: "Tính Năng Chính",
@@ -1435,7 +1901,7 @@ const translations = {
             ]
           },
           options: {
-            title: "Tùy Chọn D��ch Vụ",
+            title: "Tùy Chọn Dch Vụ",
             domestic: {
               title: "Vận Tải Nội Địa",
               features: [
@@ -1466,7 +1932,7 @@ const translations = {
             },
             overview: {
               title: "Tổng Quan Dịch Vụ",
-              description: "Chúng tôi chuyên xử lý các lô hàng rời và hàng quá khổ với đội ngũ chuyên gia giàu kinh nghiệm. Dịch vụ của chúng tôi bao gồm lập kế hoạch chi tiết, thiết bị chuyên dụng và giải pháp vận chuyển tùy chỉnh."
+              description: "Chúng tôi chuyên xử lý các lô hàng rời và hàng quá khổ với đội ngũ chuyên gia giàu kinh nghiệm. Dịch vụ của chúng tôi bao gồm lập kế hoạch chi tiết, thiết bị chuyên dụng và giải pháp v���n chuyển tùy ch��nh."
             },
             features: {
               title: "Tính Năng Chính",
@@ -1659,7 +2125,7 @@ const translations = {
             },
             overview: {
               title: "Tổng Quan Dịch Vụ",
-              description: "Giải pháp logistics thương mại điện tử chuyên biệt của chúng tôi được thiết kế để đáp ứng những thách thức đặc thù của bán lẻ trực tuyến. Từ giao hàng nhanh bằng đường hàng không đến tích hợp sàn thương mại liền mạch, chúng tôi gi��p phát triển kinh doanh trực tuyến của bạn trên toàn cầu."
+              description: "Giải pháp logistics thương mại điện tử chuyên biệt của chúng tôi được thiết kế để đáp ứng những thách thức đặc thù của bán lẻ trực tuyến. Từ giao hàng nhanh bằng đường hàng không đến tích hợp sàn thương mại li�����n mạch, chúng tôi gi��p phát triển kinh doanh trực tuyến của bạn trên toàn cầu."
             },
             features: {
               title: "Tính Năng Chính",
@@ -1694,6 +2160,387 @@ const translations = {
             cargoType: "Loại Hàng Hóa",
             cargoPlaceholder: "Nhập loại hàng hóa", 
             submit: "Nhận Báo Giá Miễn Phí"
+          }
+        }
+      },
+      industries: {
+        title: "Ngành Nghề",
+        sections: {
+          mainIndustries: "Ngành Nghề Chính",
+          specializedIndustries: "Ngành Nghề Chuyên Biệt"
+        },
+        categories: {
+          foodBeverage: "Thực Phẩm & Đồ Uống",
+          garmentFootwear: "May Mặc & Giày Dép",
+          furnitureHouseware: "Nội Thất & Đồ Gia Dụng",
+          metal: "Kim Loại & Vật Liệu Xây Dựng",
+          machinery: "Máy Móc & Thiết Bị",
+          healthcareCosmetics: "Y Tế & Mỹ Phẩm",
+          dangerousGoods: "Hàng Hóa Nguy Hiểm",
+          automotive: "Ô Tô & Phụ Tùng",
+          electronics: "Điện Tử"
+        },
+        foodBeverage: {
+          title: "Ngành Thực Phẩm & Đồ Uống",
+          stats: {
+            temperature: {
+              number: "-30°C",
+              label: "Chuỗi Lạnh"
+            },
+            certification: {
+              number: "HACCP",
+              label: "Chứng Nhận"
+            }
+          },
+          overview: {
+            title: "Tổng Quan Ngành",
+            description: "Giải ph��p logistics chuy��n biệt cho ngành thực phẩm và đồ uống, đảm bảo vận chuyển và lưu trữ có kiểm soát nhiệt độ với sự tuân thủ nghiêm ngặt các tiêu chuẩn an toàn thực phẩm."
+          },
+          features: {
+            title: "Khả Năng Chính",
+            temperature: {
+              title: "Kiểm Soát Nhiệt Độ",
+              description: "Chuỗi lạnh toàn diện"
+            },
+            quality: {
+              title: "Kiểm Soát Chất Lượng",
+              description: "Tuân thủ HACCP"
+            },
+            handling: {
+              title: "Xử Lý Đặc Biệt",
+              description: "Thiết bị cấp thực phẩm"
+            },
+            time: {
+              title: "Thời Gian Quan Trọng",
+              description: "Tùy chọn giao hàng nhanh"
+            }
+          }
+        },
+        garmentFootwear: {
+          title: "Ngành May Mặc & Giày Dép",
+          stats: {
+            dustFree: {
+              number: "100%",
+              label: "Không Bụi"
+            },
+            vmi: {
+              number: "VMI",
+              label: "Giải Pháp"
+            },
+            distribution: {
+              number: "B2B",
+              label: "Phân Phối"
+            }
+          },
+          overview: {
+            title: "Tổng Quan Ngành",
+            description: "Giải pháp logistics chuyên biệt cho các thương hiệu thời trang và giày dép, đảm bảo vận chuyển hàng treo, xử lý cẩn thận và dịch vụ phân phối sẵn sàng cho bán lẻ."
+          },
+          features: {
+            title: "Khả Năng Chính",
+            storage: {
+              title: "Kho Hàng May Mặc",
+              description: "Hệ thống treo chuyên dụng"
+            },
+            value: {
+              title: "Dịch Vụ Giá Trị Gia Tăng",
+              description: "Dán nhãn & đóng gói"
+            },
+            retail: {
+              title: "Phân Phối Bán Lẻ",
+              description: "Giao hàng sẵn sàng cho cửa hàng"
+            },
+            quality: {
+              title: "Kiểm Soát Chất Lượng",
+              description: "Dịch vụ kiểm tra"
+            }
+          }
+        },
+        furnitureHouseware: {
+          title: "Ngành Nội Thất & Đồ Gia Dụng",
+          stats: {
+            space: {
+              number: "XL",
+              label: "Không Gian Hàng"
+            },
+            handling: {
+              number: "Safe",
+              label: "Xử Lý An Toàn"
+            },
+            delivery: {
+              number: "D2C",
+              label: "Giao Hàng"
+            }
+          },
+          overview: {
+            title: "Tổng Quan Ngành",
+            description: "Giải pháp logistics toàn diện cho các công ty nội thất và đồ gia dụng, cung cấp dịch vụ xử lý chuyên biệt cho các mặt hàng lớn và hàng gia dụng tinh xảo với dịch vụ giao hàng cao cấp."
+          },
+          features: {
+            title: "Khả Năng Chính",
+            handling: {
+              title: "Xử Lý Hàng Cỡ Lớn",
+              description: "Thiết bị chuyên dụng"
+            },
+            delivery: {
+              title: "Giao Hàng Tận Nhà",
+              description: "Dịch vụ cao cấp"
+            },
+            assembly: {
+              title: "Dịch Vụ Lắp Ráp",
+              description: "Lắp đặt chuyên nghiệp"
+            },
+            storage: {
+              title: "Storage Solutions",
+              description: "Climate-controlled"
+            }
+          }
+        },
+        metalConstruction: {
+          title: "Kim Loại & Vật Liệu Xây Dựng",
+          stats: {
+            capacity: {
+              number: "500T",
+              label: "Sức Chứa"
+            },
+            lifting: {
+              number: "Heavy",
+              label: "Nâng Hạ"
+            }
+          },
+          overview: {
+            title: "Tổng Quan Ngành",
+            description: "Giải pháp xử lý và vận chuyển chuyên biệt cho vật liệu xây dựng và sản phẩm kim loại, với thiết bị hạng nặng và chuyên môn trong logistics hàng dự án."
+          },
+          features: {
+            title: "Khả Năng Chính",
+            lifting: {
+              title: "Nâng Hạ Hàng Nặng",
+              description: "Thiết bị chuyên dụng"
+            },
+            project: {
+              title: "Hàng Dự Án",
+              description: "Giải pháp tùy chỉnh"
+            },
+            loading: {
+              title: "Bốc Xếp",
+              description: "Xử lý chuyên nghiệp"
+            },
+            storage: {
+              title: "Kho Bãi",
+              description: "Cơ sở an toàn"
+            }
+          }
+        },
+        machinery: {
+          title: "Máy Móc & Thiết Bị",
+          stats: {
+            handling: {
+              number: "OOG",
+              label: "Xử Lý"
+            },
+            expertise: {
+              number: "Tech",
+              label: "Chuyên Môn"
+            }
+          },
+          overview: {
+            title: "Tổng Quan Ngành",
+            description: "Giải pháp logistics chuyên nghiệp cho máy móc và thiết bị công nghiệp, bao gồm xử lý chuyên biệt cho hàng quá khổ và dịch vụ lắp đặt kỹ thuật."
+          },
+          features: {
+            title: "Khả Năng Chính",
+            technical: {
+              title: "Xử Lý Kỹ Thuật",
+              description: "Chuyên môn đặc biệt"
+            },
+            installation: {
+              title: "Lắp Đặt",
+              description: "Thiết lập chuyên nghiệp"
+            },
+            transport: {
+              title: "Vận Chuyển OOG",
+              description: "Hàng quá khổ"
+            },
+            insurance: {
+              title: "Bảo Hiểm",
+              description: "Bảo hiểm toàn diện"
+            }
+          }
+        },
+        healthcare: {
+          title: "Y Tế & Mỹ Phẩm",
+          stats: {
+            certification: {
+              number: "GDP",
+              label: "Chứng Nhận"
+            },
+            temperature: {
+              number: "2-8°C",
+              label: "Chuỗi Lạnh"
+            }
+          },
+          overview: {
+            title: "Tổng Quan Ngành",
+            description: "Giải pháp logistics y tế được chứng nhận GDP đảm bảo vận chuyển và lưu trữ có kiểm soát nhiệt độ cho dược phẩm, vật tư y tế và mỹ phẩm."
+          },
+          features: {
+            title: "Khả Năng Chính",
+            temperature: {
+              title: "Kiểm Soát Nhiệt Độ",
+              description: "Giám sát chính xác"
+            },
+            gdp: {
+              title: "Tuân Thủ GDP",
+              description: "Xử lý được chứng nhận"
+            },
+            cleanroom: {
+              title: "Phòng Sạch",
+              description: "Môi trường vô trùng"
+            },
+            transport: {
+              title: "Vận Chuyển Y Tế",
+              description: "Xe chuyên dụng"
+            }
+          }
+        },
+        dangerous: {
+          title: "Hàng Hóa Nguy Hiểm",
+          stats: {
+            certification: {
+              number: "IMDG",
+              label: "Chứng Nhận"
+            },
+            transport: {
+              number: "ADR",
+              label: "Vận Chuyển"
+            }
+          },
+          overview: {
+            title: "T���ng Quan Ngành",
+            description: "Dịch vụ xử lý và vận chuyển hàng hóa nguy hiểm được chứng nhận, đảm bảo tuân thủ các quy định quốc tế và tiêu chuẩn an toàn cho vật liệu nguy hiểm."
+          },
+          features: {
+            title: "Khả Năng Chính",
+            certified: {
+              title: "Chứng Nhận DG",
+              description: "Xử lý được cấp phép"
+            },
+            documentation: {
+              title: "Chứng Từ",
+              description: "Tuân thủ đầy đủ"
+            },
+            storage: {
+              title: "Kho Bãi Đặc Biệt",
+              description: "Cơ sở an toàn"
+            },
+            routing: {
+              title: "Lập Tuyến",
+              description: "Tối ưu an toàn"
+            }
+          }
+        },
+        automotive: {
+          title: "Ngành Công Nghiệp Ô Tô",
+          stats: {
+            delivery: {
+              number: "JIT",
+              label: "Giao Hàng"
+            },
+            certification: {
+              number: "QMS",
+              label: "Chứng Nhận"
+            },
+            integration: {
+              number: "EDI",
+              label: "Tích Hợp"
+            }
+          },
+          overview: {
+            title: "Tổng Quan Ngành",
+            description: "Giải pháp logistics chuyên biệt cho ngành ô tô hỗ trợ chuỗi cung ứng sản xuất với giao hàng đúng thời điểm và hệ thống quản lý chất lượng."
+          },
+          features: {
+            title: "Khả Năng Chính",
+            vehicle: {
+              title: "Logistics Xe",
+              description: "Vận chuyển chuyên dụng"
+            },
+            production: {
+              title: "Hỗ Trợ Sản Xuất",
+              description: "Giao hàng JIT"
+            },
+            parts: {
+              title: "Quản Lý Phụ Tùng",
+              description: "Kiểm soát tồn kho"
+            },
+            sequencing: {
+              title: "Sắp Xếp Tuần Tự",
+              description: "Cấp liệu dây chuyền"
+            }
+          }
+        },
+        electronics: {
+          title: "Ngành Điện Tử",
+          stats: {
+            protection: {
+              number: "ESD",
+              label: "Bảo Vệ"
+            },
+            tracking: {
+              number: "IoT",
+              label: "Theo Dõi"
+            }
+          },
+          overview: {
+            title: "Tổng Quan Ngành",
+            description: "Giải pháp logistics điện tử chuyên biệt đảm bảo xử lý và lưu trữ an toàn cho các linh kiện và thiết bị điện tử nhạy cảm."
+          },
+          features: {
+            title: "Khả Năng Chính",
+            protection: {
+              title: "Bảo Vệ ESD",
+              description: "Xử lý an toàn"
+            },
+            tracking: {
+              title: "Theo Dõi IoT",
+              description: "Giám sát thời gian thực"
+            },
+            security: {
+              title: "Kho Bãi An Toàn",
+              description: "Cơ sở bảo mật"
+            },
+            storage: {
+              title: "Kho Bãi Đặc Biệt",
+              description: "Cơ sở bảo mật"
+            }
+          }
+        },
+        quote: {
+          title: "Yêu Cầu Giải Pháp Ngành",
+          industryType: "Loại Ngành",
+          selectIndustry: "Chọn ngành",
+          serviceRequired: "Dịch Vụ Yêu Cầu",
+          selectService: "Chọn dịch vụ",
+          specialRequirements: "Yêu Cầu Đặc Biệt",
+          requirementsPlaceholder: "Nhập các yêu cầu đặc biệt",
+          submit: "Nhận Giải Pháp",
+          industries: {
+            food: "Thực Phẩm & Đồ Uống",
+            garment: "May Mặc & Giày Dép",
+            furniture: "Nội Thất & Đồ Gia Dụng", 
+            construction: "Vật Liệu Xây Dựng",
+            machinery: "Máy Móc & Thiết Bị",
+            healthcare: "Y Tế & Mỹ Phẩm",
+            dangerous: "Hàng Hóa Nguy Hiểm",
+            automotive: "Ô Tô & Phụ Tùng",
+            electronics: "Điện Tử"
+          },
+          services: {
+            transport: "Vận Chuyển",
+            warehouse: "Kho Bãi",
+            customs: "Thông Quan",
+            distribution: "Phân Phối"
           }
         }
       }
