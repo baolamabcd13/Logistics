@@ -32,16 +32,35 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(section);
     });
 
-    // Click handler cho navigation
+    // Click handler cho navigation với xử lý divider
     navItems.forEach(item => {
         item.addEventListener('click', function(e) {
             e.preventDefault();
             const targetId = this.getAttribute('href').substring(1);
             const targetSection = document.getElementById(targetId);
             
-            targetSection.scrollIntoView({
-                behavior: 'smooth'
-            });
+            if (targetSection) {
+                // Tìm divider trước section
+                const previousDivider = targetSection.previousElementSibling;
+                const targetElement = previousDivider && previousDivider.classList.contains('service-divider') 
+                    ? previousDivider 
+                    : targetSection;
+
+                // Lấy chiều cao của header
+                const headerHeight = document.querySelector('header').offsetHeight;
+                
+                // Tính toán vị trí scroll với offset
+                const scrollPosition = targetElement.offsetTop - headerHeight - 20;
+
+                // Scroll đến vị trí đã tính
+                window.scrollTo({
+                    top: scrollPosition,
+                    behavior: 'smooth'
+                });
+
+                // Cập nhật active state
+                setActiveNav(targetId);
+            }
         });
     });
 
