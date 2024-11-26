@@ -762,6 +762,27 @@ const translations = {
                 title: "24/7 Support",
                 description: "Continuous assistance"
               }
+            },
+            options: {
+              title: "Service Options",
+              import: {
+                title: "Import Customs",
+                features: [
+                  "Import declaration",
+                  "Duty calculation",
+                  "Documentation review",
+                  "Compliance check"
+                ]
+              },
+              export: {
+                title: "Export Customs",
+                features: [
+                  "Export documentation",
+                  "License management",
+                  "Certificate handling",
+                  "Customs consulting"
+                ]
+              }
             }
           },
           insurance: {
@@ -796,6 +817,27 @@ const translations = {
               rates: {
                 title: "Competitive Rates",
                 description: "Cost-effective solutions"
+              }
+            },
+            options: {
+              title: "Service Options",
+              standard: {
+                title: "Standard Coverage",
+                features: [
+                  "Basic damage protection",
+                  "Loss coverage",
+                  "Transit insurance",
+                  "General liability"
+                ]
+              },
+              premium: {
+                title: "Premium Coverage",
+                features: [
+                  "All-risk coverage",
+                  "Door-to-door protection",
+                  "Priority claims handling",
+                  "Extended liability"
+                ]
               }
             }
           },
@@ -832,6 +874,27 @@ const translations = {
               crossdock: {
                 title: "Cross-Docking",
                 description: "Efficient distribution"
+              }
+            },
+            options: {
+              title: "Service Options",
+              standard: {
+                title: "Standard Storage",
+                features: [
+                  "General storage space",
+                  "Basic inventory management",
+                  "Security monitoring",
+                  "Loading/unloading"
+                ]
+              },
+              value: {
+                title: "Value-Added Services",
+                features: [
+                  "Pick and pack",
+                  "Kitting and assembly",
+                  "Quality inspection",
+                  "Inventory optimization"
+                ]
               }
             }
           },
@@ -872,6 +935,27 @@ const translations = {
               analytics: {
                 title: "Data Analytics",
                 description: "Performance insights"
+              }
+            },
+            options: {
+              title: "Service Options",
+              basic: {
+                title: "Basic E-Commerce",
+                features: [
+                  "Standard shipping",
+                  "Order processing",
+                  "Basic tracking",
+                  "Returns handling"
+                ]
+              },
+              premium: {
+                title: "Premium E-Commerce",
+                features: [
+                  "Express delivery",
+                  "Marketplace integration",
+                  "Advanced analytics",
+                  "Priority support"
+                ]
               }
             }
           },
@@ -1600,7 +1684,7 @@ const translations = {
                 "Tên và thông tin liên hệ",
                 "Địa chỉ giao hàng và thanh toán",
                 "Thông tin thanh toán",
-                "Thông tin đ����ng nh�������p",
+                "Thông tin đăng nhập",
                 "Tùy chọn liên lạc"
               ]
             },
@@ -1932,7 +2016,7 @@ const translations = {
             },
             overview: {
               title: "Tổng Quan Dịch Vụ",
-              description: "Chúng tôi chuyên xử lý các lô hàng rời và hàng quá khổ với đội ngũ chuyên gia giàu kinh nghiệm. Dịch vụ của chúng tôi bao gồm lập kế hoạch chi tiết, thiết bị chuyên dụng và giải pháp v���n chuyển tùy ch��nh."
+              description: "Chúng tôi chuyên xử lý các lô hàng rời và hàng quá khổ với đội ngũ chuyên gia giàu kinh nghiệm. Dịch vụ của chúng tôi bao gồm lập kế hoạch chi tiết, thiết bị chuyên dụng và giải pháp vận chuyển tùy chỉnh."
             },
             features: {
               title: "Tính Năng Chính",
@@ -2034,6 +2118,27 @@ const translations = {
                 title: "Hỗ Trợ 24/7",
                 description: "Hỗ trợ liên tục"
               }
+            },
+            options: {
+              title: "Các Loại Dịch Vụ",
+              import: {
+                title: "Thủ Tục Nhập Khẩu",
+                features: [
+                  "Khai báo nhập khẩu",
+                  "Tính toán thuế",
+                  "Kiểm tra chứng từ",
+                  "Kiểm tra tuân thủ"
+                ]
+              },
+              export: {
+                title: "Thủ Tục Xuất Khẩu",
+                features: [
+                  "Chứng từ xuất khẩu",
+                  "Quản lý giấy phép",
+                  "Xử lý chứng nhận",
+                  "Tư vấn hải quan"
+                ]
+              }
             }
           },
           insurance: {
@@ -2068,6 +2173,27 @@ const translations = {
               rates: {
                 title: "Phí Cạnh Tranh",
                 description: "Giải pháp tiết kiệm chi phí"
+              }
+            },
+            options: {
+              title: "Các Gói Bảo Hiểm",
+              standard: {
+                title: "Bảo Hiểm Cơ Bản",
+                features: [
+                  "Bảo vệ hư hỏng cơ bản",
+                  "Bảo hiểm mất mát",
+                  "Bảo hiểm vận chuyển",
+                  "Trách nhiệm chung"
+                ]
+              },
+              premium: {
+                title: "Bảo Hiểm Cao Cấp",
+                features: [
+                  "Bảo hiểm mọi rủi ro",
+                  "Bảo vệ từ điểm đi đến điểm đến",
+                  "Xử lý bồi thường ưu tiên",
+                  "Trách nhiệm mở rộng"
+                ]
               }
             }
           },
@@ -2105,6 +2231,27 @@ const translations = {
                 title: "Trung Chuyển Hàng Hóa",
                 description: "Phân phối hiệu quả"
               }
+            },
+            options: {
+              title: "Các Dịch Vụ Kho Bãi",
+              standard: {
+                title: "Kho Bãi Tiêu Chuẩn",
+                features: [
+                  "Không gian lưu trữ chung",
+                  "Quản lý hàng tồn kho cơ bản",
+                  "Giám sát an ninh",
+                  "Bốc xếp hàng hóa"
+                ]
+              },
+              value: {
+                title: "Dịch Vụ Giá Trị Gia Tăng",
+                features: [
+                  "Nhặt và đóng gói",
+                  "Lắp ráp và đóng bộ",
+                  "Kiểm tra chất lượng",
+                  "Tối ưu hóa hàng tồn kho"
+                ]
+              }
             }
           },
           ecommerce: {
@@ -2125,7 +2272,7 @@ const translations = {
             },
             overview: {
               title: "Tổng Quan Dịch Vụ",
-              description: "Giải pháp logistics thương mại điện tử chuyên biệt của chúng tôi được thiết kế để đáp ứng những thách thức đặc thù của bán lẻ trực tuyến. Từ giao hàng nhanh bằng đường hàng không đến tích hợp sàn thương mại li�����n mạch, chúng tôi gi��p phát triển kinh doanh trực tuyến của bạn trên toàn cầu."
+              description: "Giải pháp logistics thương mại điện tử chuyên biệt của chúng tôi được thiết kế để đáp ứng những thách thức đặc thù của bán lẻ trực tuyến. Từ giao hàng nhanh bằng đường hàng không đến tích hợp sàn thương mại liền mạch, chúng tôi giúp phát triển kinh doanh trực tuyến của bạn trên toàn cầu."
             },
             features: {
               title: "Tính Năng Chính",
@@ -2144,6 +2291,27 @@ const translations = {
               analytics: {
                 title: "Phân Tích Dữ Liệu",
                 description: "Thông tin hiệu suất"
+              }
+            },
+            options: {
+              title: "Các Dịch Vụ TMĐT",
+              basic: {
+                title: "TMĐT Cơ Bản",
+                features: [
+                  "Vận chuyển tiêu chuẩn",
+                  "Xử lý đơn hàng",
+                  "Theo dõi cơ bản",
+                  "Xử lý hoàn trả"
+                ]
+              },
+              premium: {
+                title: "TMĐT Cao Cấp",
+                features: [
+                  "Giao hàng nhanh",
+                  "Tích hợp sàn thương mại",
+                  "Phân tích nâng cao",
+                  "Hỗ trợ ưu tiên"
+                ]
               }
             }
           },
@@ -2173,8 +2341,8 @@ const translations = {
           foodBeverage: "Thực Phẩm & Đồ Uống",
           garmentFootwear: "May Mặc & Giày Dép",
           furnitureHouseware: "Nội Thất & Đồ Gia Dụng",
-          metal: "Kim Loại & Vật Liệu Xây Dựng",
-          machinery: "Máy Móc & Thiết Bị",
+          metalConstruction: "Kim Loại & Vật Liệu Xây Dựng",
+          machineryEquipment: "Máy Móc & Thiết Bị",
           healthcareCosmetics: "Y Tế & Mỹ Phẩm",
           dangerousGoods: "Hàng Hóa Nguy Hiểm",
           automotive: "Ô Tô & Phụ Tùng",
@@ -2194,7 +2362,7 @@ const translations = {
           },
           overview: {
             title: "Tổng Quan Ngành",
-            description: "Giải ph��p logistics chuy��n biệt cho ngành thực phẩm và đồ uống, đảm bảo vận chuyển và lưu trữ có kiểm soát nhiệt độ với sự tuân thủ nghiêm ngặt các tiêu chuẩn an toàn thực phẩm."
+            description: "Giải pháp logistics chuyên biệt cho ngành thực phẩm và đồ uống, đảm bảo vận chuyển và lưu trữ có kiểm soát nhiệt độ với sự tuân thủ nghiêm ngặt các tiêu chuẩn an toàn thực phẩm."
           },
           features: {
             title: "Khả Năng Chính",
@@ -2291,8 +2459,8 @@ const translations = {
               description: "Lắp đặt chuyên nghiệp"
             },
             storage: {
-              title: "Storage Solutions",
-              description: "Climate-controlled"
+              title: "Giải Pháp Lưu Trữ",
+              description: "Kiểm soát nhiệt độ"
             }
           }
         },
@@ -2417,7 +2585,7 @@ const translations = {
             }
           },
           overview: {
-            title: "T���ng Quan Ngành",
+            title: "Tổng Quan Ngành",
             description: "Dịch vụ xử lý và vận chuyển hàng hóa nguy hiểm được chứng nhận, đảm bảo tuân thủ các quy định quốc tế và tiêu chuẩn an toàn cho vật liệu nguy hiểm."
           },
           features: {

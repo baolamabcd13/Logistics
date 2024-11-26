@@ -1,161 +1,202 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize AOS
-    AOS.init({
-        duration: 800,
-        offset: 100,
-        once: true
-    });
-
-    // Global variables for scroll handling
-    let lastScrollTop = 0;
-    let ticking = false;
-
-    // Fix navigation links
+    // Handle sidebar navigation
     const navItems = document.querySelectorAll('.transport-nav-item');
     const sections = document.querySelectorAll('.transport-service');
+    const leftSidebar = document.querySelector('.transport-sidebar-left');
+    const rightSidebar = document.querySelector('.transport-sidebar-right');
+    const footer = document.querySelector('.main-footer');
+    const leftSidebarTop = leftSidebar.offsetTop;
+    const rightSidebarTop = rightSidebar.offsetTop;
 
-    // Scroll handling for navigation items
+    // Update active nav item based on scroll position
+    function updateActiveNavItem() {
+        let currentSection = '';
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (window.scrollY >= (sectionTop - sectionHeight/3)) {
+                currentSection = section.getAttribute('id');
+            }
+        });
+
+        navItems.forEach(item => {
+            item.classList.remove('active');
+            if (item.getAttribute('href').slice(1) === currentSection) {
+                item.classList.add('active');
+            }
+        });
+    }
+
+    // Handle sidebar positions
+    function updateSidebarPositions() {
+        const footerRect = footer.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        const scrollY = window.scrollY;
+
+        // Left Sidebar
+        if (scrollY > leftSidebarTop) {
+            leftSidebar.classList.add('sticky');
+            
+            // Check if footer is in view
+            if (footerRect.top < windowHeight) {
+                const difference = windowHeight - footerRect.top;
+                leftSidebar.style.transform = `translateY(-${difference}px)`;
+            } else {
+                leftSidebar.style.transform = 'translateY(0)';
+            }
+        } else {
+            leftSidebar.classList.remove('sticky');
+            leftSidebar.style.transform = 'translateY(0)';
+        }
+
+        // Right Sidebar
+        if (scrollY > rightSidebarTop) {
+            rightSidebar.classList.add('sticky');
+            
+            // Check if footer is in view
+            if (footerRect.top < windowHeight) {
+                const difference = windowHeight - footerRect.top;
+                rightSidebar.style.transform = `translateY(-${difference}px)`;
+            } else {
+                rightSidebar.style.transform = 'translateY(0)';
+            }
+        } else {
+            rightSidebar.classList.remove('sticky');
+            rightSidebar.style.transform = 'translateY(0)';
+        }
+    }
+
+    // Smooth scroll to section when clicking nav items
     navItems.forEach(item => {
         item.addEventListener('click', function(e) {
             e.preventDefault();
-            
-            // Get the target section id from href
-            const targetId = this.getAttribute('href').substring(1);
+            const targetId = this.getAttribute('href').slice(1);
             const targetSection = document.getElementById(targetId);
             
             if (targetSection) {
+                // Find the previous divider if it exists
+                const previousDivider = targetSection.previousElementSibling;
+                const targetElement = previousDivider && previousDivider.classList.contains('service-divider') 
+                    ? previousDivider 
+                    : targetSection;
+
                 // Get header height for offset
                 const headerHeight = document.querySelector('header').offsetHeight;
                 
-                // Calculate scroll position
-                const scrollPosition = targetSection.offsetTop - headerHeight - 20;
+                // Calculate scroll position with consideration for header and some padding
+                const scrollPosition = targetElement.offsetTop - headerHeight - 20;
 
-                // Smooth scroll to target
                 window.scrollTo({
                     top: scrollPosition,
                     behavior: 'smooth'
                 });
 
                 // Update active state
-                navItems.forEach(nav => nav.classList.remove('active'));
+                navItems.forEach(navItem => navItem.classList.remove('active'));
                 this.classList.add('active');
             }
         });
     });
 
-    // Scroll spy functionality
-    const observerOptions = {
-        root: null,
-        rootMargin: '-20% 0px -60% 0px',
-        threshold: 0
-    };
+    // Listen for scroll events
+    window.addEventListener('scroll', () => {
+        requestAnimationFrame(() => {
+            updateActiveNavItem();
+            updateSidebarPositions();
+        });
+    });
+    
+    // Listen for window resize
+    window.addEventListener('resize', () => {
+        requestAnimationFrame(updateSidebarPositions);
+    });
+    
+    // Initial checks
+    updateActiveNavItem();
+    updateSidebarPositions();
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                // Update navigation active state
-                const currentId = entry.target.id;
-                navItems.forEach(item => {
-                    item.classList.remove('active');
-                    if (item.getAttribute('href') === `#${currentId}`) {
-                        item.classList.add('active');
+    // Thêm xử lý cho các link trong dropdown menu
+    const dropdownLinks = document.querySelectorAll('.dropdown-content a[href*="#"]');
+    
+    dropdownLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const href = this.getAttribute('href');
+            
+            // Tách URL và hash
+            const [baseUrl, hash] = href.split('#');
+            const targetId = hash;
+            
+            // Kiểm tra xem link có dẫn đến trang khác không
+            if (baseUrl && !window.location.pathname.includes(baseUrl)) {
+                // Nếu link dẫn đến trang khác, chuyển hướng với hash
+                window.location.href = href;
+                return;
+            }
+            
+            // Xử lý scroll trong cùng trang logistics-supply-chain.html
+            const targetSection = document.getElementById(targetId);
+            if (targetSection) {
+                // Tìm divider trước section
+                const previousDivider = targetSection.previousElementSibling;
+                const targetElement = previousDivider && previousDivider.classList.contains('service-divider') 
+                    ? previousDivider 
+                    : targetSection;
+
+                // Lấy chiều cao của header
+                const headerHeight = document.querySelector('header').offsetHeight;
+                
+                // Tính toán vị trí scroll với offset
+                const scrollPosition = targetElement.offsetTop - headerHeight - 20;
+
+                // Scroll đến vị trí đã tính
+                window.scrollTo({
+                    top: scrollPosition,
+                    behavior: 'smooth'
+                });
+
+                // Cập nhật active state trong navigation
+                navItems.forEach(navItem => navItem.classList.remove('active'));
+                navItems.forEach(navItem => {
+                    if (navItem.getAttribute('href') === `#${targetId}`) {
+                        navItem.classList.add('active');
                     }
                 });
             }
         });
-    }, observerOptions);
-
-    // Observe all sections
-    sections.forEach(section => {
-        observer.observe(section);
     });
 
-    // Handle sticky sidebars
-    const leftSidebar = document.querySelector('.transport-sidebar-left');
-    const rightSidebar = document.querySelector('.transport-sidebar-right');
-    const footer = document.querySelector('.main-footer');
-
-    function updateSidebarPositions() {
-        const footerRect = footer.getBoundingClientRect();
-        const viewportHeight = window.innerHeight;
-        const distanceToFooter = footerRect.top - viewportHeight;
-
-        if (distanceToFooter <= 0) {
-            const translateY = Math.abs(distanceToFooter);
-            leftSidebar.style.transform = `translateY(-${translateY}px)`;
-            rightSidebar.style.transform = `translateY(-${translateY}px)`;
-        } else {
-            leftSidebar.style.transform = 'translateY(0)';
-            rightSidebar.style.transform = 'translateY(0)';
-        }
-    }
-
-    // Add scroll and resize event listeners
-    window.addEventListener('scroll', () => {
-        if (!ticking) {
-            window.requestAnimationFrame(() => {
-                updateSidebarPositions();
-                ticking = false;
-            });
-            ticking = true;
-        }
-    });
-
-    window.addEventListener('resize', () => {
-        if (!ticking) {
-            window.requestAnimationFrame(() => {
-                updateSidebarPositions();
-                ticking = false;
-            });
-            ticking = true;
-        }
-    });
-
-    // Initial sidebar position update
-    updateSidebarPositions();
-
-    // Dropdown menu handling
-    const dropdownToggles = document.querySelectorAll('.service-dropdown-toggle');
-    dropdownToggles.forEach(toggle => {
-        toggle.addEventListener('click', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
+    // Xử lý hash trong URL khi trang load
+    window.addEventListener('load', function() {
+        if (window.location.hash) {
+            const targetId = window.location.hash.substring(1);
+            const targetSection = document.getElementById(targetId);
             
-            const serviceCard = this.closest('.service-card');
-            const dropdownContent = serviceCard.querySelector('.service-dropdown-content');
-            
-            this.classList.toggle('active');
-            
-            if (dropdownContent.style.maxHeight) {
-                dropdownContent.style.maxHeight = null;
-                dropdownContent.style.opacity = '0';
-            } else {
-                dropdownContent.style.maxHeight = dropdownContent.scrollHeight + "px";
-                dropdownContent.style.opacity = '1';
+            if (targetSection) {
+                const previousDivider = targetSection.previousElementSibling;
+                const targetElement = previousDivider && previousDivider.classList.contains('service-divider') 
+                    ? previousDivider 
+                    : targetSection;
+
+                const headerHeight = document.querySelector('header').offsetHeight;
+                const scrollPosition = targetElement.offsetTop - headerHeight - 20;
+
+                // Đợi một chút để đảm bảo trang đã load hoàn toàn
+                setTimeout(() => {
+                    window.scrollTo({
+                        top: scrollPosition,
+                        behavior: 'smooth'
+                    });
+                    // Cập nhật active state
+                    navItems.forEach(navItem => navItem.classList.remove('active'));
+                    navItems.forEach(navItem => {
+                        if (navItem.getAttribute('href') === `#${targetId}`) {
+                            navItem.classList.add('active');
+                        }
+                    });
+                }, 100);
             }
-            
-            dropdownToggles.forEach(otherToggle => {
-                if (otherToggle !== this) {
-                    otherToggle.classList.remove('active');
-                    const otherContent = otherToggle.closest('.service-card')
-                        .querySelector('.service-dropdown-content');
-                    otherContent.style.maxHeight = null;
-                    otherContent.style.opacity = '0';
-                }
-            });
-        });
-    });
-
-    // Close dropdowns when clicking outside
-    document.addEventListener('click', function(e) {
-        if (!e.target.closest('.service-card')) {
-            dropdownToggles.forEach(toggle => {
-                toggle.classList.remove('active');
-                const dropdownContent = toggle.closest('.service-card')
-                    .querySelector('.service-dropdown-content');
-                dropdownContent.style.maxHeight = null;
-                dropdownContent.style.opacity = '0';
-            });
         }
     });
 });

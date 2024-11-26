@@ -91,4 +91,77 @@ document.addEventListener('DOMContentLoaded', function() {
     // Thêm event listener cho scroll
     window.addEventListener('scroll', updateSidebarPosition);
     window.addEventListener('resize', updateSidebarPosition);
+
+    // Thêm xử lý cho các link trong dropdown menu
+    const dropdownLinks = document.querySelectorAll('.dropdown-content a[href*="#"]');
+    
+    dropdownLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const href = this.getAttribute('href');
+            
+            // Tách URL và hash
+            const [baseUrl, hash] = href.split('#');
+            const targetId = hash;
+            
+            // Kiểm tra xem link có dẫn đến trang khác không
+            if (baseUrl && !window.location.pathname.includes(baseUrl)) {
+                // Nếu link dẫn đến trang khác, chuyển hướng với hash
+                window.location.href = href;
+                return;
+            }
+            
+            // Xử lý scroll trong cùng trang transportation.html
+            const targetSection = document.getElementById(targetId);
+            if (targetSection) {
+                // Tìm divider trước section
+                const previousDivider = targetSection.previousElementSibling;
+                const targetElement = previousDivider && previousDivider.classList.contains('service-divider') 
+                    ? previousDivider 
+                    : targetSection;
+
+                // Lấy chiều cao của header
+                const headerHeight = document.querySelector('header').offsetHeight;
+                
+                // Tính toán vị trí scroll với offset
+                const scrollPosition = targetElement.offsetTop - headerHeight - 20;
+
+                // Scroll đến vị trí đã tính
+                window.scrollTo({
+                    top: scrollPosition,
+                    behavior: 'smooth'
+                });
+
+                // Cập nhật active state trong navigation
+                setActiveNav(targetId);
+            }
+        });
+    });
+
+    // Xử lý hash trong URL khi trang load
+    window.addEventListener('load', function() {
+        if (window.location.hash) {
+            const targetId = window.location.hash.substring(1);
+            const targetSection = document.getElementById(targetId);
+            
+            if (targetSection) {
+                const previousDivider = targetSection.previousElementSibling;
+                const targetElement = previousDivider && previousDivider.classList.contains('service-divider') 
+                    ? previousDivider 
+                    : targetSection;
+
+                const headerHeight = document.querySelector('header').offsetHeight;
+                const scrollPosition = targetElement.offsetTop - headerHeight - 20;
+
+                // Đợi một chút để đảm bảo trang đã load hoàn toàn
+                setTimeout(() => {
+                    window.scrollTo({
+                        top: scrollPosition,
+                        behavior: 'smooth'
+                    });
+                    setActiveNav(targetId);
+                }, 100);
+            }
+        }
+    });
 });
