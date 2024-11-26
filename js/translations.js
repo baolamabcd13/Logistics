@@ -1026,6 +1026,27 @@ const translations = {
               title: "Time Critical",
               description: "Express delivery options"
             }
+          },
+          options: {
+            title: "Service Options",
+            coldChain: {
+              title: "Cold Chain Solutions",
+              features: [
+                "Temperature monitoring",
+                "Refrigerated transport",
+                "Cold storage facilities",
+                "HACCP compliance"
+              ]
+            },
+            ambient: {
+              title: "Ambient Solutions",
+              features: [
+                "Dry storage",
+                "Inventory management",
+                "Quality control",
+                "Distribution services"
+              ]
+            }
           }
         },
         garmentFootwear: {
@@ -1065,6 +1086,27 @@ const translations = {
             quality: {
               title: "Quality Control",
               description: "Inspection services"
+            }
+          },
+          options: {
+            title: "Service Options",
+            retail: {
+              title: "Retail Distribution",
+              features: [
+                "Store delivery",
+                "Garment on hanger",
+                "Quality inspection",
+                "VMI solutions"
+              ]
+            },
+            ecommerce: {
+              title: "E-Commerce Solutions",
+              features: [
+                "Pick and pack",
+                "Returns management",
+                "Last mile delivery",
+                "Order fulfillment"
+              ]
             }
           }
         },
@@ -1106,6 +1148,27 @@ const translations = {
               title: "Storage Solutions",
               description: "Climate-controlled"
             }
+          },
+          options: {
+            title: "Service Options",
+            residential: {
+              title: "Residential Services",
+              features: [
+                "Home delivery",
+                "Assembly service",
+                "White glove delivery",
+                "Installation"
+              ]
+            },
+            commercial: {
+              title: "Commercial Services",
+              features: [
+                "Project management",
+                "Bulk delivery",
+                "Storage solutions",
+                "Office setup"
+              ]
+            }
           }
         },
         metalConstruction: {
@@ -1141,6 +1204,27 @@ const translations = {
             storage: {
               title: "Storage Facilities",
               description: "Secure facilities"
+            }
+          },
+          options: {
+            title: "Service Options",
+            project: {
+              title: "Project Logistics",
+              features: [
+                "Site delivery planning",
+                "Heavy equipment transport",
+                "Material staging",
+                "Just-in-time delivery"
+              ]
+            },
+            storage: {
+              title: "Storage Solutions",
+              features: [
+                "Secure warehousing",
+                "Inventory management",
+                "Material handling",
+                "Distribution services"
+              ]
             }
           }
         },
@@ -1178,6 +1262,27 @@ const translations = {
               title: "Insurance",
               description: "Comprehensive coverage"
             }
+          },
+          options: {
+            title: "Service Options",
+            specialized: {
+              title: "Specialized Transport",
+              features: [
+                "Heavy lift handling",
+                "Technical installation",
+                "Route planning",
+                "Equipment positioning"
+              ]
+            },
+            support: {
+              title: "Technical Support",
+              features: [
+                "Assembly services",
+                "Testing & commissioning",
+                "Maintenance support",
+                "Documentation handling"
+              ]
+            }
           }
         },
         healthcare: {
@@ -1214,6 +1319,27 @@ const translations = {
               title: "Medical Transport",
               description: "Specialized vehicles"
             }
+          },
+          options: {
+            title: "Service Options",
+            coldChain: {
+              title: "Cold Chain Services",
+              features: [
+                "Temperature monitoring",
+                "GDP compliance",
+                "Validated packaging",
+                "Real-time tracking"
+              ]
+            },
+            medical: {
+              title: "Medical Supply Chain",
+              features: [
+                "Inventory management",
+                "Emergency delivery",
+                "Quality assurance",
+                "Regulatory compliance"
+              ]
+            }
           }
         },
         dangerous: {
@@ -1249,6 +1375,27 @@ const translations = {
             routing: {
               title: "Route Planning",
               description: "Safety optimized"
+            }
+          },
+          options: {
+            title: "Service Options",
+            transport: {
+              title: "Transport Services",
+              features: [
+                "ADR compliant transport",
+                "Safety documentation",
+                "Emergency response",
+                "Route optimization"
+              ]
+            },
+            storage: {
+              title: "Storage Services",
+              features: [
+                "Certified facilities",
+                "Segregation management",
+                "Safety monitoring",
+                "Inventory control"
+              ]
             }
           }
         },
@@ -1290,6 +1437,27 @@ const translations = {
               title: "Sequencing",
               description: "Line feeding"
             }
+          },
+          options: {
+            title: "Service Options",
+            production: {
+              title: "Production Logistics",
+              features: [
+                "JIT delivery",
+                "Line-side supply",
+                "Sequence management",
+                "Quality control"
+              ]
+            },
+            aftermarket: {
+              title: "Aftermarket Services",
+              features: [
+                "Spare parts logistics",
+                "Dealer distribution",
+                "Returns handling",
+                "Express delivery"
+              ]
+            }
           }
         },
         electronics: {
@@ -1325,6 +1493,27 @@ const translations = {
             storage: {
               title: "Special Storage",
               description: "Secure facilities"
+            }
+          },
+          options: {
+            title: "Service Options",
+            highTech: {
+              title: "High-Tech Logistics",
+              features: [
+                "ESD protection",
+                "Clean room handling",
+                "Security monitoring",
+                "Climate control"
+              ]
+            },
+            consumer: {
+              title: "Consumer Electronics",
+              features: [
+                "Retail distribution",
+                "E-commerce fulfillment",
+                "Returns processing",
+                "Value-added services"
+              ]
             }
           }
         },
@@ -2382,6 +2571,27 @@ const translations = {
               title: "Thời Gian Quan Trọng",
               description: "Tùy chọn giao hàng nhanh"
             }
+          },
+          options: {
+            title: "Các Dịch Vụ Ngành",
+            coldChain: {
+              title: "Giải Pháp Chuỗi Lạnh",
+              features: [
+                "Giám sát nhiệt độ",
+                "Vận chuyển đông lạnh",
+                "Kho lạnh chuyên dụng",
+                "Tuân thủ HACCP"
+              ]
+            },
+            ambient: {
+              title: "Giải Pháp Thường Nhiệt",
+              features: [
+                "Kho khô",
+                "Quản lý hàng tồn kho",
+                "Kiểm soát chất lượng",
+                "Dịch vụ phân phối"
+              ]
+            }
           }
         },
         garmentFootwear: {
@@ -2421,6 +2631,27 @@ const translations = {
             quality: {
               title: "Kiểm Soát Chất Lượng",
               description: "Dịch vụ kiểm tra"
+            }
+          },
+          options: {
+            title: "Các Dịch Vụ Ngành",
+            retail: {
+              title: "Phân Phối Bán Lẻ",
+              features: [
+                "Giao hàng cửa hàng",
+                "Vận chuyển hàng treo",
+                "Kiểm tra chất lượng",
+                "Giải pháp VMI"
+              ]
+            },
+            ecommerce: {
+              title: "Giải Pháp TMĐT",
+              features: [
+                "Nhặt và đóng gói",
+                "Quản lý hoàn trả",
+                "Giao hàng chặng cuối",
+                "Hoàn thiện đơn hàng"
+              ]
             }
           }
         },
@@ -2462,6 +2693,27 @@ const translations = {
               title: "Giải Pháp Lưu Trữ",
               description: "Kiểm soát nhiệt độ"
             }
+          },
+          options: {
+            title: "Các Dịch Vụ Ngành",
+            residential: {
+              title: "Dịch Vụ Dân Dụng",
+              features: [
+                "Giao hàng tận nhà",
+                "Dịch vụ lắp ráp",
+                "Giao hàng cao cấp",
+                "Lắp đặt"
+              ]
+            },
+            commercial: {
+              title: "Dịch Vụ Thương Mại",
+              features: [
+                "Quản lý dự án",
+                "Giao hàng số lượng lớn",
+                "Giải pháp lưu trữ",
+                "Thiết lập văn phòng"
+              ]
+            }
           }
         },
         metalConstruction: {
@@ -2497,6 +2749,27 @@ const translations = {
             storage: {
               title: "Kho Bãi",
               description: "Cơ sở an toàn"
+            }
+          },
+          options: {
+            title: "Các Dịch Vụ Ngành",
+            project: {
+              title: "Logistics Dự Án",
+              features: [
+                "Lập kế hoạch giao hàng công trường",
+                "Vận chuyển thiết bị nặng",
+                "Sắp xếp vật liệu",
+                "Giao hàng đúng thời điểm"
+              ]
+            },
+            storage: {
+              title: "Giải Pháp Lưu Trữ",
+              features: [
+                "Kho bãi an toàn",
+                "Quản lý hàng tồn kho",
+                "Xử lý vật liệu",
+                "Dịch vụ phân phối"
+              ]
             }
           }
         },
@@ -2534,6 +2807,27 @@ const translations = {
               title: "Bảo Hiểm",
               description: "Bảo hiểm toàn diện"
             }
+          },
+          options: {
+            title: "Các Dịch Vụ Ngành",
+            specialized: {
+              title: "Vận Chuyển Chuyên Dụng",
+              features: [
+                "Xử lý hàng siêu trọng",
+                "Lắp đặt kỹ thuật",
+                "Lập kế hoạch tuyến đường",
+                "Định vị thiết bị"
+              ]
+            },
+            support: {
+              title: "Hỗ Trợ Kỹ Thuật",
+              features: [
+                "Dịch vụ lắp ráp",
+                "Kiểm tra & vận hành",
+                "Hỗ trợ bảo trì",
+                "Xử lý tài liệu"
+              ]
+            }
           }
         },
         healthcare: {
@@ -2570,6 +2864,27 @@ const translations = {
               title: "Vận Chuyển Y Tế",
               description: "Xe chuyên dụng"
             }
+          },
+          options: {
+            title: "Các Dịch Vụ Ngành",
+            coldChain: {
+              title: "Dịch Vụ Chuỗi Lạnh",
+              features: [
+                "Giám sát nhiệt độ",
+                "Tuân thủ GDP",
+                "Đóng gói được thẩm định",
+                "Theo dõi thời gian thực"
+              ]
+            },
+            medical: {
+              title: "Chuỗi Cung Ứng Y Tế",
+              features: [
+                "Quản lý hàng tồn kho",
+                "Giao hàng khẩn cấp",
+                "Đảm bảo chất lượng",
+                "Tuân thủ quy định"
+              ]
+            }
           }
         },
         dangerous: {
@@ -2605,6 +2920,27 @@ const translations = {
             routing: {
               title: "Lập Tuyến",
               description: "Tối ưu an toàn"
+            }
+          },
+          options: {
+            title: "Các Dịch Vụ Ngành",
+            transport: {
+              title: "Dịch Vụ Vận Chuyển",
+              features: [
+                "Vận chuyển tuân thủ ADR",
+                "Tài liệu an toàn",
+                "Ứng phó khẩn cấp",
+                "Tối ưu hóa tuyến đường"
+              ]
+            },
+            storage: {
+              title: "Dịch Vụ Lưu Trữ",
+              features: [
+                "Cơ sở được chứng nhận",
+                "Quản lý phân tách",
+                "Giám sát an toàn",
+                "Kiểm soát hàng tồn kho"
+              ]
             }
           }
         },
@@ -2646,6 +2982,27 @@ const translations = {
               title: "Sắp Xếp Tuần Tự",
               description: "Cấp liệu dây chuyền"
             }
+          },
+          options: {
+            title: "Các Dịch Vụ Ngành",
+            production: {
+              title: "Logistics Sản Xuất",
+              features: [
+                "Giao hàng JIT",
+                "Cung ứng dây chuyền",
+                "Quản lý trình tự",
+                "Kiểm soát chất lượng"
+              ]
+            },
+            aftermarket: {
+              title: "Dịch Vụ Hậu Mãi",
+              features: [
+                "Logistics phụ tùng",
+                "Phân phối đại lý",
+                "Xử lý hoàn trả",
+                "Giao hàng nhanh"
+              ]
+            }
           }
         },
         electronics: {
@@ -2681,6 +3038,27 @@ const translations = {
             storage: {
               title: "Kho Bãi Đặc Biệt",
               description: "Cơ sở bảo mật"
+            }
+          },
+          options: {
+            title: "Các Dịch Vụ Ngành",
+            highTech: {
+              title: "Logistics Công Nghệ Cao",
+              features: [
+                "Bảo vệ tĩnh điện ESD",
+                "Xử lý phòng sạch",
+                "Giám sát an ninh",
+                "Kiểm soát nhiệt độ"
+              ]
+            },
+            consumer: {
+              title: "Điện Tử Tiêu Dùng",
+              features: [
+                "Phân phối bán lẻ",
+                "Hoàn thiện đơn TMĐT",
+                "Xử lý hàng hoàn",
+                "Dịch vụ giá trị gia tăng"
+              ]
             }
           }
         },
