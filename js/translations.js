@@ -693,37 +693,20 @@ const translations = {
               }
             }
           }
-        }
-      },
-      quote: {
-        title: "Request a Quote",
-        serviceType: {
-          label: "Service Type",
-          placeholder: "Select service",
-          options: {
-            sea: "Sea Freight",
-            air: "Air Freight", 
-            land: "Land Transport",
-            rail: "Rail Transport"
-          }
         },
-        origin: {
-          label: "From",
-          placeholder: "Enter origin city/port"
-        },
-        destination: {
-          label: "To", 
-          placeholder: "Enter destination city/port"
-        },
-        submit: "Get Free Quote"
-      },
-      tracking: {
-        title: "Track Shipment",
-        number: {
-          label: "Tracking Number",
-          placeholder: "Enter your tracking number"
-        },
-        submit: "Track Now"
+        contact: {
+          title: "Need Assistance?",
+          description: "Our logistics experts are here to help you find the best solution for your needs.",
+          phone: {
+            label: "Hotline 24/7",
+            value: "+84 899-498-589"
+          },
+          email: {
+            label: "Email Us",
+            value: "support@logitrack.com"
+          },
+          requestCall: "Request a Call Back"
+      }
       },
       logistics: {
         title: "Logistics & Supply Chain",
@@ -959,19 +942,18 @@ const translations = {
               }
             }
           },
-          quote: {
-            title: "Request a Quote",
-            serviceType: "Service Type",
-            selectService: "Select service",
-            customsBrokerage: "Customs Brokerage Services",
-            cargoInsurance: "Cargo Insurance",
-            warehousing: "Warehousing Services",
-            ecommerce: "E-commerce Services",
-            location: "Service Location",
-            locationPlaceholder: "Enter location",
-            cargoType: "Cargo Type",
-            cargoPlaceholder: "Enter cargo type",
-            submit: "Get Free Quote"
+          contact: {
+            title: "Need Assistance?",
+            description: "Our logistics experts are here to help you find the best solution for your needs.",
+            phone: {
+              label: "Hotline 24/7",
+              value: "+84 899-498-589"
+            },
+            email: {
+              label: "Email Us",
+              value: "support@logitrack.com"
+            },
+            requestCall: "Request a Call Back"
           }
         }
       },
@@ -1517,32 +1499,18 @@ const translations = {
             }
           }
         },
-        quote: {
-          title: "Request Industry Solution",
-          industryType: "Industry Type",
-          selectIndustry: "Select industry",
-          serviceRequired: "Service Required",
-          selectService: "Select service",
-          specialRequirements: "Special Requirements",
-          requirementsPlaceholder: "Enter any special requirements",
-          submit: "Get Solution",
-          industries: {
-            food: "Food & Beverage",
-            garment: "Garment & Footwear",
-            furniture: "Furniture & Houseware",
-            construction: "Construction Materials",
-            machinery: "Machinery & Equipment",
-            healthcare: "Healthcare & Cosmetics",
-            dangerous: "Dangerous Goods",
-            automotive: "Automotive",
-            electronics: "Electronics"
+        contact: {
+          title: "Need Assistance?",
+          description: "Our logistics experts are here to help you find the best solution for your needs.",
+          phone: {
+            label: "Hotline 24/7",
+            value: "+84 899-498-589"
           },
-          services: {
-            transport: "Transportation",
-            warehouse: "Warehousing",
-            customs: "Customs Clearance",
-            distribution: "Distribution"
-          }
+          email: {
+            label: "Email Us",
+            value: "support@logitrack.com"
+          },
+          requestCall: "Request a Call Back"
         }
       }
     },
@@ -1712,7 +1680,7 @@ const translations = {
         company: {
           title: "TẬP ĐOÀN LOGISTICS",
           name: "TẬP ĐOÀN LogiTrack",
-          contact: {
+        contact: {
             address: "Huỳnh Tấn Phát, Quận 7, Thành phố Hồ Chí Minh",
             phone: "(+84) 899-498-589",
             email: "nguyenhblam000@gmail.com",
@@ -2238,37 +2206,20 @@ const translations = {
               }
             }
           }
+        },
+        contact: {
+          title: "Bạn Cần Hỗ Trợ?",
+          description: "Các chuyên gia logistics của chúng tôi luôn sẵn sàng tư vấn giải pháp tốt nhất cho bạn.",
+          phone: {
+            label: "Đường dây nóng 24/7",
+            value: "+84 899-498-589"
+          },
+          email: {
+            label: "Gửi Email",
+            value: "support@logitrack.com"
+          },
+          requestCall: "Yêu Cầu Gọi Lại"
         }
-      },
-      quote: {
-        title: "Yêu Cầu Báo Giá",
-        serviceType: {
-          label: "Loại Dịch Vụ",
-          placeholder: "Chọn dịch vụ",
-          options: {
-            sea: "Vận Tải Biển",
-            air: "Vận Tải Hàng Không",
-            land: "Vận Tải Đường Bộ",
-            rail: "Vận Tải Đường Sắt"
-          }
-        },
-        origin: {
-          label: "Từ",
-          placeholder: "Nhập thành phố/cảng đi"
-        },
-        destination: {
-          label: "Đến",
-          placeholder: "Nhập thành phố/cảng đến"
-        },
-        submit: "Nhận Báo Giá Miễn Phí"
-      },
-      tracking: {
-        title: "Theo Dõi Lô Hàng",
-        number: {
-          label: "Mã Theo Dõi",
-          placeholder: "Nhập mã theo dõi của bạn"
-        },
-        submit: "Theo Dõi Ngay"
       },
       logistics: {
         title: "Logistics & Chuỗi Cung Ứng",
@@ -2504,19 +2455,18 @@ const translations = {
               }
             }
           },
-          quote: {
-            title: "Yêu Cầu Báo Giá",
-            serviceType: "Loại Dịch Vụ", 
-            selectService: "Chọn dịch vụ",
-            customsBrokerage: "Dịch Vụ Khai Báo Hải Quan",
-            cargoInsurance: "Bảo Hiểm Hàng Hóa",
-            warehousing: "Dịch Vụ Kho Bãi",
-            ecommerce: "Dịch Vụ Thương Mại Điện Tử",
-            location: "Địa Điểm Dịch Vụ",
-            locationPlaceholder: "Nhập địa điểm",
-            cargoType: "Loại Hàng Hóa",
-            cargoPlaceholder: "Nhập loại hàng hóa", 
-            submit: "Nhận Báo Giá Miễn Phí"
+          contact: {
+            title: "Bạn Cần Hỗ Trợ?",
+            description: "Các chuyên gia logistics của chúng tôi luôn sẵn sàng tư vấn giải pháp tốt nhất cho bạn.",
+            phone: {
+              label: "Đường dây nóng 24/7",
+              value: "+84 899-498-589"
+            },
+            email: {
+              label: "Gửi Email",
+              value: "support@logitrack.com"
+            },
+            requestCall: "Yêu Cầu Gọi Lại"
           }
         }
       },
@@ -3062,32 +3012,18 @@ const translations = {
             }
           }
         },
-        quote: {
-          title: "Yêu Cầu Giải Pháp Ngành",
-          industryType: "Loại Ngành",
-          selectIndustry: "Chọn ngành",
-          serviceRequired: "Dịch Vụ Yêu Cầu",
-          selectService: "Chọn dịch vụ",
-          specialRequirements: "Yêu Cầu Đặc Biệt",
-          requirementsPlaceholder: "Nhập các yêu cầu đặc biệt",
-          submit: "Nhận Giải Pháp",
-          industries: {
-            food: "Thực Phẩm & Đồ Uống",
-            garment: "May Mặc & Giày Dép",
-            furniture: "Nội Thất & Đồ Gia Dụng", 
-            construction: "Vật Liệu Xây Dựng",
-            machinery: "Máy Móc & Thiết Bị",
-            healthcare: "Y Tế & Mỹ Phẩm",
-            dangerous: "Hàng Hóa Nguy Hiểm",
-            automotive: "Ô Tô & Phụ Tùng",
-            electronics: "Điện Tử"
+        contact: {
+          title: "Bạn Cần Hỗ Trợ?",
+          description: "Các chuyên gia logistics của chúng tôi luôn sẵn sàng tư vấn giải pháp tốt nhất cho bạn.",
+          phone: {
+            label: "Đường dây nóng 24/7",
+            value: "+84 899-498-589"
           },
-          services: {
-            transport: "Vận Chuyển",
-            warehouse: "Kho Bãi",
-            customs: "Thông Quan",
-            distribution: "Phân Phối"
-          }
+          email: {
+            label: "Gửi Email",
+            value: "support@logitrack.com"
+          },
+          requestCall: "Yêu Cầu Gọi Lại"
         }
       }
     }

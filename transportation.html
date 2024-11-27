@@ -565,46 +565,32 @@
 
         <!-- Right Sidebar -->
         <aside class="transport-sidebar-right">
-            <div class="transport-quick-quote">
-                <h3 data-translate="quote.title">Request a Quote</h3>
-                <form class="transport-quote-form">
-                    <div class="form-group">
-                        <label data-translate="quote.serviceType.label">Service Type</label>
-                        <select>
-                            <option value="" data-translate="quote.serviceType.placeholder">Select a service</option>
-                            <option value="sea" data-translate="quote.serviceType.options.sea">Sea Freight</option>
-                            <option value="air" data-translate="quote.serviceType.options.air">Air Freight</option>
-                            <option value="land" data-translate="quote.serviceType.options.land">Land Transport</option>
-                            <option value="rail" data-translate="quote.serviceType.options.rail">Rail Freight</option>
-                        </select>
+            <div class="contact-card">
+                <div class="contact-header">
+                    <i class="fas fa-headset"></i>
+                    <h3 data-translate="transportation.contact.title">Need Assistance?</h3>
+                </div>
+                <div class="contact-content">
+                    <p class="contact-description" data-translate="transportation.contact.description">Our logistics experts are here to help you find the best solution for your needs.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-phone-alt"></i>
+                            <div class="method-details">
+                                <span class="label" data-translate="transportation.contact.phone.label">Hotline 24/7</span>
+                                <span class="value" data-translate="transportation.contact.phone.value">+84 899-498-589</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div class="method-details">
+                                <span class="label" data-translate="transportation.contact.email.label">Email Us</span>
+                                <span class="value" data-translate="transportation.contact.email.value">support@logitrack.com</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label data-translate="quote.origin.label">From</label>
-                        <input type="text" data-translate-placeholder="quote.origin.placeholder">
-                    </div>
-                    <div class="form-group">
-                        <label data-translate="quote.destination.label">To</label>
-                        <input type="text" data-translate-placeholder="quote.destination.placeholder">
-                    </div>
-                    <button type="submit" class="transport-quote-btn">
-                        <i class="fas fa-paper-plane"></i>
-                        <span data-translate="quote.submit">Get Free Quote</span>
-                    </button>
-                </form>
-            </div>
-
-            <div class="transport-tracking">
-                <h3 data-translate="tracking.title">Track Shipment</h3>
-                <form class="tracking-form">
-                    <div class="form-group">
-                        <label data-translate="tracking.number.label">Tracking Number</label>
-                        <input type="text" data-translate-placeholder="tracking.number.placeholder">
-                    </div>
-                    <button type="submit" class="tracking-btn">
-                        <i class="fas fa-search"></i>
-                        <span data-translate="tracking.submit">Track Now</span>
-                    </button>
-                </form>
+                </div>
             </div>
         </aside>
     </div>

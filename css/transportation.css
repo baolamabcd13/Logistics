@@ -244,10 +244,10 @@ body, html {
 
 /* Right Sidebar Enhancements */
 .transport-sidebar-right {
-  background: linear-gradient(145deg, #ffffff, #f8fafc);
+  background: #fff;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
-  padding: 28px;
+  padding: 24px;
   position: fixed;
   top: 104px;
   right: 24px;
@@ -258,152 +258,150 @@ body, html {
   transition: transform 0.3s ease;
 }
 
-/* Quick Quote Form */
-.transport-quick-quote {
-  background: #fff;
-  padding: 0 24px 24px;
-  border-radius: 16px;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-  margin-bottom: 24px;
-}
-
-.transport-quick-quote h3 {
-  color: var(--primary-color);
-  font-size: 1.25rem;
-  margin-bottom: 24px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.transport-quick-quote h3::before {
-  content: '';
+.transport-sidebar-right::-webkit-scrollbar {
   width: 4px;
-  height: 24px;
-  background: var(--secondary-color);
+}
+
+.transport-sidebar-right::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.transport-sidebar-right::-webkit-scrollbar-thumb {
+  background: #e2e8f0;
   border-radius: 4px;
 }
 
-.form-group {
+.transport-sidebar-right::-webkit-scrollbar-thumb:hover {
+  background: #cbd5e1;
+}
+
+.contact-card {
+  border: none;
+  box-shadow: none;
+  background: transparent;
+}
+
+.contact-header {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
+  color: var(--text-white);
+  padding: 24px 20px;
+  text-align: center;
+}
+
+.contact-header i {
+  font-size: 2em;
+  margin-bottom: 12px;
+  color: var(--secondary-color);
+}
+
+.contact-header h3 {
+  margin: 0;
+  font-size: 1.4em;
+  font-weight: 600;
+  color: var(--text-white);
+}
+
+.contact-content {
+  padding: 24px 20px;
+}
+
+.contact-description {
+  color: var(--text-light);
+  margin-bottom: 24px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.contact-methods {
   margin-bottom: 20px;
-  width: 100%;
 }
 
-.form-group label {
+.contact-method {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.contact-method:last-child {
+  border-bottom: none;
+}
+
+.contact-method i {
+  font-size: 1.2em;
+  color: var(--secondary-color);
+  width: 40px;
+  text-align: center;
+}
+
+.method-details {
+  flex: 1;
+}
+
+.method-details .label {
   display: block;
+  font-size: 0.9em;
+  color: var(--text-light);
+  margin-bottom: 2px;
+}
+
+.method-details .value {
+  font-weight: 600;
   color: var(--text-dark);
-  font-weight: 500;
-  margin-bottom: 8px;
-  font-size: 0.9rem;
 }
 
-.form-group select,
-.form-group input {
-  width: 100%;
-  padding: 12px 16px;
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-  font-size: 0.95rem;
-  transition: all 0.3s ease;
-  background: #f8fafc;
-  box-sizing: border-box;
-}
-
-.form-group select:hover,
-.form-group input:hover {
-  border-color: var(--primary-color);
-}
-
-.form-group select:focus,
-.form-group input:focus {
-  outline: none;
-  border-color: var(--secondary-color);
-  box-shadow: 0 0 0 3px rgba(255, 107, 0, 0.1);
-  background: #fff;
-}
-
-.transport-quote-btn {
+.contact-btn {
   width: 100%;
   padding: 14px;
-  background: var(--secondary-color);
-  color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: var(--border-radius);
   font-weight: 600;
-  font-size: 1rem;
   cursor: pointer;
-  transition: all 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  box-sizing: border-box;
+  transition: var(--transition);
+  background: var(--primary-color);
+  color: var(--text-white);
 }
 
-.transport-quote-btn:hover {
-  background: var(--secondary-hover);
+.contact-btn:hover {
+  background: var(--primary-hover);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(255, 107, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Contact Info Section */
-.transport-contact-info {
-  background: #fff;
-  padding: 24px;
-  border-radius: 16px;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+.contact-btn i {
+  font-size: 1.1em;
 }
 
-.transport-contact-info h3 {
-  color: var(--primary-color);
-  font-size: 1.25rem;
+/* Điều chỉnh khoảng cách giữa các phần tử */
+.contact-methods {
   margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
 }
 
-.transport-contact-info h3::before {
-  content: '';
-  width: 4px;
-  height: 24px;
-  background: var(--primary-color);
-  border-radius: 4px;
+/* Có thể thêm hiệu ứng pulse nhẹ cho nút CTA chính */
+@keyframes subtle-pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+  100% { transform: scale(1); }
 }
 
-.contact-item {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 16px;
-  margin-bottom: 12px;
-  border-radius: 12px;
-  background: #f8fafc;
-  transition: all 0.3s ease;
+.contact-btn:hover {
+  animation: subtle-pulse 2s infinite;
 }
 
-.contact-item:hover {
-  background: #fff;
-  transform: translateX(4px);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+/* Hover effects */
+.contact-method:hover {
+  background: var(--background-light);
+  border-radius: 8px;
+  padding: 12px;
+  margin: 0 -12px;
 }
 
-.contact-item i {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--primary-color);
-  color: white;
-  border-radius: 10px;
-  font-size: 1.2rem;
-}
-
-.contact-item span {
-  color: var(--text-dark);
-  font-size: 0.95rem;
-  font-weight: 500;
+.contact-method:hover i {
+  transform: scale(1.1);
 }
 
 /* Responsive Design */
@@ -763,62 +761,4 @@ a:hover {
   height: 6px;
   border-radius: 50%;
   background-color: var(--border-color);
-}
-
-/* Track Shipment Section */
-.transport-tracking {
-    background: #fff;
-    padding: 24px;
-    border-radius: 16px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-    margin-top: 24px;
-}
-
-.transport-tracking h3 {
-    color: var(--primary-color);
-    font-size: 1.25rem;
-    margin-bottom: 24px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.transport-tracking h3::before {
-    content: '';
-    width: 4px;
-    height: 24px;
-    background: var(--primary-color);
-    border-radius: 4px;
-}
-
-.tracking-form .form-group {
-    margin-bottom: 20px;
-}
-
-.tracking-btn {
-    width: 100%;
-    padding: 14px;
-    background: var(--primary-color);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-weight: 500;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    transition: all 0.3s ease;
-    box-sizing: border-box;
-}
-
-.tracking-btn:hover {
-    background: var(--primary-hover);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(26, 79, 139, 0.2);
-}
-
-.tracking-btn i {
-    font-size: 1.1rem;
 }
