@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - LogiTrack</title>
+    <link rel="stylesheet" href="css/support.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                Logi<span>Track</span>
+            </a>
+            
+            <button class="hamburger" aria-label="Menu">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            
+            <div class="nav-wrapper">
+                <nav>
+                    <ul>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle">Solutions <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <div class="dropdown-grid">
+                                    <!-- Transportation Column -->
+                                    <div class="dropdown-column">
+                                        <h3>Transportation</h3>
+                                        <ul>
+                                            <li><a href="transportation.html#sea-freight">Sea freight</a></li>
+                                            <li><a href="transportation.html#air-freight">Air freight</a></li>
+                                            <li><a href="transportation.html#inland-trucking">Inland trucking & Cross border</a></li>
+                                            <li><a href="transportation.html#rail-freight">Rail freight</a></li>
+                                            <li><a href="transportation.html#break-bulk">Break bulk & OOG (Out-of-Gauge)</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Logistics Column -->
+                                    <div class="dropdown-column">
+                                        <h3>Logistics and Supply chain</h3>
+                                        <ul>
+                                            <li><a href="logistics-supply-chain.html#customs">Customs brokerage</a></li>
+                                            <li><a href="logistics-supply-chain.html#insurance">Cargo insurance</a></li>
+                                            <li><a href="logistics-supply-chain.html#warehousing">Warehousing</a></li>
+                                            <li><a href="logistics-supply-chain.html#ecommerce">E-Commerce (Air-express)</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Industries Column -->
+                                    <div class="dropdown-column">
+                                        <h3>Industries</h3>
+                                        <ul>
+                                            <li><a href="industries.html#food-beverage">Food & Beverage</a></li>
+                                            <li><a href="industries.html#garment-footwear">Garment & Footwear</a></li>
+                                            <li><a href="industries.html#furniture">Furniture & Houseware</a></li>
+                                            <li><a href="industries.html#construction">Metal & Construction materials</a></li>
+                                            <li><a href="industries.html#machinery">Machinery & Equipment</a></li>
+                                            <li><a href="industries.html#healthcare">Healthcare, Cosmetics & Medical supply</a></li>
+                                            <li><a href="industries.html#dangerous-goods">Dangerous goods</a></li>
+                                            <li><a href="industries.html#automotive">Automotives</a></li>
+                                            <li><a href="industries.html#electronics">Electronics</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#sustainability">Sustainability</a></li>
+                        <li><a href="#news">Insights</a></li>
+                        <li><a href="support.html" data-translate="support">Support</a></li>
+                    </ul>
+                    <div class="lang-selector">
+                        <a href="#">VIE</a>
+                        <span class="divider">|</span>
+                        <a href="#" class="active">ENG</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Support Hero Section -->
+    <section class="sp-support-hero">
+        <div class="sp-container">
+            <div class="sp-hero-content" data-aos="fade-up">
+                <span class="sp-hero-label">SUPPORT CENTER</span>
+                <h1>How Can We Help You Today?</h1>
+                <p>Get instant answers from our comprehensive help resources</p>
+                
+                <div class="sp-search-wrapper">
+                    <div class="sp-search-container">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" placeholder="Search for articles, guides & more...">
+                        <button class="sp-search-btn">Search</button>
+                    </div>
+                    <div class="sp-popular-searches">
+                        <span>Popular:</span>
+                        <a href="#">Tracking</a>
+                        <a href="#">Shipping Rates</a>
+                        <a href="#">Claims</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Categories -->
+    <section class="sp-support-categories">
+        <div class="sp-container">
+            <div class="sp-categories-grid">
+                <div class="sp-category-card" data-category="shipping" data-aos="fade-up" data-aos-delay="100">
+                    <div class="sp-card-content">
+                        <div class="sp-card-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h3 data-translate="support.categories.shipping.title">Shipping & Tracking</h3>
+                        <p data-translate="support.categories.shipping.description">Track your shipment and manage deliveries</p>
+                    </div>
+                    <div class="sp-card-footer">
+                        <a href="#" class="sp-learn-more-btn" data-translate="support.categories.learnMore">
+                            <span>Learn More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="sp-category-card" data-category="billing" data-aos="fade-up" data-aos-delay="200">
+                    <div class="sp-card-content">
+                        <div class="sp-card-icon">
+                            <i class="fas fa-file-invoice"></i>
+                        </div>
+                        <h3 data-translate="support.categories.billing.title">Billing & Payments</h3>
+                        <p data-translate="support.categories.billing.description">Manage invoices and payment methods</p>
+                    </div>
+                    <div class="sp-card-footer">
+                        <a href="#" class="sp-learn-more-btn" data-translate="support.categories.learnMore">
+                            <span>Learn More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="sp-category-card" data-category="claims" data-aos="fade-up" data-aos-delay="300">
+                    <div class="sp-card-content">
+                        <div class="sp-card-icon">
+                            <i class="fas fa-undo-alt"></i>
+                        </div>
+                        <h3 data-translate="support.categories.claims.title">Claims & Returns</h3>
+                        <p data-translate="support.categories.claims.description">File claims and manage returns</p>
+                    </div>
+                    <div class="sp-card-footer">
+                        <a href="#" class="sp-learn-more-btn" data-translate="support.categories.learnMore">
+                            <span>Learn More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="sp-category-card" data-category="technical" data-aos="fade-up" data-aos-delay="400">
+                    <div class="sp-card-content">
+                        <div class="sp-card-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3 data-translate="support.categories.technical.title">Technical Support</h3>
+                        <p data-translate="support.categories.technical.description">Get help with technical issues</p>
+                    </div>
+                    <div class="sp-card-footer">
+                        <a href="#" class="sp-learn-more-btn" data-translate="support.categories.learnMore">
+                            <span>Learn More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Help Guides -->
+    <section class="sp-quick-help">
+        <div class="sp-container">
+            <h2>QUICK HELP GUIDES</h2>
+            
+            <div class="sp-guides-grid">
+                <!-- Track Shipment Guide -->
+                <div class="sp-guide-card">
+                    <div class="sp-guide-card-inner">
+                        <div class="sp-guide-card-front">
+                            <div class="sp-card-content">
+                                <div class="sp-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <h3>Tracking Guide</h3>
+                                <div class="sp-steps">
+                                    <div class="sp-step">
+                                        <div class="sp-step-left">
+                                            <span class="sp-step-number">01</span>
+                                        </div>
+                                        <div class="sp-step-right">
+                                            <span class="sp-step-text">Enter tracking number</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="sp-step">
+                                        <div class="sp-step-left">
+                                            <span class="sp-step-number">02</span>
+                                        </div>
+                                        <div class="sp-step-right">
+                                            <span class="sp-step-text">Select service</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="sp-step">
+                                        <div class="sp-step-left">
+                                            <span class="sp-step-number">03</span>
+                                        </div>
+                                        <div class="sp-step-right">
+                                            <span class="sp-step-text">Track status</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="sp-view-guide">View Details</button>
+                            </div>
+                        </div>
+
+                        <div class="sp-guide-card-back">
+                            <div class="sp-card-content">
+                                <h3>How to Track</h3>
+                                <div class="sp-detailed-steps">
+                                    <div class="sp-step">
+                                        <h4>Enter Tracking Number</h4>
+                                        <p>Find your tracking number in the shipping confirmation email</p>
+                                    </div>
+                                    <div class="sp-step">
+                                        <h4>Select Service</h4>
+                                        <p>Choose your carrier from the available options</p>
+                                    </div>
+                                    <div class="sp-step">
+                                        <h4>Track Status</h4>
+                                        <p>Get real-time updates on your shipment location</p>
+                                    </div>
+                                </div>
+                                <button class="sp-flip-back">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ship Package Guide -->
+                <div class="sp-guide-card">
+                    <div class="sp-guide-card-inner">
+                        <div class="sp-guide-card-front">
+                            <div class="sp-card-content">
+                                <div class="sp-icon">
+                                    <i class="fas fa-box"></i>
+                                </div>
+                                <h3>Shipping Guide</h3>
+                                <div class="sp-steps">
+                                    <div class="sp-step">
+                                        <span class="sp-step-number">01</span>
+                                        <p>Package details</p>
+                                    </div>
+                                    <div class="sp-step">
+                                        <span class="sp-step-number">02</span>
+                                        <p>Shipping options</p>
+                                    </div>
+                                    <div class="sp-step">
+                                        <span class="sp-step-number">03</span>
+                                        <p>Compare rates</p>
+                                    </div>
+                                </div>
+                                <button class="sp-view-guide">View Details</button>
+                            </div>
+                        </div>
+
+                        <div class="sp-guide-card-back">
+                            <div class="sp-card-content">
+                                <h3>How to Ship</h3>
+                                <div class="sp-detailed-steps">
+                                    <div class="sp-step">
+                                        <h4>Package Details</h4>
+                                        <p>Enter dimensions, weight, and contents of your package</p>
+                                    </div>
+                                    <div class="sp-step">
+                                        <h4>Shipping Options</h4>
+                                        <p>Select delivery speed, insurance, and special handling</p>
+                                    </div>
+                                    <div class="sp-step">
+                                        <h4>Compare Rates</h4>
+                                        <p>Review available shipping rates and select the best option</p>
+                                    </div>
+                                </div>
+                                <button class="sp-flip-back">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- File Claim Guide -->
+                <div class="sp-guide-card">
+                    <div class="sp-guide-card-inner">
+                        <div class="sp-guide-card-front">
+                            <div class="sp-card-content">
+                                <div class="sp-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <h3>Claims Guide</h3>
+                                <div class="sp-steps">
+                                    <div class="sp-step">
+                                        <span class="sp-step-number">01</span>
+                                        <p>Gather documents</p>
+                                    </div>
+                                    <div class="sp-step">
+                                        <span class="sp-step-number">02</span>
+                                        <p>Submit form</p>
+                                    </div>
+                                    <div class="sp-step">
+                                        <span class="sp-step-number">03</span>
+                                        <p>Track status</p>
+                                    </div>
+                                </div>
+                                <button class="sp-view-guide">View Details</button>
+                            </div>
+                        </div>
+
+                        <div class="sp-guide-card-back">
+                            <div class="sp-card-content">
+                                <h3>How to File a Claim</h3>
+                                <div class="sp-detailed-steps">
+                                    <div class="sp-step">
+                                        <h4>Gather Documents</h4>
+                                        <p>Collect shipping receipt, photos, and other relevant documentation</p>
+                                    </div>
+                                    <div class="sp-step">
+                                        <h4>Submit Form</h4>
+                                        <p>Complete the claim form with all required information</p>
+                                    </div>
+                                    <div class="sp-step">
+                                        <h4>Track Status</h4>
+                                        <p>Monitor your claim status and respond to any requests</p>
+                                    </div>
+                                </div>
+                                <button class="sp-flip-back">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="sp-faq-section">
+        <div class="sp-container">
+            <h2 data-translate="support.faq.title">Frequently Asked Questions</h2>
+            <div class="sp-faq-grid">
+                <!-- Shipping & Tracking FAQs -->
+                <div class="sp-faq-category">
+                    <h3 data-translate="support.faq.shipping.title">Shipping & Tracking</h3>
+                    <div class="sp-faq-item" data-aos="fade-up">
+                        <div class="sp-faq-question">
+                            <h4 data-translate="support.faq.tracking.question">How can I track my shipment?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="sp-faq-answer">
+                            <p data-translate="support.faq.tracking.answer">Enter your tracking number on our homepage or use our mobile app to track your shipment in real-time.</p>
+                        </div>
+                    </div>
+
+                    <div class="sp-faq-item" data-aos="fade-up">
+                        <div class="sp-faq-question">
+                            <h4 data-translate="support.faq.delivery.question">What are your delivery times?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="sp-faq-answer">
+                            <p data-translate="support.faq.delivery.answer">Delivery times vary by service and destination. Express delivery typically takes 1-3 business days, while standard shipping takes 3-7 business days.</p>
+                        </div>
+                    </div>
+
+                    <div class="sp-faq-item" data-aos="fade-up">
+                        <div class="sp-faq-question">
+                            <h4 data-translate="support.faq.international.question">Do you offer international shipping?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="sp-faq-answer">
+                            <p data-translate="support.faq.international.answer">Yes, we offer international shipping to over 200 countries. Rates and delivery times vary by destination.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Billing & Payment FAQs -->
+                <div class="sp-faq-category">
+                    <h3 data-translate="support.faq.billing.title">Billing & Payment</h3>
+                    <div class="sp-faq-item" data-aos="fade-up">
+                        <div class="sp-faq-question">
+                            <h4 data-translate="support.faq.payment.question">What payment methods do you accept?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="sp-faq-answer">
+                            <p data-translate="support.faq.payment.answer">We accept major credit cards, bank transfers, and digital payment methods including PayPal and digital wallets.</p>
+                        </div>
+                    </div>
+
+                    <div class="sp-faq-item" data-aos="fade-up">
+                        <div class="sp-faq-question">
+                            <h4 data-translate="support.faq.invoice.question">How can I get an invoice for my shipment?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="sp-faq-answer">
+                            <p data-translate="support.faq.invoice.answer">Invoices are automatically generated and sent to your registered email address. You can also download them from your account dashboard.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Claims & Returns FAQs -->
+                <div class="sp-faq-category">
+                    <h3 data-translate="support.faq.claims.title">Claims & Returns</h3>
+                    <div class="sp-faq-item" data-aos="fade-up">
+                        <div class="sp-faq-question">
+                            <h4 data-translate="support.faq.damage.question">What should I do if my package is damaged?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="sp-faq-answer">
+                            <p data-translate="support.faq.damage.answer">Document the damage with photos and contact our support team immediately. File a claim within 24 hours of delivery for fastest processing.</p>
+                        </div>
+                    </div>
+
+                    <div class="sp-faq-item" data-aos="fade-up">
+                        <div class="sp-faq-question">
+                            <h4 data-translate="support.faq.insurance.question">Is shipping insurance included?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="sp-faq-answer">
+                            <p data-translate="support.faq.insurance.answer">Basic coverage is included for all shipments. Additional insurance can be purchased for valuable items.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dangerous Goods Section -->
+    <section class="sp-dangerous-goods">
+        <div class="sp-container">
+            <h2>Dangerous Goods Guidelines</h2>
+            
+            <div class="sp-dangerous-grid">
+                <!-- Flammable Materials -->
+                <div class="sp-dangerous-category">
+                    <div class="sp-category-header">
+                        <h3>
+                            <i class="fas fa-fire"></i>
+                            Flammable Materials
+                        </h3>
+                    </div>
+                    <div class="sp-dangerous-list">
+                        <div class="sp-dangerous-item">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span>Gasoline and Fuel</span>
+                        </div>
+                        <div class="sp-dangerous-item">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span>Paint Thinners</span>
+                        </div>
+                        <div class="sp-dangerous-item">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span>Aerosol Cans</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Explosive Materials -->
+                <div class="sp-dangerous-category">
+                    <div class="sp-category-header">
+                        <h3>
+                            <i class="fas fa-bomb"></i>
+                            Explosive Materials
+                        </h3>
+                    </div>
+                    <div class="sp-dangerous-list">
+                        <div class="sp-dangerous-item">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span>Fireworks</span>
+                        </div>
+                        <div class="sp-dangerous-item">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span>Ammunition</span>
+                        </div>
+                        <div class="sp-dangerous-item">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span>Blasting Caps</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Corrosive Materials -->
+                <div class="sp-dangerous-category">
+                    <div class="sp-category-header">
+                        <h3>
+                            <i class="fas fa-skull-crossbones"></i>
+                            Corrosive Materials
+                        </h3>
+                    </div>
+                    <div class="sp-dangerous-list">
+                        <div class="sp-dangerous-item">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span>Strong Acids</span>
+                        </div>
+                        <div class="sp-dangerous-item">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span>Battery Fluid</span>
+                        </div>
+                        <div class="sp-dangerous-item">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span>Bleach</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sp-warning-box">
+                <div class="sp-warning-box-header">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <h4>Important Notice</h4>
+                </div>
+                <p>This list is not exhaustive. For a complete list of prohibited and restricted items, please contact our support team. Shipping dangerous goods without proper declaration may result in penalties and legal consequences.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Methods -->
+    <section class="sp-contact-methods">
+        <div class="sp-container">
+            <div class="sp-contact-header">
+                <h2>Get in Touch</h2>
+                <p>We're here to help! Choose your preferred way to connect with our support team.</p>
+            </div>
+
+            <div class="sp-methods-grid">
+                <!-- Phone Support -->
+                <div class="sp-contact-method" data-aos="fade-up">
+                    <div class="sp-contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>24/7 support for urgent inquiries</p>
+                    <a href="tel:+84899498589" class="sp-contact-info">
+                        +84 899-498-589
+                    </a>
+                </div>
+
+                <!-- Email Support -->
+                <div class="sp-contact-method" data-aos="fade-up" data-aos-delay="100">
+                    <div class="sp-contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>Get response within 24 hours</p>
+                    <a href="mailto:support@logitrack.com" class="sp-contact-info">
+                        support@logitrack.com
+                    </a>
+                </div>
+
+                <!-- Live Chat -->
+                <div class="sp-contact-method" data-aos="fade-up" data-aos-delay="200">
+                    <div class="sp-contact-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Live Chat</h3>
+                    <p>Chat with our support team</p>
+                    <button class="sp-chat-button">
+                        <i class="fas fa-comment-dots"></i>
+                        Start Chat
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Company Info -->
+                <div class="footer-section">
+                    <h3>LOGISTICS GROUP</h3>
+                    <h2 class="company-name">Logi<span class="highlight">Track</span> GROUP</h2>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Huynh Tan Phat, District 7, Ho Chi Minh City</p>
+                        <p><i class="fas fa-phone"></i> (+84) 899-498-589</p>
+                        <p><i class="fas fa-envelope"></i> nguyenhblam000@gmail.com</p>
+                        <p><i class="fas fa-globe"></i> https://github.com/baolamabcd13</p>
+                    </div>
+                </div>
+
+                <!-- Map Section -->
+                <div class="footer-section">
+                    <h3>COMPANY LOCATION</h3>
+                    <h2>Find Us On Map</h2>
+                    <div class="map-container">
+                        <img src="img/world-map.png" alt="World Map" class="world-map">
+                    </div>
+                </div>
+
+                <!-- Connect Section -->
+                <div class="footer-section">
+                    <h3>CONNECT WITH US</h3>
+                    <h2>Social Media</h2>
+                    <div class="social-links">
+                        <a href="#" class="social-btn facebook" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-btn twitter" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-btn tiktok" aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="#" class="social-btn youtube" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social-btn linkedin" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-btn instagram" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    <a href="{link}" title="Chứng nhận Tick Đỏ ECheck Verified" target="_blank">
+                        <img style="height: 48px; width: auto;" src="https://echeck.numbala.com/imgs/echeck1.svg" alt="Chứng nhận Tick Đỏ ECheck Verified">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Category Detail Modal -->
+    <div id="sp-categoryModal" class="sp-modal">
+        <div class="sp-modal-content">
+            <div class="sp-modal-header">
+                <h2 class="sp-modal-title"></h2>
+                <button class="sp-close-modal">&times;</button>
+            </div>
+            <div class="sp-modal-body">
+                <div class="sp-category-tabs">
+                    <div class="sp-tab-buttons">
+                        <button class="sp-tab-btn active" data-tab="sp-overview">Overview</button>
+                        <button class="sp-tab-btn" data-tab="sp-guide">How-to Guide</button>
+                    </div>
+                    <div class="sp-tab-content">
+                        <div class="sp-tab-pane active" id="sp-overview">
+                            <!-- Overview content -->
+                        </div>
+                        <div class="sp-tab-pane" id="sp-guide">
+                            <!-- Guide content -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sp-modal-footer">
+                <div class="sp-quick-actions">
+                    <button class="sp-action-btn">
+                        <i class="fas fa-headset"></i>
+                        Contact Support
+                    </button>
+                    <button class="sp-action-btn">
+                        <i class="fas fa-file-download"></i>
+                        Download Guide
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Thêm modal này vào cuối body, trước các scripts -->
+    <div id="sp-categoryModal" class="sp-modal">
+        <div class="sp-modal-content">
+            <div class="sp-modal-header">
+                <h2 class="sp-modal-title"></h2>
+                <button class="sp-close-modal">&times;</button>
+            </div>
+            <div class="sp-modal-body">
+                <div class="sp-category-tabs">
+                    <div class="sp-tab-buttons">
+                        <button class="sp-tab-btn active" data-tab="sp-overview">Overview</button>
+                        <button class="sp-tab-btn" data-tab="sp-guide">How-to Guide</button>
+                    </div>
+                    <div class="sp-tab-content">
+                        <div class="sp-tab-pane active" id="sp-overview">
+                            <!-- Overview content will be inserted here -->
+                        </div>
+                        <div class="sp-tab-pane" id="sp-guide">
+                            <!-- Guide content will be inserted here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/translations.js" type="module"></script>
+    <script src="js/script.js" type="module"></script>
+    <script src="js/support.js"></script>
+</body>
+</html>
