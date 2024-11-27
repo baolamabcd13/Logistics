@@ -1344,3 +1344,113 @@ h3 {
         text-align: center;
     }
 }
+
+/* Styles cho search suggestions */
+.search-suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 5px;
+    display: none;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.suggestion-item {
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.suggestion-item:hover,
+.suggestion-item.selected {
+    background-color: #f8f9fa;
+}
+
+.suggestion-item i {
+    color: #6c757d;
+    font-size: 14px;
+}
+
+.suggestion-item span {
+    color: #212529;
+}
+
+/* Scrollbar styles cho suggestions */
+.search-suggestions::-webkit-scrollbar {
+    width: 8px;
+}
+
+.search-suggestions::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.search-suggestions::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.search-suggestions::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Hiệu ứng highlight cho section được chọn */
+@keyframes highlightSection {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(0,123,255,0);
+    }
+    50% {
+        transform: scale(1.02);
+        box-shadow: 0 0 20px rgba(0,123,255,0.3);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(0,123,255,0);
+    }
+}
+
+.highlight-section {
+    animation: highlightSection 2s ease-out;
+}
+
+/* Style cho suggestion items */
+.suggestion-item {
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.suggestion-item:hover {
+    background-color: #f8f9fa;
+}
+
+.suggestion-item i {
+    width: 20px;
+    color: #6c757d;
+}
+
+.suggestion-item span {
+    flex: 1;
+}
+
+/* Thêm màu nền cho các category khác nhau */
+.suggestion-item[data-category="tracking"] i { color: #007bff; }
+.suggestion-item[data-category="shipping"] i { color: #28a745; }
+.suggestion-item[data-category="claims"] i { color: #dc3545; }
+.suggestion-item[data-category="billing"] i { color: #ffc107; }
+.suggestion-item[data-category="technical"] i { color: #6610f2; }
+.suggestion-item[data-category="dangerous"] i { color: #fd7e14; }
+.suggestion-item[data-category="contact"] i { color: #20c997; }

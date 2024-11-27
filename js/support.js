@@ -1,16 +1,94 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Support search functionality
     const searchInput = document.querySelector('.sp-search-container input');
-    if (searchInput) {
-        searchInput.addEventListener('input', (e) => {
-            console.log('Searching for:', e.target.value);
+    const searchButton = document.querySelector('.sp-search-btn');
+    const guidesGrid = document.querySelector('.sp-guides-grid');
+    const categoriesGrid = document.querySelector('.sp-categories-grid');
+
+    // Hàm tìm kiếm
+    function performSearch(searchTerm) {
+        searchTerm = searchTerm.toLowerCase().trim();
+        
+        // Nếu không có từ khóa tìm kiếm, hiển thị lại tất cả
+        if (!searchTerm) {
+            showAllContent();
+            return;
+        }
+
+        // Tìm trong guides
+        const guideCards = document.querySelectorAll('.sp-guide-card');
+        guideCards.forEach(card => {
+            const title = card.querySelector('h3').textContent.toLowerCase();
+            const description = card.querySelector('.sp-steps').textContent.toLowerCase();
+            
+            if (title.includes(searchTerm) || description.includes(searchTerm)) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
         });
+
+        // Tìm trong categories
+        const categoryCards = document.querySelectorAll('.sp-category-card');
+        categoryCards.forEach(card => {
+            const title = card.querySelector('h3').textContent.toLowerCase();
+            const description = card.querySelector('p').textContent.toLowerCase();
+            
+            if (title.includes(searchTerm) || description.includes(searchTerm)) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+
+        // Hiển thị thông báo nếu không tìm thấy kết quả
+        const visibleGuides = [...guideCards].filter(card => card.style.display !== 'none');
+        const visibleCategories = [...categoryCards].filter(card => card.style.display !== 'none');
+
+        if (visibleGuides.length === 0 && visibleCategories.length === 0) {
+            showNoResults();
+        } else {
+            hideNoResults();
+        }
+    }
+
+    // Hiển thị lại tất cả content
+    function showAllContent() {
+        const allCards = document.querySelectorAll('.sp-guide-card, .sp-category-card');
+        allCards.forEach(card => card.style.display = 'block');
+        hideNoResults();
+    }
+
+    // Hiển thị thông báo không tìm thấy kết quả
+    function showNoResults() {
+        let noResults = document.querySelector('.sp-no-results');
+        if (!noResults) {
+            noResults = document.createElement('div');
+            noResults.className = 'sp-no-results';
+            noResults.innerHTML = `
+                <div class="sp-no-results-content">
+                    <i class="fas fa-search"></i>
+                    <h3>Không tìm thấy kết quả</h3>
+                    <p>Vui lòng thử lại với từ khóa khác</p>
+                </div>
+            `;
+            guidesGrid.parentNode.insertBefore(noResults, guidesGrid);
+        }
+        noResults.style.display = 'block';
+    }
+
+    // Ẩn thông báo không tìm thấy kết quả
+    function hideNoResults() {
+        const noResults = document.querySelector('.sp-no-results');
+        if (noResults) {
+            noResults.style.display = 'none';
+        }
     }
 
     // Category content for modals
     const categoryContent = {
         shipping: {
-            title: "Shipping & Tracking Support",
+            title: "Shipping & Tracking Support",   
             overview: `
                 <div class="sp-overview-section">
                     <h2>Shipping Services & Information</h2>

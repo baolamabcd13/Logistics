@@ -1512,6 +1512,166 @@ const translations = {
           },
           requestCall: "Request a Call Back"
         }
+      },
+      support: {
+        hero: {
+          label: "SUPPORT CENTER",
+          title: "How Can We Help You Today?",
+          description: "Get instant answers from our comprehensive help resources",
+          searchPlaceholder: "Search for articles, guides & more...",
+          searchButton: "Search",
+          popularLabel: "Popular:",
+          popularTracking: "Tracking",
+          popularShippingRates: "Shipping Rates",
+          popularClaims: "Claims"
+        },
+        categories: {
+          shipping: {
+            title: "Shipping & Tracking",
+            description: "Track your shipment and manage deliveries"
+          },
+          billing: {
+            title: "Billing & Payments",
+            description: "Manage invoices and payment methods"
+          },
+          claims: {
+            title: "Claims & Returns",
+            description: "File claims and manage returns"
+          },
+          technical: {
+            title: "Technical Support",
+            description: "Get help with technical issues"
+          },
+          learnMore: "Learn More"
+        },
+        quickHelp: {
+          title: "QUICK HELP GUIDES",
+          viewDetails: "View Details",
+          back: "Back",
+          tracking: {
+            title: "Tracking Guide",
+            howTo: "How to Track",
+            step1: "Enter tracking number",
+            step2: "Select service",
+            step3: "Track status",
+            step1Title: "Enter Tracking Number",
+            step1Description: "Find your tracking number in the shipping confirmation email",
+            step2Title: "Select Service",
+            step2Description: "Choose your carrier from the available options",
+            step3Title: "Track Status",
+            step3Description: "Get real-time updates on your shipment location"
+          },
+          shipping: {
+            title: "Shipping Guide",
+            howTo: "How to Ship",
+            step1: "Package details",
+            step2: "Shipping options",
+            step3: "Compare rates",
+            step1Title: "Package Details",
+            step1Description: "Enter dimensions, weight, and contents of your package",
+            step2Title: "Shipping Options",
+            step2Description: "Select delivery speed, insurance, and special handling",
+            step3Title: "Compare Rates",
+            step3Description: "Review available shipping rates and select the best option"
+          },
+          claims: {
+            title: "Claims Guide",
+            howTo: "How to File a Claim",
+            step1: "Gather documents",
+            step2: "Submit form",
+            step3: "Track status",
+            step1Title: "Gather Documents",
+            step1Description: "Collect shipping receipt, photos, and other relevant documentation",
+            step2Title: "Submit Form",
+            step2Description: "Complete the claim form with all required information",
+            step3Title: "Track Status",
+            step3Description: "Monitor your claim status and respond to any requests"
+          }
+        },
+        faq: {
+          title: "Frequently Asked Questions",
+          shipping: {
+            title: "Shipping & Tracking"
+          },
+          billing: {
+            title: "Billing & Payment"
+          },
+          claims: {
+            title: "Claims & Returns"
+          },
+          tracking: {
+            question: "How can I track my shipment?",
+            answer: "Enter your tracking number on our homepage or use our mobile app to track your shipment in real-time."
+          },
+          delivery: {
+            question: "What are your delivery times?",
+            answer: "Delivery times vary by service and destination. Express delivery typically takes 1-3 business days, while standard shipping takes 3-7 business days."
+          },
+          international: {
+            question: "Do you offer international shipping?",
+            answer: "Yes, we offer international shipping to over 200 countries. Rates and delivery times vary by destination."
+          },
+          payment: {
+            question: "What payment methods do you accept?",
+            answer: "We accept major credit cards, bank transfers, and digital payment methods including PayPal and digital wallets."
+          },
+          invoice: {
+            question: "How can I get an invoice for my shipment?",
+            answer: "Invoices are automatically generated and sent to your registered email address. You can also download them from your account dashboard."
+          },
+          damage: {
+            question: "What should I do if my package is damaged?",
+            answer: "Document the damage with photos and contact our support team immediately. File a claim within 24 hours of delivery for fastest processing."
+          },
+          insurance: {
+            question: "Is shipping insurance included?",
+            answer: "Basic coverage is included for all shipments. Additional insurance can be purchased for valuable items."
+          }
+        },
+        dangerousGoods: {
+          title: "Dangerous Goods Guidelines",
+          flammable: {
+            title: "Flammable Materials",
+            item1: "Gasoline and Fuel",
+            item2: "Paint Thinners",
+            item3: "Aerosol Cans"
+          },
+          explosive: {
+            title: "Explosive Materials",
+            item1: "Fireworks",
+            item2: "Ammunition",
+            item3: "Blasting Caps"
+          },
+          corrosive: {
+            title: "Corrosive Materials",
+            item1: "Strong Acids",
+            item2: "Battery Fluid",
+            item3: "Bleach"
+          },
+          warning: {
+            title: "Important Notice",
+            description: "This list is not exhaustive. For a complete list of prohibited and restricted items, please contact our support team. Shipping dangerous goods without proper declaration may result in penalties and legal consequences."
+          }
+        },
+        contact: {
+          title: "Get in Touch",
+          description: "We're here to help! Choose your preferred way to connect with our support team.",
+          phone: {
+            title: "Call Us",
+            description: "24/7 support for urgent inquiries",
+            number: "+84 899-498-589"
+          },
+          email: {
+            title: "Email Us",
+            description: "Get response within 24 hours",
+            address: "support@logitrack.com"
+          },
+          chat: {
+            title: "Live Chat",
+            description: "Chat with our support team",
+            button: "Start Chat"
+          }
+        }
       }
     },
     vi: {
@@ -1878,7 +2038,7 @@ const translations = {
               "Truy cập dữ liệu cá nhân của bạn",
               "Yêu cầu chỉnh sửa dữ liệu",
               "Yêu cầu xóa dữ liệu",
-              "Từ chối nhận thông tin tiếp thị",
+              "Từ ch���i nhận thông tin tiếp thị",
               "Chuyển giao dữ liệu"
             ]
           },
@@ -3025,6 +3185,197 @@ const translations = {
           },
           requestCall: "Yêu Cầu Gọi Lại"
         }
+      },
+      support: {
+        hero: {
+          label: "TRUNG TÂM HỖ TRỢ",
+          title: "Chúng Tôi Có Thể Giúp Gì Cho Bạn Hôm Nay?",
+          description: "Nhận câu trả lời ngay lập tức từ nguồn tài nguyên hỗ trợ toàn diện của chúng tôi",
+          searchPlaceholder: "Tìm kiếm bài viết, hướng dẫn và nhiều hơn nữa...",
+          searchButton: "Tìm kiếm",
+          popularLabel: "Phổ biến:",
+          popularTracking: "Theo dõi",
+          popularShippingRates: "Giá cước vận chuyển",
+          popularClaims: "Khiếu nại"
+        },
+        categories: {
+          shipping: {
+            title: "Vận Chuyển & Theo Dõi",
+            description: "Theo dõi lô hàng và quản lý giao hàng"
+          },
+          billing: {
+            title: "Thanh Toán & Hóa Đơn",
+            description: "Quản lý hóa đơn và phương thức thanh toán"
+          },
+          claims: {
+            title: "Khiếu Nại & Hoàn Trả",
+            description: "Gửi khiếu nại và quản lý hoàn trả"
+          },
+          technical: {
+            title: "Hỗ Trợ Kỹ Thuật",
+            description: "Nhận trợ giúp về các vấn đề kỹ thuật"
+          },
+          learnMore: "Tìm Hiểu Thêm"
+        },
+        quickHelp: {
+          title: "HƯỚNG DẪN NHANH",
+          viewDetails: "Xem Chi Tiết",
+          back: "Quay Lại",
+          tracking: {
+            title: "Hướng Dẫn Theo Dõi",
+            howTo: "Cách Theo Dõi",
+            step1: "Nhập mã vận đơn",
+            step2: "Chọn dịch vụ",
+            step3: "Theo dõi trạng thái",
+            step1Title: "Nhập Mã Vận Đơn",
+            step1Description: "Tìm mã vận đơn trong email xác nhận vận chuyển",
+            step2Title: "Chọn Dịch Vụ",
+            step2Description: "Chọn hãng vận chuyển từ các tùy chọn có sẵn",
+            step3Title: "Theo Dõi Trạng Thái",
+            step3Description: "Nhận cập nhật thời gian thực về vị trí lô hàng của bạn"
+          },
+          shipping: {
+            title: "Hướng Dẫn Gửi Hàng",
+            howTo: "Cách Gửi Hàng",
+            step1: "Chi tiết gói hàng",
+            step2: "Tùy chọn vận chuyển",
+            step3: "So sánh giá cước",
+            step1Title: "Chi Tiết Gói Hàng",
+            step1Description: "Nhập kích thước, trọng lượng và nội dung của gói hàng",
+            step2Title: "Tùy Chọn Vận Chuyển",
+            step2Description: "Chọn tốc độ giao hàng, bảo hiểm và xử lý đặc biệt",
+            step3Title: "So Sánh Giá Cước",
+            step3Description: "Xem xét các mức giá vận chuyển có sẵn và chọn tùy chọn tốt nhất"
+          },
+          quickHelp: {
+            title: "HƯỚNG DẪN NHANH",
+            viewDetails: "Xem Chi Tiết",
+            back: "Quay Lại",
+            tracking: {
+              title: "Hướng Dẫn Theo Dõi",
+              howTo: "Cách Theo Dõi",
+              step1: "Nhập mã vận đơn",
+              step2: "Chọn dịch vụ",
+              step3: "Theo dõi trạng thái",
+              step1Title: "Nhập Mã Vận Đơn",
+              step1Description: "Tìm mã vận đơn trong email xác nhận vận chuyển",
+              step2Title: "Chọn Dịch Vụ",
+              step2Description: "Chọn hãng vận chuyển từ các tùy chọn có sẵn",
+              step3Title: "Theo Dõi Trạng Thái",
+              step3Description: "Nhận cập nhật thời gian thực về vị trí lô hàng của bạn"
+            },
+            shipping: {
+              title: "Hướng Dẫn Gửi Hàng",
+              howTo: "Cách Gửi Hàng",
+              step1: "Chi tiết gói hàng",
+              step2: "Tùy chọn vận chuyển",
+              step3: "So sánh giá cước",
+              step1Title: "Chi Tiết Gói Hàng",
+              step1Description: "Nhập kích thước, trọng lượng và nội dung của gói hàng",
+              step2Title: "Tùy Chọn Vận Chuyển",
+              step2Description: "Chọn tốc độ giao hàng, bảo hiểm và xử lý đặc biệt",
+              step3Title: "So Sánh Giá Cước",
+              step3Description: "Xem xét các mức giá vận chuyển có sẵn và chọn tùy chọn tốt nhất"
+            }
+          },
+          claims: {
+            title: "Hướng Dẫn Khiếu Nại",
+            howTo: "Cách Gửi Khiếu Nại",
+            step1: "Thu thập tài liệu",
+            step2: "Gửi biểu mẫu",
+            step3: "Theo dõi trạng thái",
+            step1Title: "Thu Thập Tài Liệu",
+            step1Description: "Thu thập biên lai vận chuyển, hình ảnh và các tài liệu liên quan khác",
+            step2Title: "Gửi Biểu Mẫu",
+            step2Description: "Hoàn thành biểu mẫu khiếu nại với tất cả thông tin cần thiết",
+            step3Title: "Theo Dõi Trạng Thái",
+            step3Description: "Theo dõi trạng thái khiếu nại của bạn và phản hồi mọi yêu cầu"
+          }
+        },
+          faq: {
+            title: "Câu Hỏi Thường Gặp",
+            shipping: {
+              title: "Vận Chuyển & Theo Dõi"
+            },
+            billing: {
+              title: "Thanh Toán & Hóa Đơn"
+            },
+            claims: {
+              title: "Khiếu Nại & Hoàn Trả"
+            },
+            tracking: {
+              question: "Làm thế nào để theo dõi lô hàng của tôi?",
+              answer: "Nhập mã vận đơn của bạn trên trang chủ hoặc sử dụng ứng dụng di động của chúng tôi để theo dõi lô hàng của bạn theo thời gian thực."
+            },
+            delivery: {
+              question: "Thời gian giao hàng của bạn là bao lâu?",
+              answer: "Thời gian giao hàng thay đổi tùy theo dịch vụ và điểm đến. Giao hàng nhanh thường mất 1-3 ngày làm việc, trong khi vận chuyển tiêu chuẩn mất 3-7 ngày làm việc."
+            },
+            international: {
+              question: "Bạn có cung cấp dịch vụ vận chuyển quốc tế không?",
+              answer: "Có, chúng tôi cung cấp dịch vụ vận chuyển quốc tế đến hơn 200 quốc gia. Giá cước và thời gian giao hàng thay đổi tùy theo điểm đến."
+            },
+            payment: {
+              question: "Bạn chấp nhận những phương thức thanh toán nào?",
+              answer: "Chúng tôi chấp nhận các thẻ tín dụng chính, chuyển khoản ngân hàng và các phương thức thanh toán điện tử bao gồm PayPal và ví điện tử."
+            },
+            invoice: {
+              question: "Làm thế nào để tôi nhận được hóa đơn cho lô hàng của mình?",
+              answer: "Hóa đơn được tự động tạo và gửi đến địa chỉ email đã đăng ký của bạn. Bạn cũng có thể tải chúng từ bảng điều khiển tài khoản của mình."
+            },
+            damage: {
+              question: "Tôi nên làm gì nếu gói hàng của tôi bị hư hỏng?",
+              answer: "Ghi lại hư hỏng bằng hình ảnh và liên hệ ngay với đội ngũ hỗ trợ của chúng tôi. Gửi khiếu nại trong vòng 24 giờ kể từ khi giao hàng để được xử lý nhanh nhất."
+            },
+            insurance: {
+              question: "Bảo hiểm vận chuyển có được bao gồm không?",
+              answer: "Bảo hiểm cơ bản được bao gồm cho tất cả các lô hàng. Bảo hiểm bổ sung có thể được mua cho các mặt hàng có giá trị."
+            }
+          },
+        dangerousGoods: {
+          title: "Hướng Dẫn Về Hàng Hóa Nguy Hiểm",
+          flammable: {
+            title: "Vật Liệu Dễ Cháy",
+            item1: "Xăng và Nhiên Liệu",
+            item2: "Dung Môi Pha Sơn",
+            item3: "Bình Xịt Aerosol"
+          },
+          explosive: {
+            title: "Vật Liệu Nổ",
+            item1: "Pháo Hoa",
+            item2: "Đạn Dược",
+            item3: "Kíp Nổ"
+          },
+          corrosive: {
+            title: "Vật Liệu Ăn Mòn",
+            item1: "Axit Mạnh",
+            item2: "Dung Dịch Ắc Quy",
+            item3: "Chất Tẩy"
+          },
+          warning: {
+            title: "Thông Báo Quan Trọng",
+            description: "Danh sách này không đầy đủ. Để biết danh sách đầy đủ các mặt hàng bị cấm và hạn chế, vui lòng liên hệ với đội ngũ hỗ trợ của chúng tôi. Vận chuyển hàng hóa nguy hiểm mà không khai báo đúng cách có thể dẫn đến hình phạt và hậu quả pháp lý."
+          }
+        },
+        contact: {
+          title: "Liên Hệ Với Chúng Tôi",
+          description: "Chúng tôi luôn sẵn sàng hỗ trợ! Chọn cách thức liên hệ ưa thích của bạn với đội ngũ hỗ trợ của chúng tôi.",
+          phone: {
+            title: "Gọi Cho Chúng Tôi",
+            description: "Hỗ trợ 24/7 cho các yêu cầu khẩn cấp",
+            number: "+84 899-498-589"
+          },
+          email: {
+            title: "Gửi Email Cho Chúng Tôi",
+            description: "Nhận phản hồi trong vòng 24 giờ",
+            address: "support@logitrack.com"
+          },
+          chat: {
+            title: "Trò Chuyện Trực Tuyến",
+            description: "Trò chuyện với đội ngũ hỗ trợ của chúng tôi",
+            button: "Bắt Đầu Trò Chuyện"
+          }
+        }
       }
     }
   };
@@ -3098,7 +3449,7 @@ const translations = {
       const aboutLink = document.querySelector('a[href="#about"]');
       const sustainabilityLink = document.querySelector('a[href="#sustainability"]');
       const newsLink = document.querySelector('a[href="#news"]');
-      const supportLink = document.querySelector('a[href="#support"]');
+      const supportLink = document.querySelector('a[href="support.html"]');
 
       if (servicesLink) servicesLink.textContent = translations[lang].services;
       if (aboutLink) aboutLink.textContent = translations[lang].aboutUs;

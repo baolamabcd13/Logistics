@@ -24,7 +24,7 @@ header {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 30px;
   height: 100%;
@@ -2507,5 +2507,114 @@ body.modal-open {
     [lang="vi"] .footer-links a {
         padding: 3px 8px;
     }
+}
+
+/* Search suggestions styling */
+.hero-search {
+  position: relative;
+}
+
+.search-suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 5px;
+  display: none;
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.suggestion-item {
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.suggestion-item:hover {
+  background-color: #f8f9fa;
+}
+
+.suggestion-item i {
+  width: 20px;
+  color: #007bff;
+}
+
+.suggestion-item[data-category="tracking"] i { color: #007bff; }
+.suggestion-item[data-category="shipping"] i { color: #28a745; }
+.suggestion-item[data-category="customs"] i { color: #dc3545; }
+.suggestion-item[data-category="rates"] i { color: #ffc107; }
+
+/* Scrollbar styling */
+.search-suggestions::-webkit-scrollbar {
+  width: 8px;
+}
+
+.search-suggestions::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.search-suggestions::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.search-suggestions::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Hero search styles */
+.hero-search {
+    max-width: 700px;
+    margin: 0 auto 0 -5px;
+    position: relative;
+}
+
+.hero-search-container {
+    background: white;
+    border-radius: 12px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.search-icon {
+    color: #666;
+    font-size: 1.2em;
+    padding: 0 15px;
+}
+
+.hero-search input {
+    flex: 1;
+    border: none;
+    padding: 12px;
+    font-size: 1.1em;
+    outline: none;
+}
+
+.search-btn {
+    background: #FF6B00;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.search-btn:hover {
+    background: #e66000;
+    transform: translateY(-1px);
 }
 
