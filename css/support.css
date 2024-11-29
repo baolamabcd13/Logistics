@@ -1454,3 +1454,55 @@ h3 {
 .suggestion-item[data-category="technical"] i { color: #6610f2; }
 .suggestion-item[data-category="dangerous"] i { color: #fd7e14; }
 .suggestion-item[data-category="contact"] i { color: #20c997; }
+
+/* Technical Support Card Centering */
+.sp-technical-support {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.sp-technical-support .sp-category-card {
+    width: 100%;
+    max-width: 400px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    float: none !important;
+    position: relative;
+    left: 0 !important;
+    transform: none !important;
+}
+
+/* Đảm bảo grid không ảnh hưởng */
+.sp-categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* Card kỹ thuật sẽ nằm ngoài grid */
+.sp-technical-support {
+    grid-column: 1 / -1;
+}
+
+.sp-guide-card-back .logo {
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #1a4f8b;
+}
+
+.sp-guide-card-back .logo span {
+    color: #ff6b00;  /* Hoặc màu của bạn */
+}
+
+.sp-guide-card-back .sp-card-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
