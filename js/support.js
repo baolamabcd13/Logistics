@@ -1899,4 +1899,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Thêm styles vào document
     document.head.insertAdjacentHTML('beforeend', modalStyles);
+
+    // Card flip functionality
+    const qhCards = document.querySelectorAll('.qh-card');
+    
+    qhCards.forEach(card => {
+        const viewDetailsBtn = card.querySelector('.qh-button');
+        const backToStepsBtn = card.querySelector('.qh-back-button');
+        
+        // Flip to back
+        viewDetailsBtn.addEventListener('click', () => {
+            card.classList.add('flipped');
+        });
+        
+        // Flip to front
+        backToStepsBtn.addEventListener('click', () => {
+            card.classList.remove('flipped');
+        });
+    });
 });

@@ -172,131 +172,219 @@
     </section>
 
     <!-- Quick Help Guides -->
-    <section class="sp-quick-help">
-        <div class="sp-container">
+    <section class="qh-section">
+        <div class="qh-container">
             <h2 data-translate="support.quickHelp.title">QUICK HELP GUIDES</h2>
             
-            <div class="sp-guides-grid">
+            <div class="qh-grid">
                 <!-- Track Shipment Guide -->
-                <div class="sp-guide-card">
-                    <div class="sp-guide-card-inner">
-                        <div class="sp-guide-card-front">
-                            <div class="sp-card-content">
-                                <div class="sp-icon">
+                <div class="qh-card">
+                    <div class="qh-card-inner">
+                        <!-- Front side -->
+                        <div class="qh-card-front">
+                            <div class="qh-header">
+                                <div class="qh-icon">
                                     <i class="fas fa-map-marker-alt"></i>
                                 </div>
-                                <h3 data-translate="support.quickHelp.tracking.title">Tracking Guide</h3>
-                                <div class="sp-steps">
-                                    <div class="sp-step">
-                                        <div class="sp-step-left">
-                                            <span class="sp-step-number">01</span>
-                                        </div>
-                                        <div class="sp-step-right">
-                                            <span class="sp-step-text" data-translate="support.quickHelp.tracking.step1">Enter tracking number</span>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="sp-step">
-                                        <div class="sp-step-left">
-                                            <span class="sp-step-number">02</span>
-                                        </div>
-                                        <div class="sp-step-right">
-                                            <span class="sp-step-text" data-translate="support.quickHelp.tracking.step2">Select service</span>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="sp-step">
-                                        <div class="sp-step-left">
-                                            <span class="sp-step-number">03</span>
-                                        </div>
-                                        <div class="sp-step-right">
-                                            <span class="sp-step-text" data-translate="support.quickHelp.tracking.step3">Track status</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <button class="sp-view-guide" data-translate="support.quickHelp.viewDetails">View Details</button>
+                                <h3 class="qh-title" data-translate="support.quickHelp.tracking.title">Tracking Guide</h3>
+                            </div>
+                            
+                            <div class="qh-content">
+                                <ul class="qh-steps">
+                                    <li class="qh-step">
+                                        <span class="qh-step-number">01</span>
+                                        <span class="qh-step-text" data-translate="support.quickHelp.tracking.step1">Enter tracking number</span>
+                                    </li>
+                                    <li class="qh-step">
+                                        <span class="qh-step-number">02</span>
+                                        <span class="qh-step-text" data-translate="support.quickHelp.tracking.step2">Select service</span>
+                                    </li>
+                                    <li class="qh-step">
+                                        <span class="qh-step-number">03</span>
+                                        <span class="qh-step-text" data-translate="support.quickHelp.tracking.step3">Track status</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="qh-footer">
+                                <button class="qh-button">
+                                    <span data-translate="support.quickHelp.viewDetails">View Details</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
                             </div>
                         </div>
 
-                        <div class="sp-guide-card-back">
-                            <div class="sp-card-content">
-                                <a href="index.html" class="logo">
-                                    Logi<span>Track</span>
-                                </a>
+                        <!-- Back side -->
+                        <div class="qh-card-back">
+                            <div class="qh-back-header">
+                                <h3 data-translate="support.quickHelp.tracking.detailTitle">Detailed Tracking Guide</h3>
+                            </div>
+                            <div class="qh-back-content">
+                                <p data-translate="support.quickHelp.tracking.detailIntro">Follow these detailed steps to track your shipment:</p>
+                                <ol>
+                                    <li data-translate="support.quickHelp.tracking.detail1">Go to the tracking page</li>
+                                    <li data-translate="support.quickHelp.tracking.detail2">Enter your tracking number in the search box</li>
+                                    <li data-translate="support.quickHelp.tracking.detail3">Select your shipping service</li>
+                                    <li data-translate="support.quickHelp.tracking.detail4">Click "Track" to see your shipment status</li>
+                                    <li data-translate="support.quickHelp.tracking.detail5">View detailed tracking history and estimated delivery date</li>
+                                </ol>
+                            </div>
+                            <div class="qh-back-footer">
+                                <button class="qh-back-button">
+                                    <i class="fas fa-arrow-left"></i>
+                                    <span data-translate="support.quickHelp.backToSteps">Back to Steps</span>
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Ship Package Guide -->
-                <div class="sp-guide-card">
-                    <div class="sp-guide-card-inner">
-                        <div class="sp-guide-card-front">
-                            <div class="sp-card-content">
-                                <div class="sp-icon">
+                <div class="qh-card">
+                    <div class="qh-card-inner">
+                        <!-- Front side -->
+                        <div class="qh-card-front">
+                            <div class="qh-header">
+                                <div class="qh-icon">
                                     <i class="fas fa-box"></i>
                                 </div>
-                                <h3 data-translate="support.quickHelp.shipping.title">Shipping Guide</h3>
-                                <div class="sp-steps">
-                                    <div class="sp-step">
-                                        <span class="sp-step-number">01</span>
-                                        <p data-translate="support.quickHelp.shipping.step1">Package details</p>
-                                    </div>
-                                    <div class="sp-step">
-                                        <span class="sp-step-number">02</span>
-                                        <p data-translate="support.quickHelp.shipping.step2">Shipping options</p>
-                                    </div>
-                                    <div class="sp-step">
-                                        <span class="sp-step-number">03</span>
-                                        <p data-translate="support.quickHelp.shipping.step3">Compare rates</p>
-                                    </div>
-                                </div>
-                                <button class="sp-view-guide" data-translate="support.quickHelp.viewDetails">View Details</button>
+                                <h3 class="qh-title" data-translate="support.quickHelp.shipping.title">Shipping Guide</h3>
+                            </div>
+                            
+                            <div class="qh-content">
+                                <ul class="qh-steps">
+                                    <li class="qh-step">
+                                        <span class="qh-step-number">01</span>
+                                        <span class="qh-step-text" data-translate="support.quickHelp.shipping.step1">Package details</span>
+                                    </li>
+                                    <li class="qh-step">
+                                        <span class="qh-step-number">02</span>
+                                        <span class="qh-step-text" data-translate="support.quickHelp.shipping.step2">Shipping options</span>
+                                    </li>
+                                    <li class="qh-step">
+                                        <span class="qh-step-number">03</span>
+                                        <span class="qh-step-text" data-translate="support.quickHelp.shipping.step3">Compare rates</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="qh-footer">
+                                <button class="qh-button">
+                                    <span data-translate="support.quickHelp.viewDetails">View Details</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
                             </div>
                         </div>
 
-                        <div class="sp-guide-card-back">
-                            <div class="sp-card-content">
-                                <a href="index.html" class="logo">
-                                    Logi<span>Track</span>
-                                </a>
+                        <!-- Back side -->
+                        <div class="qh-card-back">
+                            <div class="qh-back-header">
+                                <h3 data-translate="support.quickHelp.shipping.detailTitle">Detailed Shipping Guide</h3>
+                            </div>
+                            <div class="qh-back-content">
+                                <p data-translate="support.quickHelp.shipping.detailIntro">Complete shipping process guide:</p>
+                                <ol>
+                                    <li data-translate="support.quickHelp.shipping.detail1">Measure package dimensions and weight</li>
+                                    <li data-translate="support.quickHelp.shipping.detail2">Choose appropriate packaging materials</li>
+                                    <li>
+                                        <span data-translate="support.quickHelp.shipping.detail3">Select shipping service level:</span>
+                                        <ul>
+                                            <li data-translate="support.quickHelp.shipping.service1">Express (1-2 days)</li>
+                                            <li data-translate="support.quickHelp.shipping.service2">Standard (3-5 days)</li>
+                                            <li data-translate="support.quickHelp.shipping.service3">Economy (5-7 days)</li>
+                                        </ul>
+                                    </li>
+                                    <li data-translate="support.quickHelp.shipping.detail4">Compare shipping rates</li>
+                                    <li data-translate="support.quickHelp.shipping.detail5">Print shipping label</li>
+                                </ol>
+                            </div>
+                            <div class="qh-back-footer">
+                                <button class="qh-back-button">
+                                    <i class="fas fa-arrow-left"></i>
+                                    <span data-translate="support.quickHelp.backToSteps">Back to Steps</span>
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- File Claim Guide -->
-                <div class="sp-guide-card">
-                    <div class="sp-guide-card-inner">
-                        <div class="sp-guide-card-front">
-                            <div class="sp-card-content">
-                                <div class="sp-icon">
+                <div class="qh-card">
+                    <div class="qh-card-inner">
+                        <!-- Front side -->
+                        <div class="qh-card-front">
+                            <div class="qh-header">
+                                <div class="qh-icon">
                                     <i class="fas fa-file-alt"></i>
                                 </div>
-                                <h3 data-translate="support.quickHelp.claims.title">Claims Guide</h3>
-                                <div class="sp-steps">
-                                    <div class="sp-step">
-                                        <span class="sp-step-number">01</span>
-                                        <p data-translate="support.quickHelp.claims.step1">Gather documents</p>
-                                    </div>
-                                    <div class="sp-step">
-                                        <span class="sp-step-number">02</span>
-                                        <p data-translate="support.quickHelp.claims.step2">Submit form</p>
-                                    </div>
-                                    <div class="sp-step">
-                                        <span class="sp-step-number">03</span>
-                                        <p data-translate="support.quickHelp.claims.step3">Track status</p>
-                                    </div>
-                                </div>
-                                <button class="sp-view-guide" data-translate="support.quickHelp.viewDetails">View Details</button>
+                                <h3 class="qh-title" data-translate="support.quickHelp.claims.title">Claims Guide</h3>
+                            </div>
+                            
+                            <div class="qh-content">
+                                <ul class="qh-steps">
+                                    <li class="qh-step">
+                                        <span class="qh-step-number">01</span>
+                                        <span class="qh-step-text" data-translate="support.quickHelp.claims.step1">Gather documents</span>
+                                    </li>
+                                    <li class="qh-step">
+                                        <span class="qh-step-number">02</span>
+                                        <span class="qh-step-text" data-translate="support.quickHelp.claims.step2">Submit form</span>
+                                    </li>
+                                    <li class="qh-step">
+                                        <span class="qh-step-number">03</span>
+                                        <span class="qh-step-text" data-translate="support.quickHelp.claims.step3">Track status</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="qh-footer">
+                                <button class="qh-button">
+                                    <span data-translate="support.quickHelp.viewDetails">View Details</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
                             </div>
                         </div>
 
-                        <div class="sp-guide-card-back">
-                            <div class="sp-card-content">
-                                <a href="index.html" class="logo">
-                                    Logi<span>Track</span>
-                                </a>
+                        <!-- Back side -->
+                        <div class="qh-card-back">
+                            <div class="qh-back-header">
+                                <h3 data-translate="support.quickHelp.claims.detailTitle">Claims Process Guide</h3>
+                            </div>
+                            <div class="qh-back-content">
+                                <p data-translate="support.quickHelp.claims.detailIntro">Follow these steps to file a claim:</p>
+                                <ol>
+                                    <li>
+                                        <span data-translate="support.quickHelp.claims.detail1">Required Documents:</span>
+                                        <ul>
+                                            <li data-translate="support.quickHelp.claims.doc1">Shipping receipt</li>
+                                            <li data-translate="support.quickHelp.claims.doc2">Photos of damage (if applicable)</li>
+                                            <li data-translate="support.quickHelp.claims.doc3">Value documentation</li>
+                                            <li data-translate="support.quickHelp.claims.doc4">Original invoice</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <span data-translate="support.quickHelp.claims.detail2">Submit Claim:</span>
+                                        <ul>
+                                            <li data-translate="support.quickHelp.claims.submit1">Fill out claim form</li>
+                                            <li data-translate="support.quickHelp.claims.submit2">Attach all documents</li>
+                                            <li data-translate="support.quickHelp.claims.submit3">Provide detailed description</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <span data-translate="support.quickHelp.claims.detail3">Track Claim Status:</span>
+                                        <ul>
+                                            <li data-translate="support.quickHelp.claims.status1">Check email updates</li>
+                                            <li data-translate="support.quickHelp.claims.status2">Use claim reference number</li>
+                                            <li data-translate="support.quickHelp.claims.status3">Contact support if needed</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="qh-back-footer">
+                                <button class="qh-back-button">
+                                    <i class="fas fa-arrow-left"></i>
+                                    <span data-translate="support.quickHelp.backToSteps">Back to Steps</span>
+                                </button>
                             </div>
                         </div>
                     </div>

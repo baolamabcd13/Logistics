@@ -1547,45 +1547,74 @@ const translations = {
         quickHelp: {
           title: "QUICK HELP GUIDES",
           viewDetails: "View Details",
-          back: "Back",
+          backToSteps: "Back to Steps",
           tracking: {
             title: "Tracking Guide",
-            howTo: "How to Track",
+            detailTitle: "Detailed Tracking Guide",
+            detailIntro: "Follow these detailed steps to track your shipment:",
             step1: "Enter tracking number",
             step2: "Select service",
             step3: "Track status",
-            step1Title: "Enter Tracking Number",
-            step1Description: "Find your tracking number in the shipping confirmation email",
-            step2Title: "Select Service",
-            step2Description: "Choose your carrier from the available options",
-            step3Title: "Track Status",
-            step3Description: "Get real-time updates on your shipment location"
+            detail1: "Go to the tracking page",
+            detail2: "Enter your tracking number in the search box",
+            detail3: "Select your shipping service",
+            detail4: "Click \"Track\" to see your shipment status",
+            detail5: "View detailed tracking history and estimated delivery date"
           },
           shipping: {
             title: "Shipping Guide",
-            howTo: "How to Ship",
+            detailTitle: "Detailed Shipping Guide",
+            detailIntro: "Complete shipping process guide:",
             step1: "Package details",
             step2: "Shipping options",
             step3: "Compare rates",
-            step1Title: "Package Details",
-            step1Description: "Enter dimensions, weight, and contents of your package",
-            step2Title: "Shipping Options",
-            step2Description: "Select delivery speed, insurance, and special handling",
-            step3Title: "Compare Rates",
-            step3Description: "Review available shipping rates and select the best option"
+            detail1: "Measure package dimensions and weight",
+            detail2: "Choose appropriate packaging materials",
+            detail3: "Select shipping service level:",
+            service1: "Express (1-2 days)",
+            service2: "Standard (3-5 days)",
+            service3: "Economy (5-7 days)",
+            detail4: "Compare shipping rates",
+            detail5: "Print shipping label"
           },
           claims: {
             title: "Claims Guide",
-            howTo: "How to File a Claim",
+            detailTitle: "Claims Process Guide",
+            detailIntro: "Follow these steps to file a claim:",
             step1: "Gather documents",
             step2: "Submit form",
             step3: "Track status",
-            step1Title: "Gather Documents",
-            step1Description: "Collect shipping receipt, photos, and other relevant documentation",
-            step2Title: "Submit Form",
-            step2Description: "Complete the claim form with all required information",
-            step3Title: "Track Status",
-            step3Description: "Monitor your claim status and respond to any requests"
+            detail1: "Required Documents:",
+            detail2: "Submit Claim:",
+            detail3: "Track Claim Status:",
+            doc1: "Shipping receipt",
+            doc2: "Photos of damage (if applicable)",
+            doc3: "Value documentation",
+            doc4: "Original invoice",
+            submit1: "Fill out claim form",
+            submit2: "Attach all documents",
+            submit3: "Provide detailed description",
+            status1: "Check email updates",
+            status2: "Use claim reference number",
+            status3: "Contact support if needed",
+            process: {
+              title: "Claims Process",
+              description: "Our streamlined claims process ensures quick resolution",
+              timeframe: "Processing time: 5-7 business days",
+              requirements: "Please ensure all documents are clear and complete",
+              support: "Need help? Contact our claims support team"
+            },
+            documents: {
+              title: "Required Documentation",
+              description: "Essential documents for claim processing",
+              list: [
+                "Original shipping documents",
+                "Commercial invoice",
+                "Packing list",
+                "Damage evidence (photos/videos)",
+                "Cost estimates for repair/replacement"
+              ]
+            }
           }
         },
         faq: {
@@ -1943,7 +1972,7 @@ const translations = {
             },
             availability: {
               title: "2.2 Tính Khả Dụng của Dịch Vụ",
-              content: "Chúng tôi cố gắng cung cấp dịch vụ 24/7, nhưng không thể đảm bảo tính khả dụng liên tục của dịch vụ do bảo trì, cập nhật hoặc các yếu tố ngoi tầm kiểm soát của chúng tôi."
+              content: "Chúng tôi cố gắng cung cấp dịch vụ 24/7, nhưng không thể đảm bảo tính khả dụng liên tục của dịch vụ do bảo trì, cập nhật hoặc các yếu tố ngoi t��m kiểm soát c���a chúng tôi."
             }
           },
           userResponsibilities: {
@@ -3220,76 +3249,108 @@ const translations = {
         quickHelp: {
           title: "HƯỚNG DẪN NHANH",
           viewDetails: "Xem Chi Tiết",
-          back: "Quay Lại",
+          backToSteps: "Quay Lại",
           tracking: {
             title: "Hướng Dẫn Theo Dõi",
-            howTo: "Cách Theo Dõi",
+            detailTitle: "Hướng Dẫn Theo Dõi Chi Tiết",
+            detailIntro: "Làm theo các bước sau để theo dõi lô hàng của bạn:",
             step1: "Nhập mã vận đơn",
             step2: "Chọn dịch vụ",
             step3: "Theo dõi trạng thái",
-            step1Title: "Nhập Mã Vận Đơn",
-            step1Description: "Tìm mã vận đơn trong email xác nhận vận chuyển",
-            step2Title: "Chọn Dịch Vụ",
-            step2Description: "Chọn hãng vận chuyển từ các tùy chọn có sẵn",
-            step3Title: "Theo Dõi Trạng Thái",
-            step3Description: "Nhận cập nhật thời gian thực về vị trí lô hàng của bạn"
+            detail1: "Truy cập trang theo dõi",
+            detail2: "Nhập mã vận đơn vào ô tìm kiếm",
+            detail3: "Chọn dịch vụ vận chuyển",
+            detail4: "Nhấp \"Theo dõi\" để xem trạng thái lô hàng",
+            detail5: "Xem lịch sử theo dõi chi tiết và ngày giao hàng dự kiến"
           },
           shipping: {
             title: "Hướng Dẫn Gửi Hàng",
-            howTo: "Cách Gửi Hàng",
+            detailTitle: "Hướng Dẫn Gửi Hàng Chi Tiết",
+            detailIntro: "Hướng dẫn quy trình gửi hàng đầy đủ:",
             step1: "Chi tiết gói hàng",
             step2: "Tùy chọn vận chuyển",
             step3: "So sánh giá cước",
-            step1Title: "Chi Tiết Gói Hàng",
-            step1Description: "Nhập kích thước, trọng lượng và nội dung của gói hàng",
-            step2Title: "Tùy Chọn Vận Chuyển",
-            step2Description: "Chọn tốc độ giao hàng, bảo hiểm và xử lý đặc biệt",
-            step3Title: "So Sánh Giá Cước",
-            step3Description: "Xem xét các mức giá vận chuyển có sẵn và chọn tùy chọn tốt nhất"
+            detail1: "Đo kích thước và cân nặng gói hàng",
+            detail2: "Chọn vật liệu đóng gói phù hợp",
+            detail3: "Chọn cấp độ dịch vụ vận chuyển:",
+            service1: "Hỏa tốc (1-2 ngày)",
+            service2: "Tiêu chuẩn (3-5 ngày)",
+            service3: "Tiết kiệm (5-7 ngày)",
+            detail4: "So sánh giá cước vận chuyển",
+            detail5: "In nhãn vận chuyển"
           },
           quickHelp: {
             title: "HƯỚNG DẪN NHANH",
             viewDetails: "Xem Chi Tiết",
-            back: "Quay Lại",
+            backToSteps: "Quay Lại",
             tracking: {
               title: "Hướng Dẫn Theo Dõi",
-              howTo: "Cách Theo Dõi",
+              detailTitle: "Hướng Dẫn Theo Dõi Chi Tiết",
+              detailIntro: "Làm theo các bước sau để theo dõi lô hàng của bạn:",
               step1: "Nhập mã vận đơn",
               step2: "Chọn dịch vụ",
               step3: "Theo dõi trạng thái",
-              step1Title: "Nhập Mã Vận Đơn",
-              step1Description: "Tìm mã vận đơn trong email xác nhận vận chuyển",
-              step2Title: "Chọn Dịch Vụ",
-              step2Description: "Chọn hãng vận chuyển từ các tùy chọn có sẵn",
-              step3Title: "Theo Dõi Trạng Thái",
-              step3Description: "Nhận cập nhật thời gian thực về vị trí lô hàng của bạn"
+              detail1: "Truy cập trang theo dõi",
+              detail2: "Nhập mã vận đơn vào ô tìm kiếm",
+              detail3: "Chọn dịch vụ vận chuyển",
+              detail4: "Nhấp \"Theo dõi\" để xem trạng thái lô hàng",
+              detail5: "Xem lịch sử theo dõi chi tiết và ngày giao hàng dự kiến"
             },
             shipping: {
               title: "Hướng Dẫn Gửi Hàng",
-              howTo: "Cách Gửi Hàng",
+              detailTitle: "Hướng Dẫn Gửi Hàng Chi Tiết",
+              detailIntro: "Hướng dẫn quy trình gửi hàng đầy đủ:",
               step1: "Chi tiết gói hàng",
               step2: "Tùy chọn vận chuyển",
               step3: "So sánh giá cước",
-              step1Title: "Chi Tiết Gói Hàng",
-              step1Description: "Nhập kích thước, trọng lượng và nội dung của gói hàng",
-              step2Title: "Tùy Chọn Vận Chuyển",
-              step2Description: "Chọn tốc độ giao hàng, bảo hiểm và xử lý đặc biệt",
-              step3Title: "So Sánh Giá Cước",
-              step3Description: "Xem xét các mức giá vận chuyển có sẵn và chọn tùy chọn tốt nhất"
+              detail1: "Đo kích thước và cân nặng gói hàng",
+              detail2: "Chọn vật liệu đóng gói phù hợp",
+              detail3: "Chọn cấp độ dịch vụ vận chuyển:",
+              service1: "Hỏa tốc (1-2 ngày)",
+              service2: "Tiêu chuẩn (3-5 ngày)",
+              service3: "Tiết kiệm (5-7 ngày)",
+              detail4: "So sánh giá cước vận chuyển",
+              detail5: "In nhãn vận chuyển"
             }
           },
           claims: {
             title: "Hướng Dẫn Khiếu Nại",
-            howTo: "Cách Gửi Khiếu Nại",
+            detailTitle: "Hướng Dẫn Quy Trình Khiếu Nại",
+            detailIntro: "Làm theo các bước sau để gửi khiếu nại:",
             step1: "Thu thập tài liệu",
             step2: "Gửi biểu mẫu",
             step3: "Theo dõi trạng thái",
-            step1Title: "Thu Thập Tài Liệu",
-            step1Description: "Thu thập biên lai vận chuyển, hình ảnh và các tài liệu liên quan khác",
-            step2Title: "Gửi Biểu Mẫu",
-            step2Description: "Hoàn thành biểu mẫu khiếu nại với tất cả thông tin cần thiết",
-            step3Title: "Theo Dõi Trạng Thái",
-            step3Description: "Theo dõi trạng thái khiếu nại của bạn và phản hồi mọi yêu cầu"
+            detail1: "Tài Liệu Cần Thiết:",
+            detail2: "Gửi Khiếu Nại:",
+            detail3: "Theo Dõi Trạng Thái Khiếu Nại:",
+            doc1: "Biên lai vận chuyển",
+            doc2: "Hình ảnh hư hỏng (nếu có)",
+            doc3: "Chứng từ giá trị",
+            doc4: "Hóa đơn gốc",
+            submit1: "Điền biểu mẫu khiếu nại",
+            submit2: "Đính kèm tất cả tài liệu",
+            submit3: "Cung cấp mô tả chi tiết",
+            status1: "Kiểm tra cập nhật qua email",
+            status2: "Sử dụng mã tham chiếu khiếu nại",
+            status3: "Liên hệ hỗ trợ nếu cần",
+            process: {
+              title: "Quy Trình Khiếu Nại",
+              description: "Quy trình khiếu nại được tối ưu hóa để giải quyết nhanh chóng",
+              timeframe: "Thời gian xử lý: 5-7 ngày làm việc",
+              requirements: "Vui lòng đảm bảo tất cả tài liệu rõ ràng và đầy đủ",
+              support: "Cần hỗ trợ? Liên hệ đội ngũ hỗ trợ khiếu nại của chúng tôi"
+            },
+            documents: {
+              title: "Tài Liệu Cần Thiết",
+              description: "Các tài liệu cần thiết để xử lý khiếu nại",
+              list: [
+                "Chứng từ vận chuyển gốc",
+                "Hóa đơn thương mại",
+                "Danh sách đóng gói",
+                "Bằng chứng hư hỏng (ảnh/video)",
+                "Ước tính chi phí sửa chữa/thay thế"
+              ]
+            }
           }
         },
           faq: {
@@ -3362,7 +3423,7 @@ const translations = {
           description: "Chúng tôi luôn sẵn sàng hỗ trợ! Chọn cách thức liên hệ ưa thích của bạn với đội ngũ hỗ trợ của chúng tôi.",
           phone: {
             title: "Gọi Cho Chúng Tôi",
-            description: "Hỗ trợ 24/7 cho các yêu cầu khẩn cấp",
+            description: "H�� trợ 24/7 cho các yêu cầu khẩn cấp",
             number: "+84 899-498-589"
           },
           email: {
